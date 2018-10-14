@@ -41,9 +41,13 @@ try focusing more on code itself.
       a name, is of certain gender and also can say
       something relevant, like "meow" or "Hello Jenny!".
  1. List inhabitants. Each list entry should like
-    `human, John, male, 2, 2, Hello world!`
+    `human; John; male; 2; 2; Hello world!`
     - if inhabitant has no hands then
       skip it or report `0` or `undefined` - up to you
+ 1. Optional: each inhabitant can be friendly to 1 or
+    more other inhabitants (or to none). If you implement
+    this then the output should also list friends, i.e.
+    `human; John; male; 2; 2; Hello world!; Rex, Tom, Jenny`
  1. Optional: Define an object representing cat-woman.
     - cat-woman's saying should be exactly the same as
       cat's
@@ -138,6 +142,11 @@ from [Kottans Front-End Course](https://github.com/kottans/frontend).
 Some extras related to OOP:
  - [DRY, KISS, YAGNI](https://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161)
  - [SOLID](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
+
+If you feel now that you can improve your code being armed
+with OOP knowledge then go ahead! Don't forget to fix your row
+in the [worlds.md]((https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/worlds.md)
+submitting an update PR.
 
 ## Credits
 
