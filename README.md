@@ -21,9 +21,9 @@ You will be creating a JavaScript model of this world.
 
 ### Preparations
 
-1. Fork this repo
+1. Fork [this repo](https://github.com/OleksiyRudenko/a-tiny-JS-world)
 
-   ![fork](./img/fork.png)
+   ![fork](img/fork.png)
 
 1. Clone your fork locally
 
@@ -61,43 +61,49 @@ results in changing name of `object1`?
 
     Read about
     [Copying Objects in JavaScript](https://scotch.io/bar-talk/copying-objects-in-javascript)
+
 </details>
 
 ### What's next
 
 You're done? Congratulations!
 
+Did you like the experience?
+Grant this repo a :star:!
+
 #### List your repo
 
-1. Navigate to [A Tiny JS World root repo worlds list](https://github.com/OleksiyRudenko/a-tiny-JS-world/worlds.md)
+1. Navigate to [A Tiny JS World root repo worlds list](https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/worlds.md)
 
-1. Click **Edit this file** button.
+1. Edit the file
+   * Click **Edit this file** button
 
-![./img/edit.png]
+   * Copy the very first line in the table, go all way down
+     to the end of the table, insert the copy as
+     the last row in the table, and edit it as
+     appropriate specifying:
+     - current date as YYYY-MM-DD
+     - number of objects you created
+     - number of code lines your object definitions take
+     - your github nick in square brackets
+       and link to your repository in parentheses
 
-1. Copy the very first line in the table, insert the copy in
-   the next row so other rows move down, and edit it as
-   appropriate specifying:
-   - current date as YYYY-MM-DD
-   - number of objects you created
-   - number of code lines your object definitions take
-   - your github nick in square brackets
-     and link to your repository in parentheses
+   * Switch to Preview tab to check if the table still looks
+     nice.
 
-![./img/edit.gif]
+   ![edit-animated](img/edit.gif)
 
-1. Switch to Preview tab to check if the table still looks
-   nice.
+1. Submit changes
+   * Scroll down to **Propose file change**
+   * Type "List a tiny JS world by <your name>" in commit subject
+   * Click **Propose file change** button.
 
-1. Scroll down to **Propose file change**
-
-1. Type "Add a world by <your name>" in commit subject
-
-1. Click **Propose file change** button.
-
-![./img/pr.gif]
+   ![do-pr](img/pr.gif)
 
 You are done here!
+
+_Please, note that PRs may not be merged very soon. Thank you
+for your patience._
 
 #### Code review
 
@@ -144,3 +150,8 @@ This Tiny JS World project wouldn't ever happen without
 (it's free and offers a totally remote tasks)
 I have completed as a student in 2017 and since then
 have a chance to contribute thus paying back.
+
+Special thanks to [Anastasiya Mashoshyna](https://github.com/AMashoshyna),
+[Yevhen Orlov](https://github.com/yevhenorlov) and other
+[Kottans](https://github.com/kottans) for the discussion, feedback,
+and support that resulted in this project creation.
