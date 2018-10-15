@@ -40,7 +40,7 @@ try focusing more on code itself.
     - Each object has legs, hands (optional, naturally),
       a name, is of certain gender and also can say
       something relevant, like "meow" or "Hello Jenny!".
- 1. List inhabitants. Each list entry should like
+ 1. List inhabitants. Each list entry should be like
     `human; John; male; 2; 2; Hello world!`
     - if inhabitant has no hands then
       skip it or report `0` or `undefined` - up to you
@@ -145,7 +145,7 @@ Some extras related to OOP:
 
 If you feel now that you can improve your code being armed
 with OOP knowledge then go ahead! Don't forget to fix your row
-in the [worlds.md]((https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/worlds.md)
+in the [worlds.md](https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/worlds.md)
 submitting an update PR.
 
 ## Credits
