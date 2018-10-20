@@ -128,12 +128,34 @@ to your rescue.
 
 #### Learn on your own
 
+Imagine you have to build a big world populated with billions
+of inhabitants and a great variety of species, and your world
+project code base will be distributed across many files.
+
+Now, here are the problems.
+
+ - How do you create many similar objects?
+ - How do you add an attribute to all e.g. humans?
+ - How do you access your world inhabitants across your code base?
+ - How do you deal with common attributes for multiple species?
+ - How do you aggregate inhabitants into communities (families,
+   countries etc.)?
+ - What if you decide to add a family name and want that a person
+   being asked for her or his name would include family name
+   in their response? (And you already have these questions
+   posed in multiple locations across your code base)
+
+**In other words how do you make your code scalable?**
+
+Object-Oriented Programing (OOP) concepts come to your rescue.
+
 The following will help you to make yourself familiar
 with OOP and JavaScript OOP.
 
 - [How to explain object-oriented programming concepts to a 6-year-old](https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260)
 - [Object-oriented JavaScript for beginners](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 - [Object oriented programming in javascript](https://www.sohamkamani.com/blog/2016/04/30/oops-in-js/)
+- [Fundamental Object Design Patterns](https://medium.com/launch-school/javascript-weekly-fundamental-object-design-patterns-31453f68427f)
 
 Consider completing
 [Object-Oriented Javascript](https://github.com/kottans/frontend/blob/master/tasks/js-oop.md)
