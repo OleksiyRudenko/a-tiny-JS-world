@@ -59,12 +59,12 @@ try focusing more on code itself.
 _Instructions above are also available in `index.html`_.
 
 Doing `var object1 = object2` and `object2.name='Anny'`
-results in changing name of `object1`?
+results in changing name of `object1` to `Anny` as well?
 
 <details><summary>Click me!</summary>
 
-    Read about
-    [Copying Objects in JavaScript](https://scotch.io/bar-talk/copying-objects-in-javascript)
+Read about
+[Copying Objects in JavaScript](https://scotch.io/bar-talk/copying-objects-in-javascript)
 
 </details>
 
@@ -156,7 +156,7 @@ This repo is dedicated to my elder son Yaroslav who turned
 This Tiny JS World project wouldn't ever happen without
 [Kottans](http://kottans.org/) and awesome
 [Kottans Front-End Course](https://github.com/kottans/frontend)
-(it's free and offers a totally remote tasks)
+(it's free and initial part is completely remote)
 I have completed as a student in 2017 and since then
 have a chance to contribute thus paying back.
 
