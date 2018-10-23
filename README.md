@@ -100,7 +100,7 @@ Grant this repo a :star:!
 1. Submit changes
    * Scroll down to **Propose file change**
    * Type "List a tiny JS world by <your name>" in commit subject
-   * Click **Propose file change** button.
+   * Click **Propose file change** button, then **Create pull request** and then **Create pull request** once again to complete.
 
    ![do-pr](img/pr.gif)
 
