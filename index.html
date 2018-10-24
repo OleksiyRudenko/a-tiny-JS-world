@@ -2,70 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>A tiny JS world</title>
+    <title>A Tiny JS World</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+    <link rel="manifest" href="./ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass%20Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    <link rel="stylesheet" href="https://oleksiyrudenko.github.io/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://oleksiyrudenko.github.io/default-beauty.css/default-beauty.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>A tiny JS world</h1>
-    <p>
-        Open DevTools / Browser console to see the code output.
-        <code>Ctrl-Shift-J</code> in Google Chrome or Mozilla Firefox.
-    </p>
-    <ol>
-        <li>Define objects representing this world inhabitants:
-        a dog, a cat, a woman, and a man.
-            <ul>
-                <li>Each object has legs, hands (optional, naturally),
-                a name, is of certain gender and also can say
-                    something relevant, like "meow" or "Hello Jenny!".</li>
-            </ul>
-        </li>
-        <li>List inhabitants. Each list entry should like
-            <code>human, John, male, 2, 2, Hello world!</code>
-            <ul>
-                <li>if inhabitant has no hands then
-                    skip it or report `0` or `undefined` - up to you</li>
-            </ul>
-        </li>
-        <li>Optional: Define an object representing cat-woman.
-            <ul>
-                <li>cat-woman's saying should be exactly the same as
-                    cat's</li>
-                <li>whenever you change cat's saying cat-woman's saying
-                    should change accordingly - they are strongly tied
-                    on some astral level</li>
-            </ul>
-        </li>
-        <li>Push your repo to github when done</li>
-    </ol>
-    <script>
-        /*
-         1. Define objects representing this world inhabitants:
-            a dog, a cat, a woman, and a man.
-            - Each object has legs, hands (optional, naturally),
-              a name, is of certain gender and also can say
-              something relevant, like "meow" or "Hello Jenny!".
-         2. List inhabitants. Each list entry should like
-            `human, John, male, 2, 2, Hello world!`
-            - if inhabitant has no hands then
-              skip it or report `0` or `undefined` - up to you
-         3. Optional: Define an object representing cat-woman.
-            - cat-woman's saying should be exactly the same as
-              cat's
-            - whenever you change cat's saying cat-woman's saying
-              should change accordingly - they are strongly tied
-              on some astral level
-         4. Push your repo to github when done
-         */
-
-        // define your objects here
-
-
-
-        // use console.log() for output
-
-
-
-    </script>
+    <header>
+        <img src="./img/tiny-world.png" width="150" height="150"/>
+        <div class="column">
+            <h1>A Tiny JS World</h1>
+            <div>
+                This tiny world is created as a part of
+                <a href="https://github.com/OleksiyRudenko/a-tiny-JS-world" target="_blank">A Tiny JS World</a> project
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <h2>This world is inhabited by</h2>
+        <p class="source-code">(world's <code><a id="source-code" href="./index.js" target="_blank">source code</a></code>)</p>
+    </main>
+    <footer>
+        <div>
+            <div class="logo">A tiny JS world</div>
+            <div class="credits">
+                Credits: Site emblem &copy; 2017,
+                <a href="http://www.tactus.com/blog/create-amazing-360-degree-tiny-planet-photos-videos/" target="_blank">TACTUS</a>
+            </div>
+        </div>
+        <p><small>
+            Styled with
+            <a href="https://github.com/OleksiyRudenko/default-beauty.css" target="_blank">
+                <i class="fas fa-heart"></i> Default-Beauty.css <i class="fab fa-github-square"></i>
+            </a>
+            and
+            <a href="https://github.com/OleksiyRudenko/normalize.css" target="_blank">
+                normalize.css fork <i class="fab fa-github-square"></i>
+            </a>
+        </small></p>
+    </footer>
+    <script src="./js/lib.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

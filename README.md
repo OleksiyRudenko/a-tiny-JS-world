@@ -27,11 +27,8 @@ You will be creating a JavaScript model of this world.
 
 1. Clone your fork locally
 
-1. `index.html` is what you will work with. Put your code
-   between `<script>` and `</script>` tags.
-
-You may want manipulate DOM for prettier output, but
-try focusing more on code itself.
+1. `index.js` is what you will work with. Put your code
+   into it.
 
 ### The job
 
@@ -40,10 +37,11 @@ try focusing more on code itself.
     - Each object has legs, hands (optional, naturally),
       a name, is of certain gender and also can say
       something relevant, like "meow" or "Hello Jenny!".
- 1. List inhabitants. Each list entry should be like
+ 1. List inhabitants using project built-in `print(message)` function.
+    Each list entry should look like
     `human; John; male; 2; 2; Hello world!`
     - if inhabitant has no hands then
-      skip it or report `0` or `undefined` - up to you
+      skip it or report `0` or `undefined`, it is totally up to you
  1. Optional: each inhabitant can be friendly to 1 or
     more other inhabitants (or to none). If you implement
     this then the output should also list friends, i.e.
@@ -52,11 +50,16 @@ try focusing more on code itself.
     - cat-woman's saying should be exactly the same as
       cat's
     - whenever you change cat's saying cat-woman's saying
-      should change accordingly - they are strongly tied
+      should change accordingly, they are strongly tied
       on some astral level
- 1. Push your repo to github
 
-_Instructions above are also available in `index.html`_.
+#### Testing things
+
+To see how things work just open `index.html` with your browser.
+Press `Ctrl-Shift-J` in Google Chrome or Mozilla Firefox to see
+developer's console for possible errors.
+
+You may want to prettify the output, but try focusing more on code itself.
 
 Doing `var object1 = object2` and `object2.name='Anny'`
 results in changing name of `object1` to `Anny` as well?
@@ -67,6 +70,22 @@ Read about
 [Copying Objects in JavaScript](https://scotch.io/bar-talk/copying-objects-in-javascript)
 
 </details>
+
+#### Publishing
+
+Push your repo to github.
+
+You may want to publish your world on [GitHub Pages](https://pages.github.com/).
+The following commands will help you.
+
+```
+git checkout gh-pages
+git merge master
+git push origin
+```
+
+Now your world is published at
+`https://<YourGithubUsername>.github.io/a-tiny-JS-world/`
 
 ### What's next
 
