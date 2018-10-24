@@ -6,9 +6,10 @@ And with JavaScript OOP in particular.
 
 ## About you
 
-1. You know JavaScript basics.
+This place can be useful to you if you
 
-1. You don't know any OOP or at least JavaScript specific OOP.
+* know JavaScript basics
+* don't know any OOP or at least JavaScript specific OOP
 
 ## The story
 
