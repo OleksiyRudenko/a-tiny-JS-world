@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-flow: column;
+}
+
+
+header {
+    background-color: #68afe7;
+    color: var(--color-darkest);
+}
+
+.column {
+    margin-left: 1rem;
+    display: flex;
+    flex-flow: column;
+}
+
+main {
+    flex-grow: 1;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.source-code {
+    font-size: 75%;
+    color: var(--color-grayDarker);
+}
+
+footer {
+    background-color: #7f931a;
+    color: var(--color-darkest);
+}
+
+.logo {
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+}
+
+.credits {
+    font-size: 0.75rem;
+}
