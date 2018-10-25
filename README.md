@@ -1,3 +1,6 @@
+[![MIT Licensed][icon-mit]][license]
+[![Kottans-Frontend][icon-kottans]][kottans-frontend]
+
 # A Tiny JS World
 
 This is a tiny task for those who are not familiar with
@@ -186,3 +189,9 @@ Special thanks to [Anastasiya Mashoshyna](https://github.com/AMashoshyna),
 [Yevhen Orlov](https://github.com/yevhenorlov) and other
 [Kottans](https://github.com/kottans) for the discussion, feedback,
 and support that resulted in this project creation.
+
+[icon-mit]: https://img.shields.io/badge/license-MIT-blue.svg
+[license]: https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/LICENSE.md
+
+[icon-kottans]: https://img.shields.io/badge/%3D(%5E.%5E)%3D-frontend-yellow.svg
+[kottans-frontend]: https://github.com/kottans/frontend
