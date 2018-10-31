@@ -9,6 +9,11 @@ header {
     color: var(--color-darkest);
 }
 
+.emblem {
+    width: 150px;
+    height: 150px;
+}
+
 .column {
     margin-left: 1rem;
     display: flex;
