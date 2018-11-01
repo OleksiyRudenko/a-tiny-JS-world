@@ -32,7 +32,10 @@ You will be creating a JavaScript model of this world.
 1. Clone your fork locally
 
 1. `index.js` is what you will work with. Put your code
-   into it.
+   into it. 
+   It is also a good practice to work in a dedicated
+   branch, not `master`. So start with `checkout -B populate-world`
+   before committing any changes.
 
 ### The job
 
