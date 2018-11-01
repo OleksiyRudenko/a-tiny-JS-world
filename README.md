@@ -38,7 +38,7 @@ You will be creating a JavaScript model of this world.
 
  1. Define objects representing this world inhabitants:
     a dog, a cat, a woman, and a man.
-    - Each object has legs, hands (optional, naturally),
+    - Each inhabitant has legs, hands (optional, naturally),
       a name, is of certain gender and also can say
       something relevant, like "meow" or "Hello Jenny!".
  1. List inhabitants using project built-in `print(message)` function.
