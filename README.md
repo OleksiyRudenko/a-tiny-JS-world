@@ -7,6 +7,29 @@ This is a tiny task for those who are not familiar with
 Object-Oriented Programing concepts yet.
 And with JavaScript OOP in particular.
 
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [About you](#about-you)
+- [The story](#the-story)
+- [First approach](#first-approach)
+  - [Preparations](#preparations)
+  - [The job](#the-job)
+  - [Keep things simple](#keep-things-simple)
+  - [Testing your app](#testing-your-app)
+  - [Publishing](#publishing)
+- [What's next](#whats-next)
+  - [List your repo](#list-your-repo)
+  - [Code review](#code-review)
+- [Leveling your skills up](#leveling-your-skills-up)
+- [Credits](#credits)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<!-- generated with [DocToc](https://github.com/thlorenz/doctoc) -->
+
 ## About you
 
 This place can be useful to you if you
@@ -21,7 +44,7 @@ a man, and sometimes by a cat-woman.
 
 You will be creating a JavaScript model of this world.
 
-## Instructions
+## First approach
 
 ### Preparations
 
@@ -59,7 +82,13 @@ You will be creating a JavaScript model of this world.
     - whenever you change cat's saying cat-woman's saying
       should change accordingly, they are strongly tied
       on some astral level
-   
+
+Read following [Keep things simple](#keep-things-simple)
+and [Testing your app](#testing-your-app) sections
+before you start coding.
+
+### Keep things simple
+
 **NB!** At this stage you don't need anything beyond what you
 already know. Do not study any OOP.
 Anything like example below would work.
@@ -90,7 +119,7 @@ will become a milestone to measure your improvement against.
 That is the aim of incremental studying process:
 **Do - Learn - Improve**
 
-#### Testing things
+### Testing your app
 
 To see how things work just open `index.html` with your browser.
 Press `Ctrl-Shift-J` in Google Chrome or Mozilla Firefox to see
@@ -108,7 +137,7 @@ Read about
 
 </details>
 
-#### Publishing
+### Publishing
 
 Push your repo to github.
 
@@ -138,6 +167,8 @@ git merge master
 git push origin gh-pages
 git checkout master
 ```
+
+[_^ Up to TOC ^_](#table-of-contents)
 
 ## What's next
 
@@ -197,6 +228,8 @@ whenever you need to build bigger worlds
 Object Oriented Programming concepts come
 to your rescue.
 
+[_^ Up to TOC ^_](#table-of-contents)
+
 ## Leveling your skills up
 
 ### Learn on your own
@@ -253,6 +286,8 @@ hopefully feel happier and self-confident.
 Your repo fork reflects your progress, so feel free exposing it
 to whoever might be interested in your learning path proofs.
 
+[_^ Up to TOC ^_](#table-of-contents)
+
 ## Credits
 
 This repo is dedicated to my elder son Yaroslav who turned
@@ -269,6 +304,8 @@ Special thanks to [Anastasiya Mashoshyna](https://github.com/AMashoshyna),
 [Yevhen Orlov](https://github.com/yevhenorlov) and other
 [Kottans](https://github.com/kottans) for the discussion, feedback,
 and support that resulted in this project creation.
+
+[_^ Up to TOC ^_](#table-of-contents)
 
 [icon-mit]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/LICENSE.md
