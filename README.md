@@ -80,7 +80,8 @@ print(dog.species + ';' + dog.name + ';' + dog.gender + ';' +
 ```
 
 If you know how to improve the code sample above e.g. employing
-`#Array.join` or a function that takes an object as an argument
+[`#Array.join`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+or a function that takes an object as an argument
 and returns a string to feed to `print()` then go ahead.
 
 You will have the opportunity to improve your skills later on
