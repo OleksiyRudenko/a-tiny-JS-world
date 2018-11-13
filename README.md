@@ -59,6 +59,35 @@ You will be creating a JavaScript model of this world.
     - whenever you change cat's saying cat-woman's saying
       should change accordingly, they are strongly tied
       on some astral level
+   
+**NB!** At this stage you don't need anything beyond what you
+already know. Do not study any OOP.
+Anything like example below would work.
+
+```javascript
+const dog = {
+  species: 'dog',
+  name: 'Toby',
+  gender: 'male',
+  legs: 4,
+  hands: 0,
+  saying: 'woof-woof!'
+};
+// ... other objects ...
+print(dog.species + ';' + dog.name + ';' + dog.gender + ';' + 
+  dog.legs + ';' + dog.hands + ';' + dog.saying);
+// ... other print-outs ...
+```
+
+If you know how to improve the code sample above e.g. employing
+`#Array.join` or a function that takes an object as an argument
+and returns a string to feed to `print()` then go ahead.
+
+You will have the opportunity to improve your skills later on
+and your current solution at your current level of knowledge
+will become a milestone to measure your improvement against.
+That is the aim of incremental studying process:
+**Do - Learn - Improve**
 
 #### Testing things
 
