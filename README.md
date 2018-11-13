@@ -138,14 +138,14 @@ git push origin gh-pages
 git checkout master
 ```
 
-### What's next
+## What's next
 
 You're done? Congratulations!
 
 Did you like the experience?
 Grant this repo a :star:!
 
-#### List your repo
+### List your repo
 
 1. Navigate to [A Tiny JS World root repo worlds list](https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/worlds.md)
 
@@ -179,7 +179,7 @@ You are done here!
 _Please, note that PRs may not be merged very soon. Thank you
 for your patience._
 
-#### Code review
+### Code review
 
 If you have completed this task as a part
 of [Kottans Front-End Course](https://github.com/kottans/frontend)
@@ -196,7 +196,9 @@ whenever you need to build bigger worlds
 Object Oriented Programming concepts come
 to your rescue.
 
-#### Learn on your own
+## Leveling your skills up
+
+### Learn on your own
 
 Imagine you have to build a big world populated with billions
 of inhabitants and a great variety of species, and your world
@@ -235,10 +237,20 @@ Some extras related to OOP:
  - [DRY, KISS, YAGNI](https://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161)
  - [SOLID](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
 
+### Improve your code
+
 If you feel now that you can improve your code being armed
 with OOP knowledge then go ahead! Don't forget to fix your row
 in the [worlds.md](https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/worlds.md)
 submitting an update PR.
+
+### Wrap-up
+
+Grats! You've done a great job! You have improved your OOP skills and
+hopefully feel happier and self-confident.
+
+Your repo fork reflects your progress, so feel free exposing it
+to whoever might be interested in your learning path proofs.
 
 ## Credits
 
