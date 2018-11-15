@@ -264,10 +264,11 @@ with OOP and JavaScript OOP.
 - [Fundamental Object Design Patterns](https://medium.com/launch-school/javascript-weekly-fundamental-object-design-patterns-31453f68427f)
 - [Composition over Inheritance
 ](https://medium.com/humans-create-software/composition-over-inheritance-cb6f88070205)
+- [ES6 classes cheat snippet](https://gist.github.com/OleksiyRudenko/672d39b08d9d0da4e179aca49876c58b)
 
 Consider completing
 [Object-Oriented Javascript](https://github.com/kottans/frontend/blob/master/tasks/js-oop.md)
-from [Kottans Front-End Course](https://github.com/kottans/frontend).
+from [Kottans Front-End Course](https://github.com/kottans/frontend) if not yet.
 
 Some extras related to OOP:
  - [DRY, KISS, YAGNI](https://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161)
