@@ -7,4 +7,5 @@
  2018-11-17 |    4    |     77     | [MitchfFirstGit](https://github.com/MitchfFirstGit/a-tiny-JS-world)
  2018-11-16 |    5    |    32      | [beta-version-profile](https://github.com/beta-version-profile/a-tiny-JS-world)
  2018-11-17 |    5    |    70      | [linkqwd](https://github.com/linkqwd/a-tiny-JS-world/tree/populate-world)
+ 2018-11-20 |    5    |    43      | [IrynaY](https://github.com/IrynaY/a-tiny-JS-world/tree/gh-pages)
 
