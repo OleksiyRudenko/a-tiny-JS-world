@@ -7,6 +7,29 @@ This is a tiny task for those who are not familiar with
 Object-Oriented Programing concepts yet.
 And with JavaScript OOP in particular.
 
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [About you](#about-you)
+- [The story](#the-story)
+- [First approach](#first-approach)
+  - [Preparations](#preparations)
+  - [The job](#the-job)
+  - [Keep things simple](#keep-things-simple)
+  - [Testing your app](#testing-your-app)
+  - [Publishing](#publishing)
+- [What's next](#whats-next)
+  - [List your repo](#list-your-repo)
+  - [Code review](#code-review)
+- [Leveling your skills up](#leveling-your-skills-up)
+- [Credits](#credits)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<!-- generated with [DocToc](https://github.com/thlorenz/doctoc) -->
+
 ## About you
 
 This place can be useful to you if you
@@ -21,7 +44,7 @@ a man, and sometimes by a cat-woman.
 
 You will be creating a JavaScript model of this world.
 
-## Instructions
+## First approach
 
 ### Preparations
 
@@ -32,7 +55,10 @@ You will be creating a JavaScript model of this world.
 1. Clone your fork locally
 
 1. `index.js` is what you will work with. Put your code
-   into it.
+   into it. 
+   It is also a good practice to work in a dedicated
+   branch, not `master`. So start with `checkout -B populate-world`
+   before committing any changes.
 
 ### The job
 
@@ -57,7 +83,43 @@ You will be creating a JavaScript model of this world.
       should change accordingly, they are strongly tied
       on some astral level
 
-#### Testing things
+Read following [Keep things simple](#keep-things-simple)
+and [Testing your app](#testing-your-app) sections
+before you start coding.
+
+### Keep things simple
+
+**NB!** At this stage you don't need anything beyond what you
+already know. Do not study any OOP.
+Anything like example below would work.
+
+```javascript
+const dog = {
+  species: 'dog',
+  name: 'Toby',
+  gender: 'male',
+  legs: 4,
+  hands: 0,
+  saying: 'woof-woof!'
+};
+// ... other objects ...
+print(dog.species + ';' + dog.name + ';' + dog.gender + ';' + 
+  dog.legs + ';' + dog.hands + ';' + dog.saying);
+// ... other print-outs ...
+```
+
+If you know how to improve the code sample above e.g. employing
+[`#Array.join`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+or a function that takes an object as an argument
+and returns a string to feed to `print()` then go ahead.
+
+You will have the opportunity to improve your skills later on
+and your current solution at your current level of knowledge
+will become a milestone to measure your improvement against.
+That is the aim of incremental studying process:
+**Do - Learn - Improve**
+
+### Testing your app
 
 To see how things work just open `index.html` with your browser.
 Press `Ctrl-Shift-J` in Google Chrome or Mozilla Firefox to see
@@ -75,7 +137,7 @@ Read about
 
 </details>
 
-#### Publishing
+### Publishing
 
 Push your repo to github.
 
@@ -106,14 +168,16 @@ git push origin gh-pages
 git checkout master
 ```
 
-### What's next
+[_^ Up to TOC ^_](#table-of-contents)
+
+## What's next
 
 You're done? Congratulations!
 
 Did you like the experience?
 Grant this repo a :star:!
 
-#### List your repo
+### List your repo
 
 1. Navigate to [A Tiny JS World root repo worlds list](https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/worlds.md)
 
@@ -147,7 +211,7 @@ You are done here!
 _Please, note that PRs may not be merged very soon. Thank you
 for your patience._
 
-#### Code review
+### Code review
 
 If you have completed this task as a part
 of [Kottans Front-End Course](https://github.com/kottans/frontend)
@@ -164,7 +228,11 @@ whenever you need to build bigger worlds
 Object Oriented Programming concepts come
 to your rescue.
 
-#### Learn on your own
+[_^ Up to TOC ^_](#table-of-contents)
+
+## Leveling your skills up
+
+### Learn on your own
 
 Imagine you have to build a big world populated with billions
 of inhabitants and a great variety of species, and your world
@@ -194,19 +262,34 @@ with OOP and JavaScript OOP.
 - [Object-oriented JavaScript for beginners](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 - [Object oriented programming in javascript](https://www.sohamkamani.com/blog/2016/04/30/oops-in-js/)
 - [Fundamental Object Design Patterns](https://medium.com/launch-school/javascript-weekly-fundamental-object-design-patterns-31453f68427f)
+- [Composition over Inheritance
+](https://medium.com/humans-create-software/composition-over-inheritance-cb6f88070205)
+- [ES6 classes cheat snippet](https://gist.github.com/OleksiyRudenko/672d39b08d9d0da4e179aca49876c58b)
 
 Consider completing
 [Object-Oriented Javascript](https://github.com/kottans/frontend/blob/master/tasks/js-oop.md)
-from [Kottans Front-End Course](https://github.com/kottans/frontend).
+from [Kottans Front-End Course](https://github.com/kottans/frontend) if not yet.
 
 Some extras related to OOP:
  - [DRY, KISS, YAGNI](https://code.tutsplus.com/tutorials/3-key-software-principles-you-must-understand--net-25161)
  - [SOLID](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
 
+### Improve your code
+
 If you feel now that you can improve your code being armed
 with OOP knowledge then go ahead! Don't forget to fix your row
 in the [worlds.md](https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/worlds.md)
 submitting an update PR.
+
+### Wrap-up
+
+Grats! You've done a great job! You have improved your OOP skills and
+hopefully feel happier and self-confident.
+
+Your repo fork reflects your progress, so feel free exposing it
+to whoever might be interested in your learning path proofs.
+
+[_^ Up to TOC ^_](#table-of-contents)
 
 ## Credits
 
@@ -224,6 +307,8 @@ Special thanks to [Anastasiya Mashoshyna](https://github.com/AMashoshyna),
 [Yevhen Orlov](https://github.com/yevhenorlov) and other
 [Kottans](https://github.com/kottans) for the discussion, feedback,
 and support that resulted in this project creation.
+
+[_^ Up to TOC ^_](#table-of-contents)
 
 [icon-mit]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/LICENSE.md
