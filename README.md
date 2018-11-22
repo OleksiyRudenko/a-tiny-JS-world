@@ -145,15 +145,16 @@ You may want to publish your world on [GitHub Pages](https://pages.github.com/).
 The following commands will help you.
 
 ```
-git checkout -B gh-pages
+git fetch
+git checkout gh-pages
 git pull origin gh-pages
 git merge master
-git push --set-upstream origin gh-pages
+git push origin gh-pages
 git checkout master
 ```
 
-The above script creates a new branch, updates it from the remote, and binds
-your local branch with the remote one.
+The above script updates `gh-pages` branch from the remote, then
+from master, and pushes updated branch to the remote.
 
 Now your world is published at
 `https://<YourGithubUsername>.github.io/a-tiny-JS-world/`
