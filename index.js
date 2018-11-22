@@ -99,7 +99,6 @@ dog.addFriend(man.name);
 dog.addFriend(woman.name);
 dog.addFriend(cat.name);
 
-
 display(dog);
 display(man);
 display(woman);
