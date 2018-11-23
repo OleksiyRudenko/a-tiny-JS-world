@@ -205,6 +205,9 @@ Grant this repo a :star:!
      - number of code lines your object definitions take
      - your github nick in square brackets
        and link to your repository in parentheses
+       
+   * Add an extra new line so additions from other contributors
+     do not affect yours.
 
    * Switch to Preview tab to check if the table still looks
      nice.
