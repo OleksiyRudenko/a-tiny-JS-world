@@ -10,5 +10,6 @@
  2018-11-20 |    5    |     27     | [IrynaY](https://github.com/IrynaY/a-tiny-JS-world/tree/populate-world)
  2018-11-23 |    4    |     46     | [kalash14](https://github.com/kalash14/a-tiny-JS-world/tree/populate-world)
  2018-11-28 |    4    |     24     | [maxovsanyuk]( https://github.com/maxovsanyuk/kottans-frontend/tree/master/task_js-pre-oop)
+ 2018-11-28 |    4    |     23     | [zihfred]( https://github.com/Zihfred/a-tiny-JS-world)
 
 
