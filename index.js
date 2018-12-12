@@ -76,3 +76,14 @@ inhabitants.forEach(inhabitant => {
 
   print(info.join(';'), 'div');
 });
+
+const catWoman = {
+  species: 'human',
+  name: 'Kitty woman',
+  gender: 'female',
+  legs: 0,
+  hands: 2,
+  get saying() {
+    return cat.saying;
+  },
+};
