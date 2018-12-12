@@ -7,7 +7,7 @@
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
-let dog, cat, woman, man;
+var dog, cat, woman, man;
 
 dog = {
   species: 'dog',
@@ -44,6 +44,10 @@ man = {
 
 const inhabitants = [dog, cat, woman, man];
 
+woman.friends = [cat, man];
+man.friends = [woman, dog];
+dog.friends = [man];
+cat.friends = [woman];
 // ======== OUTPUT ========
 /* Use print(message) for output.
    Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
@@ -63,18 +67,12 @@ const inhabitants = [dog, cat, woman, man];
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
 inhabitants.forEach(inhabitant => {
-  print(
-    inhabitant.species +
-      ';' +
-      inhabitant.name +
-      ';' +
-      inhabitant.gender +
-      ';' +
-      inhabitant.legs +
-      ';' +
-      inhabitant.hands +
-      ';' +
-      inhabitant.saying,
-    'div',
-  );
+  const info = Object.keys(inhabitant).map(prop => {
+    if (prop === 'friends') {
+      return inhabitant[prop].map(friend => friend.name).join(',');
+    }
+    return inhabitant[prop];
+  });
+
+  print(info.join(';'), 'div');
 });
