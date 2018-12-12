@@ -7,7 +7,41 @@
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
+let dog, cat, woman, man;
+const inhabitants = [dog, cat, woman, man];
 
+dog = {
+  species: 'dog',
+  name: 'Frodo',
+  gender: 'female',
+  legs: 4,
+  hands: 0,
+  saying: 'woof-woof!',
+};
+cat = {
+  species: 'cat',
+  name: 'Mr. Smith',
+  gender: 'male',
+  legs: 4,
+  hands: 0,
+  saying: 'meeeeeeow',
+};
+woman = {
+  species: 'human',
+  name: 'Jany',
+  gender: 'female',
+  legs: 4,
+  hands: 0,
+  saying: 'I have a headache',
+};
+man = {
+  species: 'human',
+  name: 'Piter',
+  gender: 'male',
+  legs: 4,
+  hands: 0,
+  saying: 'Honey come on',
+};
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -28,4 +62,12 @@
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
 
-
+dog = {
+  species: 'dog',
+  name: 'Frodo',
+  gender: 'female',
+  legs: 4,
+  hands: 0,
+  saying: 'woof-woof!',
+};
+print(dog.species, 'div');
