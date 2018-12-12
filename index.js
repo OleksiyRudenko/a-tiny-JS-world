@@ -8,7 +8,6 @@
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
 let dog, cat, woman, man;
-const inhabitants = [dog, cat, woman, man];
 
 dog = {
   species: 'dog',
@@ -30,18 +29,20 @@ woman = {
   species: 'human',
   name: 'Jany',
   gender: 'female',
-  legs: 4,
-  hands: 0,
+  legs: 0,
+  hands: 2,
   saying: 'I have a headache',
 };
 man = {
   species: 'human',
   name: 'Piter',
   gender: 'male',
-  legs: 4,
-  hands: 0,
+  legs: 0,
+  hands: 2,
   saying: 'Honey come on',
 };
+
+const inhabitants = [dog, cat, woman, man];
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -61,13 +62,19 @@ man = {
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
-
-dog = {
-  species: 'dog',
-  name: 'Frodo',
-  gender: 'female',
-  legs: 4,
-  hands: 0,
-  saying: 'woof-woof!',
-};
-print(dog.species, 'div');
+inhabitants.forEach(inhabitant => {
+  print(
+    inhabitant.species +
+      ';' +
+      inhabitant.name +
+      ';' +
+      inhabitant.gender +
+      ';' +
+      inhabitant.legs +
+      ';' +
+      inhabitant.hands +
+      ';' +
+      inhabitant.saying,
+    'div',
+  );
+});
