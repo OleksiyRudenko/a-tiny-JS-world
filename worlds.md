@@ -16,5 +16,5 @@
  2018-12-04 |    6    |     59     | [justdevway](https://github.com/justdevway/a-tiny-JS-world/tree/populate-work)
  2018-12-04 |    5    |     58     | [MitchfFirstGit](https://github.com/MitchfFirstGit/a-tiny-JS-world)
  2018-12-04 |    5    |     74     | [o-msh](https://github.com/o-msh/a-tiny-JS-world)
- 
+ 2018-12-16 |    5    |     52     | [igkostyuk](https://github.com/igkostyuk/a-tiny-JS-world)
  
