@@ -60,12 +60,7 @@ const catWoman = {
 function inhabitantsInfo(obj) {
   let info = '';
   for (let key of Object.keys(obj)) {
-    if (obj[key] != undefined && obj[key] != 0) {
-      info += obj[key] + '; ';
-    } else {
-      info += '';
-    }
-
+    info += obj[key] + ' ;';
   }
   return info;
 }
