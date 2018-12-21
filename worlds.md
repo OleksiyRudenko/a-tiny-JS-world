@@ -20,4 +20,5 @@
  2018-12-14 |    5    |     89     | [leonovoleksii](https://github.com/leonovoleksii/a-tiny-JS-world)
  2018-12-21 |    5    |     68     | [frostwolm](https://github.com/frostwolm/a-tiny-JS-world)
  2018-12-21 |    5    |     89     | [Aldegid](https://github.com/Aldegid/a-tiny-JS-world)
+ 2018-12-21 |    4    |     53      | [RomanovAleksander](https://github.com/RomanovAleksander/a-tiny-JS-world)
  
