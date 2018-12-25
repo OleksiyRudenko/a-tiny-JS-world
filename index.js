@@ -1,31 +1,66 @@
-/* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
-   Complete the below for code reviewers' convenience:
+class Parent {
+  constructor(name, gender) {
+    this.name = name
+    this.gender = gender
+  }
+}
 
-   Code repository: _put repo URL here_
-   Web app: _put project's github pages URL here_
-   */
+class Animal extends Parent {
+  constructor(name, gender) {
+    super(name, gender)
+    this.hands = 0
+    this.legs = 4
+  }
+}
 
-// ======== OBJECTS DEFINITIONS ========
-// Define your objects here
+class Human extends Parent {
+  constructor(name, gender) {
+    super(name, gender)
+    this.kind = 'Human'
+    this.hands = 2
+    this.legs = 2
+    this.say = `Hello, I'm ${this.name}}`
+  }
+}
 
+class Dog extends Animal {
+  constructor(name, gender) {
+    super(name, gender)
+    this.kind = 'Dog'
+    this.say = `woof - woof`
+  }
+}
 
-// ======== OUTPUT ========
-/* Use print(message) for output.
-   Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
+class Cat extends Animal {
+  constructor(name, gender) {
+    super(name, gender)
+    this.kind = 'Cat'
+    this.say = `meow - meow`
+  }
+}
+class CatWoman extends Human {
+  constructor(name, gender) {
+    super(name, gender)
+    this.say = new Cat().say
+  }
+}
 
-   Message can contain HTML markup. You may also tweak index.html and/or styles.css.
-   However, please, REFRAIN from improving visuals at least until your code is reviewed
-   so code reviewers might focus on a single file that is index.js.
-   */
+const printAll = obj => {
+  print(
+    `${obj.kind}; ${obj.gender}; ${obj.name}; ${obj.legs} legs; ${
+      obj.hands ? obj.hands : 'no'
+    } hands; ${obj.say}`
+  )
+}
 
-/* Print examples:
-   print('ABC');
-   print('<strong>ABC</strong>');
-   print('<strong>ABC</strong>', 'div');
+const specimens = [
+  new Cat('Tom', 'male'),
+  new Dog('Spot', 'male'),
+  new Human('Adam', 'male'),
+  new Human('Eva', 'female'),
+  new CatWoman('Amber Heard', 'female')
+]
 
-   print('human; John; male; 2; 2; Hello world!; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
-   */
-
-
+specimens.forEach(obj => {
+  printAll(obj)
+})
