@@ -28,4 +28,4 @@
  2018-12-25 |    5    |     72     | [bugagashinka](https://github.com/bugagashinka/a-tiny-JS-world)
  2018-12-26 |    5    |     63     | [CuteShaun](https://github.com/CuteShaun/a-tiny-JS-world)
  2018-12-26 |    5    |     58     | [Vitaminvp](https://github.com/Vitaminvp/a-tiny-JS-world)
- 
+ 2018-12-26 |    4    |     14     | [zophrox](https://github.com/zophrox/a-tiny-JS-world/blob/populate-world/index.js)
