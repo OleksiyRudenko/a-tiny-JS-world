@@ -14,7 +14,7 @@ const dog = {
   legs: 4,
   hands: 0,
   saying: 'woof-woof!',
-  friends: [""]
+  friends: ["Fabula"]
 };
 
 const cat = {
@@ -24,7 +24,7 @@ const cat = {
   legs: 4,
   hands: 0,
   saying: 'meow-meow!',
-  friends: ['Toby', ]
+  friends: ['Toby', 'Kandy', 'Lili']
 };
 
 const man = {
@@ -34,7 +34,7 @@ const man = {
   legs: 2,
   hands: 2,
   saying: 'I am Superman!',
-  friends: ['']
+  friends: ['Kan']
 };
 
 const woman = {
@@ -57,24 +57,10 @@ const catWoman = {
   friends: ['Fabula']
 };
 
-function inhabitantsInfo(obj) {
-  let info = '';
-  for (let key of Object.keys(obj)) {
-    if (obj[key] != undefined && obj[key] != 0) {
-      info += obj[key] + '; ';
-    } else {
-      info += '';
-    }
-
-  }
-  return info;
-}
-
-print(inhabitantsInfo(dog));
-print(inhabitantsInfo(cat));
-print(inhabitantsInfo(man));
-print(inhabitantsInfo(woman));
-print(inhabitantsInfo(catWoman));
+const inhabitants = [dog, cat, man, woman, catWoman];
+inhabitants.forEach(element => {
+  print([element.species, element.gender, element.name, element.saying, element.legs, element.hands, element.friends].join('; '));
+})
 
 
 // ======== OUTPUT ========
