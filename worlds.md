@@ -26,4 +26,5 @@
  2018-12-22 |    5    |     65     | [yulyasystem](https://github.com/yulyasystem/a-tiny-JS-world)
  2018-12-25 |    5    |     45     | [babayK0](https://github.com/babayK0/a-tiny-JS-world)
  2018-12-25 |    5    |     72     | [bugagashinka](https://github.com/bugagashinka/a-tiny-JS-world)
+ 2018-12-26 |    5    |     63     | [CuteShaun](https://github.com/CuteShaun/a-tiny-JS-world)
  
