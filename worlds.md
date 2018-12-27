@@ -33,24 +33,3 @@
  2018-12-27 |    4    |     40     | [OlgaFrontend](https://github.com/OlgaFrontend/a-tiny-JS-world)
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
- 
- 
-
-
-
