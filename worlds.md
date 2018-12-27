@@ -30,6 +30,6 @@
  2018-12-26 |    5    |     58     | [Vitaminvp](https://github.com/Vitaminvp/a-tiny-JS-world)
  2018-12-26 |    4    |     14     | [zophrox](https://github.com/zophrox/a-tiny-JS-world/blob/populate-world/index.js)
  2018-12-26 |    5    |     77     | [nazmariam](https://github.com/nazmariam/a-tiny-JS-world)
-
+ 2018-12-27 |    5    |     60     | [AlexNugda](https://github.com/AlexNugda/a-tiny-JS-world)
  
  
