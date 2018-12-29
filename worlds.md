@@ -31,5 +31,5 @@
  2018-12-26 |    4    |     14     | [zophrox](https://github.com/zophrox/a-tiny-JS-world/blob/populate-world/index.js)
  2018-12-26 |    5    |     77     | [nazmariam](https://github.com/nazmariam/a-tiny-JS-world)
  2018-12-27 |    4    |     40     | [OlgaFrontend](https://github.com/OlgaFrontend/a-tiny-JS-world)
- 
+ 2018-12-29 |    5    |     52     | [vladk96](https://github.com/vladk96/a-tiny-JS-world)
  
