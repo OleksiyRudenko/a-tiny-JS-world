@@ -23,7 +23,7 @@
  2018-12-21 |    4    |     46     | [AlinaLadybug](https://github.com/AlinaLadybug/a-tiny-JS-world)
  2018-12-21 |    4    |     53     | [RomanovAleksander](https://github.com/RomanovAleksander/a-tiny-JS-world)
  2018-12-22 |    5    |     67     | [sioniks](https://github.com/sioniks/a-tiny-JS-world)
- 2018-12-22 |    5    |     65     | [yulyasystem](https://github.com/yulyasystem/a-tiny-JS-world)
+ 2018-12-22 |    5    |     50     | [yulyasystem](https://github.com/yulyasystem/a-tiny-JS-world)
  2018-12-25 |    5    |     45     | [babayK0](https://github.com/babayK0/a-tiny-JS-world)
  2018-12-25 |    5    |     72     | [bugagashinka](https://github.com/bugagashinka/a-tiny-JS-world)
  2018-12-26 |    5    |     63     | [CuteShaun](https://github.com/CuteShaun/a-tiny-JS-world)
