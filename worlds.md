@@ -32,4 +32,5 @@
  2018-12-26 |    5    |     77     | [nazmariam](https://github.com/nazmariam/a-tiny-JS-world)
  2018-12-27 |    4    |     40     | [OlgaFrontend](https://github.com/OlgaFrontend/a-tiny-JS-world)
  2018-12-29 |    5    |     52     | [vladk96](https://github.com/vladk96/a-tiny-JS-world)
+ 2018-12-30 |    4    |     34     | [Roman-Halenko](https://github.com/Roman-Halenko/a-tiny-JS-world/blob/gh-pages/index.js)
  
