@@ -8,6 +8,59 @@
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
 
+let inhabitants = getInhabitants();
+
+function getInhabitants () {
+    const man = {
+        species: 'man',
+        name: 'Homer',
+        gender: 'male',
+        legs: 2,
+        hands: 2,
+        saying: 'D\'oh!',
+    };
+    const woman = {
+        species: 'woman',
+        name: 'Marge',
+        gender: 'female',
+        legs: 2,
+        hands: 2,
+        saying: 'Mmm~mmmmm!',
+    };
+    const dog = {
+        species: 'dog',
+        name: 'Santa\'s Little Helper',
+        gender: 'female',
+        legs: 4,
+        hands: 0,
+        saying: 'Arf-arf!',
+    };
+    const cat = {
+        species: 'cat',
+        name: 'Snowball',
+        gender: 'male',
+        legs: 4,
+        hands: 0,
+        saying: 'Meaou-meaou!',
+    };
+    const catWoman = {
+        species: 'catWoman',
+        name: 'Selina Kyle',
+        gender: 'female',
+        legs: 2,
+        hands: 2,
+        get saying () {return cat.saying},
+        set saying (nextVerb) {return cat.saying},
+    };
+
+    man.friends = [woman, dog];
+    woman.friends = [man, cat, dog];
+    cat.friends = [catWoman];
+
+    return [man, woman, cat, dog, catWoman];
+};
+
+// printInfo(inhabitants);
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -18,14 +71,24 @@
    so code reviewers might focus on a single file that is index.js.
    */
 
-/* Print examples:
-   print('ABC');
-   print('<strong>ABC</strong>');
-   print('<strong>ABC</strong>', 'div');
+const BASE_SCHEME = ['species', 'name', 'gender', 'legs', 'hands', 'saying', 'friends'];
 
-   print('human; John; male; 2; 2; Hello world!; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
-   */
+function inhabitantHandler (inhabitant) {
+    let parts = BASE_SCHEME.map((propName) => {
+        if (propName === 'friends') {
+            const hasFriends = inhabitant.friends && Array.isArray(inhabitant.friends);
+            console.log(inhabitant.friends);
+            console.log(inhabitant);
+            return (hasFriends)
+                ? inhabitant.friends.map((friend) => (friend.name)).join(', ')
+                : 'has no friends';
+        }
 
+    return inhabitant[propName] || `has no ${propName}`;
+    });
 
+    let message = parts.join('; ');
+    window.print(message);
+}
+
+inhabitants.forEach(inhabitantHandler);
