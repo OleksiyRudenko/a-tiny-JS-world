@@ -37,3 +37,4 @@
  2019-01-02 |    5    |     21     | [ivarshavets](https://github.com/ivarshavets/a-tiny-JS-world)
  2019-01-03 |    5    |     50     | [AnnaGrynchuk](https://github.com/AnnaGrynchuk/a-tiny-JS-world)
  2018-12-27 |    5    |     60     | [AlexNugda](https://github.com/AlexNugda/a-tiny-JS-world)
+
