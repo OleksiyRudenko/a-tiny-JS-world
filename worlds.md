@@ -35,4 +35,6 @@
  2018-12-30 |    4    |     34     | [Roman-Halenko](https://github.com/Roman-Halenko/a-tiny-JS-world/blob/gh-pages/index.js)
  2019-01-01 |    5    |     62     | [Dnzln](https://github.com/dnzln/a-tiny-JS-world/)
  2019-01-02 |    5    |     21     | [ivarshavets](https://github.com/ivarshavets/a-tiny-JS-world)
+ 2019-01-03 |    5    |     50     | [AnnaGrynchuk](https://github.com/AnnaGrynchuk/a-tiny-JS-world)
+
 
