@@ -152,6 +152,9 @@ Push your repo to github.
 You may want to publish your world on [GitHub Pages](https://pages.github.com/).
 The following commands will help you.
 
+Assuming you merged your code into `master`.
+You may alternatively merge from feature branch (`populate-world`).
+
 ```
 git fetch
 git checkout gh-pages
@@ -169,6 +172,8 @@ Now your world is published at
 
 When you want to update your site with latest changes in `master`
 do the following:
+(Assuming you merged your code into `master`.
+You may alternatively merge from feature branch (`populate-world`).)
 
 ```
 git checkout gh-pages
