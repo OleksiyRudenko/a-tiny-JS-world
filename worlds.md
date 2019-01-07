@@ -40,4 +40,5 @@
  2018-12-27 |    5    |     60     | [AlexNugda](https://github.com/AlexNugda/a-tiny-JS-world)
  2019-01-04 |    5    |     94     | [vv2529](https://github.com/vv2529/a-tiny-JS-world)
  2019-01-05 |    4    |     66      | [Anzhelika](https://github.com/angelikaSemeniuk/a-tiny-JS-world)
+ 2019-01-07 |    5    |     87      | [SergSenras](https://github.com/SergSenras/a-tiny-JS-world)
  
