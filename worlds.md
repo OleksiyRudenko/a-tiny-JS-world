@@ -42,4 +42,4 @@
  2019-01-05 |    4    |     66      | [Anzhelika](https://github.com/angelikaSemeniuk/a-tiny-JS-world)
  2019-01-07 |    5    |     87      | [SergSenras](https://github.com/SergSenras/a-tiny-JS-world)
  2019-01-08 |    6    |     61      | [DJStar77](https://github.com/DJStar77/a-tiny-JS-world)
- 
+ 2019-01-10 |    4    |     54     |  [webdevagent](https://github.com/webdevagent/a-tiny-JS-world)
