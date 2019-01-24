@@ -44,4 +44,6 @@
  2019-01-08 |    6    |     61      | [DJStar77](https://github.com/DJStar77/a-tiny-JS-world)
  2019-01-10 |    4    |     54     |  [webdevagent](https://github.com/webdevagent/a-tiny-JS-world)
  2019-01-10 |    4    |     72     | [mfialko](https://github.com/mfialko/a-tiny-JS-world)
+ 2019-01-24 |    4    |     45      | [mxmgny](https://github.com/mxmgny/a-tiny-JS-world)
+ 
 
