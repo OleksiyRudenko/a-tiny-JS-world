@@ -289,6 +289,7 @@ with OOP and JavaScript OOP.
 - [How to explain object-oriented programming concepts to a 6-year-old](https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260)
 - [Object-oriented JavaScript for beginners](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 - [Object oriented programming in javascript](https://www.sohamkamani.com/blog/2016/04/30/oops-in-js/)
+- [A guide to prototype-based class inheritance in JavaScript](https://medium.freecodecamp.org/a-guide-to-prototype-based-class-inheritance-in-javascript-84953db26df0?fbclid=IwAR20DuOl_zkI2bHF80hiA3ypVM-lIRD3AeZUv2hUE69Z5wRecWJ391pbzQk)
 - [Fundamental Object Design Patterns](https://medium.com/launch-school/javascript-weekly-fundamental-object-design-patterns-31453f68427f)
 - [Composition over Inheritance
 ](https://medium.com/humans-create-software/composition-over-inheritance-cb6f88070205)
