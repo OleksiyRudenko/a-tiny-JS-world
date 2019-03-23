@@ -47,5 +47,7 @@
  2019-01-24 |    4    |     45     | [mxmgny](https://github.com/mxmgny/a-tiny-JS-world)
  2019-01-29 |    4    |     50     | [Roka20012](https://roka20012.github.io/a-tiny-JS-world/)
  2019-02-28 |    4    |     75     | [Temu4](https://temu4.github.io/a-tiny-JS-world/)
+ 2019-03-21 |    4    |     47     | [madmaxWMFU](https://madmaxwmfu.github.io/a-tiny-JS-world/)
+ 
 
 
