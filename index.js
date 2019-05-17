@@ -1,7 +1,7 @@
 /* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
    Complete the below for code reviewers' convenience:
 
-   Code repository: _put repo URL here_
+   Code repository: https://github.com/aymkin/a-tiny-JS-world
    Web app: _put project's github pages URL here_
    */
 
