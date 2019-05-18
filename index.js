@@ -1,28 +1,57 @@
 /* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
-   Complete the below for code reviewers' convenience:
 
-   Code repository: https://github.com/aymkin/a-tiny-JS-world
-   Web app: _put project's github pages URL here_
+Code repository: https://github.com/aymkin/a-tiny-JS-world
+Web app: https://aymkin.github.io/a-tiny-JS-world/
    */
-
 // ======== OBJECTS DEFINITIONS ========
-// Define your objects here
 
-// ======== OUTPUT ========
-/* Use print(message) for output.
-   Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
+const dog = {
+  species: 'dog',
+  name: 'Charly',
+  gender: 'male',
+  legs: 4,
+  hands: 0,
+  saying: 'woof-woof',
+  friends: ['man', 'cat']
+};
 
-   Message can contain HTML markup. You may also tweak index.html and/or styles.css.
-   However, please, REFRAIN from improving visuals at least until your code is reviewed
-   so code reviewers might focus on a single file that is index.js.
-   */
+const cat = {
+  species: 'cat',
+  name: 'Benjamin',
+  gender: 'male',
+  legs: 4,
+  hands: 0,
+  saying: 'meow-meow',
+  friends: ['wooman', 'dog']
+};
 
-/* Print examples:
-   print('ABC');
-   print('<strong>ABC</strong>');
-   print('<strong>ABC</strong>', 'div');
+const wooman = {
+  species: 'human',
+  name: 'Galyna',
+  gender: 'female',
+  legs: 2,
+  hands: 2,
+  saying: 'Dear, do you love me?',
+  friends: ['man', 'cat']
+};
 
-   print('human; John; male; 2; 2; Hello world!; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
-   */
+const man = {
+  species: 'human',
+  name: 'Aymkin',
+  gender: 'male',
+  legs: 2,
+  hands: 2,
+  saying: 'Honey, I love borscht.',
+  friends: ['wooman', 'dog']
+};
+
+// ========== OUTPUT ===========
+
+[wooman, man, dog, cat].forEach(inhobitant => {
+  print(
+    `I'am a ${inhobitant.species}, my name is <strong>${inhobitant.name}</strong>.
+    I have ${inhobitant.legs} legs and ${inhobitant.hands} hands.
+    Every day I say: "${inhobitant.saying}".
+    I have friends: ${inhobitant.friends.map(friend => friend).join(', ')}.`
+  );
+});
