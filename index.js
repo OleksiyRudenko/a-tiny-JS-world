@@ -45,13 +45,31 @@ const man = {
   friends: ['wooman', 'dog']
 };
 
-// ========== OUTPUT ===========
-
-[wooman, man, dog, cat].forEach(inhobitant => {
+const getBio = (inhobitant) => {
   print(
     `I'am a ${inhobitant.species}, my name is <strong>${inhobitant.name}</strong>.
     I have ${inhobitant.legs} legs and ${inhobitant.hands} hands.
-    Every day I say: "${inhobitant.saying}".
-    I have friends: ${inhobitant.friends.map(friend => friend).join(', ')}.`
+    Every day I say: "${inhobitant.saying}".`
   );
+};
+
+const makeSound = (inhobitant) => {
+  print(
+    `Every day I say: "${inhobitant.saying}".`
+  );
+};
+
+const getFriends = (inhobitant) => {
+  print(
+    `I have friends: ${inhobitant.friends.map(friend => friend).join(', ')}.`
+  );
+};
+
+// ========== OUTPUT ===========
+
+[wooman, man, dog, cat].forEach(inhobitant => {
+  getBio(inhobitant);
+  makeSound(inhobitant);
+  getFriends(inhobitant);
+  print('<--->');
 });
