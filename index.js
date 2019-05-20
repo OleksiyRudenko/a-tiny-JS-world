@@ -44,30 +44,26 @@ const man = {
   say: () => 'Honey, I love borscht.'
 };
 
-const getBio = inhobitant => {
-  print(
-    `I'am a ${inhobitant.species}, my name is <strong>${
-      inhobitant.name
-    }</strong>.
-    I have ${inhobitant.legs} legs and ${inhobitant.hands} hands.`
-  );
-  getFriends(inhobitant);
-};
-
 const getFriends = inhobitant => {
   if (inhobitant.hasOwnProperty('friends')) {
-    print(
-      `I have friends: ${inhobitant.friends.map(friend => friend).join(', ')}.`
-    );
+    return `I have friends: ${inhobitant.friends
+      .map(friend => friend)
+      .join(', ')}`;
   } else {
-    print(`I have no friends`);
+    return `I have no friends`;
   }
+};
+
+const getBio = inhobitant => {
+  return `I'am a ${inhobitant.species}, my name is <strong>${
+    inhobitant.name
+  }</strong>.\nI have ${inhobitant.legs} legs and ${
+    inhobitant.hands
+  } hands.${getFriends(inhobitant)}. \nEvery day I say:  ${inhobitant.say()}`;
 };
 
 // ========== OUTPUT ===========
 
 [wooman, man, dog, cat].forEach(inhobitant => {
-  getBio(inhobitant);
-  print(`Every day I say: ${inhobitant.say()}`);
-  print('<--->');
+  print(getBio(inhobitant));
 });
