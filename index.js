@@ -48,8 +48,7 @@ const man = {
 const getBio = (inhobitant) => {
   print(
     `I'am a ${inhobitant.species}, my name is <strong>${inhobitant.name}</strong>.
-    I have ${inhobitant.legs} legs and ${inhobitant.hands} hands.
-    Every day I say: "${inhobitant.saying}".`
+    I have ${inhobitant.legs} legs and ${inhobitant.hands} hands.`
   );
 };
 
