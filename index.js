@@ -73,5 +73,3 @@ function toString() {
   .forEach(inhabitant => {
       print(inhabitant);
 });
-
-
