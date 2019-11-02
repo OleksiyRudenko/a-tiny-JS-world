@@ -53,5 +53,5 @@
  2019-07-22 |    4    |     22     | [Valkirin](https://valkirin.github.io/a-tiny-JS-world/)
  2019-09-20 |    6    |     76     | [Barasii](https://barasii.github.io/a-tiny-JS-world/)
  2019-10-26 |    4    |     39     | [karelskiy](https://karelskiy.github.io/a-tiny-JS-world/)
-  
+ 2019-11-02 |    5    |     37     | [dashakim](https://dashakim.github.io/a-tiny-JS-world/) 
  
