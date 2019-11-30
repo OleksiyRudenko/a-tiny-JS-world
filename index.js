@@ -1,75 +1,65 @@
-const INHABITANT = {
-   properties: ['species', 'name', 'gender', 'legs', 'hands', 'saying', 'friends'],
-   species: {
-      human: 'human',
-      dog: 'dog',
-      cat: 'cat',
-      femile: 'femile',
-      male: 'male'
-   },
+class Inhabitant {
+   constructor(species, name, gender, legs, hands, saying, friends) {
+      this.species = species;
+      this.name = name;
+      this.gender = gender;
+      this.legs = legs;
+      this.hands = hands;
+      this.saying = saying;
+      this.friends = friends;
+   }
 }
 
-const dog = {
-   species: INHABITANT.species.dog,
-   name: 'Nika',
-   gender: INHABITANT.species.femile,
-   legs: 4,
-   hands: 0,
-   saying: 'gav-gav',
-   friends: ['man'],
-   toString
+class Human extends Inhabitant {
+   constructor(name, gender, saying, friends) {
+      super('human', name, gender, 2, 2, saying, friends);
+   }
 }
 
-const cat = {
-   species: INHABITANT.species.cat,
-   name: 'Musia',
-   gender: INHABITANT.species.femile,
-   legs: 4,
-   hands: 0,
-   saying: 'mur-mur',
-   friends: ['woman', 'catWoman'],
-   toString
+class Man extends Human {
+   constructor(name, saying, friends) {
+      super(name, 'male', saying, friends);
+   }
 }
 
-const woman = {
-   species: INHABITANT.species.human,
-   name: 'Katia',
-   gender: INHABITANT.species.femile,
-   legs: 2,
-   hands: 2,
-   saying: 'Pryvit)',
-   friends: ['man'],
-   toString
+class Woman extends Human {
+   constructor(name, saying, friends) {
+      super(name, 'female', saying, friends);
+   }
 }
 
-const man = {
-   species: INHABITANT.species.human,
-   name: 'Petro',
-   gender: INHABITANT.species.male,
-   legs: 2,
-   hands: 2,
-   saying: 'Zdorov!',
-   friends: ['woman', 'dog'],
-   toString
+class Animal extends Inhabitant {
+   constructor(species, name, gender, saying, friends) {
+      super(species, name, gender, 4, 0, saying, friends);
+   }
 }
 
-const catWoman = {
-   species: INHABITANT.species.human,
-   name: 'Murka',
-   gender: INHABITANT.species.femile,
-   legs: 2,
-   hands: 2,
-   saying: cat.saying,
-   friends: ['cat'],
-   toString
+class Dog extends Animal {
+   constructor( name, gender, saying, friends) {
+      super('dog', name, gender, saying, friends);
+   }
 }
 
-
-function toString() {
-  return INHABITANT.properties.map(prop => `${this[prop]}`).join('; ');
+class Cat extends Animal {
+   constructor( name, gender, saying, friends) {
+      super('cat', name, gender, saying, friends);
+   }
 }
+
+class CatWoman extends Inhabitant {
+   constructor(name, friends) {
+      super('human', name, 'female', 2, 2, 'mur-mur', friends);
+   }
+}
+
+const man = new Man('Petro', 'Zdorov!', ['woman', 'dog']),
+      woman = new Woman('Katia', 'Pryvit)', ['man']),
+      dog = new Dog('Nika', 'female', 'gav-gav', ['man']),
+      cat = new Cat('Musia', 'female', 'mur-mur', ['woman', 'catWoman']),
+      catWoman = new CatWoman('Murka', ['cat']);
+
 
 [man, woman, dog, cat, catWoman]
-  .forEach(inhabitant => {
-      print(inhabitant);
-});
+   .forEach(inhabitant => {
+      print([inhabitant.species, inhabitant.name, inhabitant.gender, inhabitant.legs, inhabitant.hands, inhabitant.saying, inhabitant.friends].join('; '));
+})
