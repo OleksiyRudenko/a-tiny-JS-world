@@ -57,5 +57,7 @@
  2019-11-19 |    5    |     50     | [dafen173](https://github.com/dafen173/a-tiny-JS-world)
  2020-01-28 |    5    |     63     | [NastjonkaK](https://github.com/NastjonkaK/a-tiny-JS-world)
  2020-03-03 |    4    |     73     | [evgeniy241984](https://evgeniy241984.github.io/a-tiny-JS-world/)
+ 2020-09-01 |    5    |     39     | [chris-voitova](https://github.com/chris-voitova/a-tiny-JS-world)
+ 
  
 
