@@ -6,7 +6,7 @@
    */
 
 // ======== OBJECTS DEFINITIONS ========
-const inhabitantsOf = [
+const inhabitants = [
   {
     species: 'human',
     name: 'Mike',
@@ -51,25 +51,10 @@ const inhabitantsOf = [
 
 // ======== OUTPUT ========
 
-let species = 'species';
-let name = 'name';
-let gender = 'gender';
-let legs = ' legs';
-let hands = 'hands';
-let saying = 'saying';
-
-inhabitantsOf.forEach((element) => {
-  print(
-    element.species +
-      '; ' +
-      element.name +
-      '; ' +
-      element.gender +
-      '; ' +
-      element.legs +
-      '; ' +
-      element.hands +
-      '; ' +
-      element.saying
-  );
-});
+function printInhabitants(arr) {
+  arr.forEach((element) => {
+    let newOb = Object.values(element).join(';');
+    print(newOb);
+  });
+}
+printInhabitants(inhabitants);
