@@ -137,7 +137,7 @@ Read about
 
 </details>
 
-Once you are happy with your app, or at least id doesn't report any errors in dev console
+Once you are happy with your app, or at least it doesn't report any errors in dev console
 you may consider it to be of release quality and worth merging into master:
 
 `git checkout master && git merge populate-world`
