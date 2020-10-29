@@ -59,6 +59,7 @@
  2020-03-03 |    4    |     73     | [evgeniy241984](https://evgeniy241984.github.io/a-tiny-JS-world/)
  2020-09-01 |    5    |     39     | [chris-voitova](https://github.com/chris-voitova/a-tiny-JS-world)
  2020-10-28 |    5    |     44     | [mustbefail](https://github.com/mustbefail/a-tiny-JS-world)
+ 2020-10-29 |    5    |     49     | [andrewklmn](https://andrewklmn.github.io/a-tiny-JS-world/)
  
  
 
