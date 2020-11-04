@@ -7,51 +7,86 @@
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
-const cat = {
-  species: 'cat',
+class Animal {
+  constructor() {
+    this.hands = 0;
+    this.legs = 4;
+    this.friends = ['no friends'];
+  }
+}
+
+class Cat extends Animal {
+  constructor(feature) {
+    super();
+    this.species = 'cat';
+    Object.assign(this, feature);
+  }
+
+  saying() {
+    return 'Meow!';
+  }
+
+}
+
+class Dog extends Animal {
+  constructor(feature) {
+    super();
+    this.species = 'dog';
+    Object.assign(this, feature);
+  }
+
+  saying() {
+    return 'Bark-Bark!';
+  }
+}
+
+const cat = new Cat({
   name: 'Prokhor',
-  hands: 0,
-  legs: 4,
-  saying: 'Meow!',
   gender: 'male',
-  friends: 'June, Maki',
-};
-const catWoman = {
-  species: 'cat',
-  name: 'June',
-  hands: 0,
-  legs: 4,
-  saying: cat.saying,
-  gender: 'female',
-  friends: 'Anna',
-};
-const dog = {
-  species: 'dog',
+  friends: ['June', 'Maki'],
+});
+
+
+const dog = new Dog({
   name: 'Maki',
-  hands: 0,
-  legs: 4,
-  saying: 'bark-bark!',
   gender: 'male',
-  friends: 'Alfred, Prokhor, Anna',
-};
-const man = {
-  species: 'human',
-  name: 'Alfred',
-  hands: 2,
-  legs: 2,
-  saying: 'Master Bruce, I...',
-  gender: 'male',
-  friends: 'Maki, Anna',
-};
-const woman = {
-  species: 'human',
-  name: 'Anna',
-  hands: 2,
-  legs: 2,
-  saying: 'Need more money!',
+  friends: ['Alfred', 'Prokhor', 'Anna'],
+});
+
+class Human {
+  constructor(feature) {
+    this.legs = 2;
+    this.hands = 2;
+    this.species = 'human';
+    Object.assign(this, feature);
+  }
+
+  saying() {
+    return this.phrase;
+  }
+}
+
+
+const catWoman = new Human({
+  name: 'June',
   gender: 'female',
-  friends: 'June, Alfred',
-};
+  friends: ['Anna'],
+  saying: new Cat().saying,
+});
+
+const man = new Human({
+  name: 'Alfred',
+  phrase: 'Master Bruce, I...',
+  gender: 'male',
+  friends: ['Maki', 'Anna'],
+});
+
+const woman = new Human({
+  name: 'Anna',
+  phrase: 'Need more money!',
+  gender: 'female',
+  friends: ['June', 'Alfred'],
+});
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -64,19 +99,11 @@ const woman = {
 
 const inhabitants = [cat, catWoman, man, woman, dog];
 
-const formatOutput = ({
-  name,
-  species,
-  hands,
-  legs,
-  saying,
-  gender,
-  friends,
-}) => {
-  return `Hello! I am ${species}, my name is ${name}, my gender is ${gender}, I have ${hands} arms and ${legs} legs and you know what: ${saying}. My friends: ${friends}`;
+const formatOutput = (habitant) => {
+  return `Hello! I am <strong>${habitant.species}</strong>, my name is <strong>${habitant.name}</strong>, my gender is <strong>${habitant.gender}</strong>, I have <strong>${habitant.hands}</strong> arms and <strong>${habitant.legs}</strong> legs and you know what: <strong>${habitant.saying()}</strong>. My friends: <strong>${habitant.friends}</strong>`;
 };
 
-inhabitants.forEach((habitant) => print(formatOutput(habitant), 'h5'));
+inhabitants.forEach((habitant) => print(formatOutput(habitant)));
 
 /* Print examples:
   print('ABC');
