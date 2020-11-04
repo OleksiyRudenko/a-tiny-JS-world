@@ -61,6 +61,6 @@
  2020-10-28 |    5    |     44     | [mustbefail](https://github.com/mustbefail/a-tiny-JS-world)
  2020-10-29 |    5    |     49     | [andrewklmn](https://andrewklmn.github.io/a-tiny-JS-world/)
  2020-11-04 |    5    |     37     | [xT0PERx](https://github.com/xT0PERx/a-tiny-JS-world)
- 
+ 2020-11-04 |    5    |     81     | [mustbefail](https://github.com/mustbefail/a-tiny-JS-world)
  
 
