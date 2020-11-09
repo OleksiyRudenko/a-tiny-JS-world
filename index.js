@@ -7,86 +7,58 @@
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
-class Animal {
-  constructor() {
-    this.hands = 0;
-    this.legs = 4;
-    this.friends = ['no friends'];
-  }
+
+const Inhabitant = (species, name, gender, hands, legs, friends, phrase) => {
+  const self = {
+    species,
+    name,
+    gender,
+    hands,
+    legs,
+    friends,
+    phrase,
+  };
+  return self;
+};
+
+const catSaying = () => ({
+  saying: () =>  "Meow!",
+});
+const humanSaying = (self) => ({
+  saying: () => self.phrase,
+});
+const dogSaying = () => ({
+  saying: () =>  "Bark-bark!",
+});
+
+const Cat = (name, gender, friends, phrase) => {
+  const self = {};
+  return Object.assign(self, Inhabitant('cat', name, gender, 0, 4, friends, phrase), catSaying());
 }
 
-class Cat extends Animal {
-  constructor(feature) {
-    super();
-    this.species = 'cat';
-    Object.assign(this, feature);
-  }
-
-  saying() {
-    return 'Meow!';
-  }
-
+const Dog = (name, gender, friends, phrase) => {
+  const self = {};
+  return Object.assign(self, Inhabitant('dog', name, gender, 0, 4, friends, phrase), dogSaying());
 }
 
-class Dog extends Animal {
-  constructor(feature) {
-    super();
-    this.species = 'dog';
-    Object.assign(this, feature);
-  }
-
-  saying() {
-    return 'Bark-Bark!';
-  }
+const Human = (name, gender, friends, phrase) => {
+  const self = {};
+  return Object.assign(self, Inhabitant('Human', name, gender, 2, 2, friends, phrase), humanSaying(self));
 }
 
-const cat = new Cat({
-  name: 'Prokhor',
-  gender: 'male',
-  friends: ['June', 'Maki'],
-});
+const catWoman = Object.assign(Human('June', 'female', ['Maki', 'Anna']), catSaying());
 
+const dog = Dog('Maki', 'male', ['Alfred', 'Prokhor'], 'Bark-bark!');
+const cat = Cat('Prokhor', 'male', ['June', 'Maki'], 'Meow!');
 
-const dog = new Dog({
-  name: 'Maki',
-  gender: 'male',
-  friends: ['Alfred', 'Prokhor', 'Anna'],
-});
+const man = Human('Alfred', 'male', ['Maki', 'Anna'], 'Master Bruce, I...');
 
-class Human {
-  constructor(feature) {
-    this.legs = 2;
-    this.hands = 2;
-    this.species = 'human';
-    Object.assign(this, feature);
-  }
-
-  saying() {
-    return this.phrase;
-  }
-}
-
-
-const catWoman = new Human({
-  name: 'June',
-  gender: 'female',
-  friends: ['Anna'],
-  saying: new Cat().saying,
-});
-
-const man = new Human({
-  name: 'Alfred',
-  phrase: 'Master Bruce, I...',
-  gender: 'male',
-  friends: ['Maki', 'Anna'],
-});
-
-const woman = new Human({
-  name: 'Anna',
-  phrase: 'Need more money!',
-  gender: 'female',
-  friends: ['June', 'Alfred'],
-});
+const woman = Human(
+  'Anna',
+  'female',
+  ['June', 'Alfred'],
+  'Need more money!'
+);
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -97,10 +69,20 @@ const woman = new Human({
   so code reviewers might focus on a single file that is index.js.
 */
 
-const inhabitants = [cat, catWoman, man, woman, dog];
+const inhabitants = [cat, dog, man, woman, catWoman];
 
 const formatOutput = (habitant) => {
-  return `Hello! I am <strong>${habitant.species}</strong>, my name is <strong>${habitant.name}</strong>, my gender is <strong>${habitant.gender}</strong>, I have <strong>${habitant.hands}</strong> arms and <strong>${habitant.legs}</strong> legs and you know what: <strong>${habitant.saying()}</strong>. My friends: <strong>${habitant.friends}</strong>`;
+  return `Hello! I am <strong>${
+    habitant.species
+  }</strong>, my name is <strong>${
+    habitant.name
+  }</strong>, my gender is <strong>${
+    habitant.gender
+  }</strong>, I have <strong>${habitant.hands}</strong> arms and <strong>${
+    habitant.legs
+  }</strong> legs and you know what: <strong>${habitant.saying()}</strong>. My friends: <strong>${
+    habitant.friends
+  }</strong>`;
 };
 
 inhabitants.forEach((habitant) => print(formatOutput(habitant)));
