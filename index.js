@@ -8,6 +8,63 @@
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
 
+const dog = {
+    species: 'dog',
+    name: 'Ivan',
+    gender: 'male',
+    legs: 4,
+    hands: 0,
+    saying: 'Woof-woof!',
+    friends: ['Ira']
+};
+
+const cat = {
+    species: 'cat',
+    name: 'Pushok',
+    gender: 'male',
+    legs: 4,
+    hands: 0,
+    saying: 'Meeeow!',
+    friends: ['Sharik', 'Ponchik']
+};
+
+const catWoman = {
+    species: 'cat',
+    name: 'Murka',
+    gender: 'female',
+    legs: 4,
+    hands: 0,
+    saying: cat.saying,
+    friends: ['Pushok']
+};
+
+const woman = {
+    species: 'human',
+    name: 'Natali',
+    gender: 'female',
+    legs: 0,
+    hands: 2,
+    saying: 'Nice to meet you!',
+    friends: ['Madona']
+};
+
+const man = {
+    species: 'human',
+    name: 'Andre',
+    gender: 'male',
+    legs: 0,
+    hands: 2,
+    saying: 'How you doing?',
+    friends: ['Vasya', 'Mitya']
+};
+
+const inhabitants = [dog, cat, catWoman, man, woman];
+
+let output = inhabitants.map(elem => {
+    return `${elem.saying} I'm a ${elem.species} with the name ${elem.name}, which means I'm ${elem.gender}. My body has ${elem.legs} legs and ${elem.hands} hands. And I want to say hi to <b>${elem.friends}</b>, you are the best!`
+}).join('\n\n');
+
+print(output);
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
