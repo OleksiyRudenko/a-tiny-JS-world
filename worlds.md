@@ -63,6 +63,7 @@
  2020-11-04 |    5    |     37     | [xT0PERx](https://github.com/xT0PERx/a-tiny-JS-world)
  2020-11-04 |    5    |     81     | [mustbefail](https://github.com/mustbefail/a-tiny-JS-world)
  2020-11-09 |    5    |     99     | [nadsatt](https://github.com/nadsatt/a-tiny-JS-world)
- 2020-11-09 |    5    |     66     | [AnnaStoyano](https://github.com/AnnaStoyano/a-tiny-JS-world) 
+ 2020-11-09 |    5    |     66     | [AnnaStoyano](https://github.com/AnnaStoyano/a-tiny-JS-world)
+ 2020-11-10 |    5    |     56     | [Nemooochka](https://github.com/Nemooochka/a-tiny-JS-world)
 
 
