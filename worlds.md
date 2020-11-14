@@ -65,5 +65,6 @@
  2020-11-09 |    5    |     99     | [nadsatt](https://github.com/nadsatt/a-tiny-JS-world)
  2020-11-09 |    5    |     66     | [AnnaStoyano](https://github.com/AnnaStoyano/a-tiny-JS-world)
  2018-11-11 |    4    |     20     | [natashafir](https://github.com/natashafir/a-tiny-JS-world)
+ 2020-11-14 |    5    |     89     | [Nemooochka](https://github.com/Nemooochka/a-tiny-JS-world)
 
 
