@@ -69,6 +69,12 @@
  2020-11-14 |    5    |     89     | [RomanSaiko](https://github.com/RomanSaiko/a-tiny-JS-world)
  2020-11-17 |    5    |     88     | [HannaSyn](https://github.com/HannaSyn/a-tiny-JS-world)
  2020-11-21 |    5    |     47     | [WebDevToday](https://github.com/webdevtoday/a-tiny-JS-world)
+ 2020-11-22 |    5    |     58     | [BlueLamantine](https://github.com/BlueLamantine/a-tiny-JS-world)
+ 
+ 
+ 
+ 
+ 
 
 
 
