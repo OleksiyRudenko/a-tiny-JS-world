@@ -59,7 +59,17 @@
  2020-03-03 |    4    |     73     | [evgeniy241984](https://evgeniy241984.github.io/a-tiny-JS-world/)
  2020-09-01 |    5    |     39     | [chris-voitova](https://github.com/chris-voitova/a-tiny-JS-world)
  2020-10-28 |    5    |     44     | [mustbefail](https://github.com/mustbefail/a-tiny-JS-world)
- 2020-10-30 |    4    |     66     | [Evgeniy241984] (https://evgeniy241984.github.io/a-tiny-JS-world/)
+ 2020-10-29 |    5    |     49     | [andrewklmn](https://andrewklmn.github.io/a-tiny-JS-world/)
+ 2020-11-04 |    5    |     37     | [xT0PERx](https://github.com/xT0PERx/a-tiny-JS-world)
+ 2020-11-04 |    5    |     81     | [mustbefail](https://github.com/mustbefail/a-tiny-JS-world)
+ 2020-11-09 |    5    |     99     | [nadsatt](https://github.com/nadsatt/a-tiny-JS-world)
+ 2020-11-09 |    5    |     66     | [AnnaStoyano](https://github.com/AnnaStoyano/a-tiny-JS-world)
+ 2018-11-11 |    4    |     20     | [natashafir](https://github.com/natashafir/a-tiny-JS-world)
+ 2020-11-14 |    5    |     89     | [Nemooochka](https://github.com/Nemooochka/a-tiny-JS-world)
+ 2020-11-14 |    5    |     89     | [RomanSaiko](https://github.com/RomanSaiko/a-tiny-JS-world)
+ 2020-11-17 |    5    |     88     | [HannaSyn](https://github.com/HannaSyn/a-tiny-JS-world)
+ 2020-11-21 |    5    |     47     | [WebDevToday](https://github.com/webdevtoday/a-tiny-JS-world)
+ 2020-11-22 |    5    |     58     | [BlueLamantine](https://github.com/BlueLamantine/a-tiny-JS-world)
+ 2020-11-23 |    4    |     33     | [ustymchyk](https://github.com/ustymchyk/a-tiny-JS-world/)
+ 2020-11-25 |    4    |     66     | [Evgeniy241984] (https://evgeniy241984.github.io/a-tiny-JS-world/)
  
- 
-
