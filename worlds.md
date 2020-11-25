@@ -71,4 +71,5 @@
  2020-11-21 |    5    |     47     | [WebDevToday](https://github.com/webdevtoday/a-tiny-JS-world)
  2020-11-22 |    5    |     58     | [BlueLamantine](https://github.com/BlueLamantine/a-tiny-JS-world)
  2020-11-23 |    4    |     33     | [ustymchyk](https://github.com/ustymchyk/a-tiny-JS-world/)
+ 2020-11-25 |    4    |     66     | [Evgeniy241984] (https://evgeniy241984.github.io/a-tiny-JS-world/)
  
