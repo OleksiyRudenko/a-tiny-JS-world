@@ -80,4 +80,4 @@
  2020-12-05 |    4    |     36     | [UA-girl](https://github.com/UA-girl/a-tiny-JS-world)
  2020-12-04 |    5    |     49     | [VBystrov](https://github.com/VBystrov/a-tiny-JS-world)
  2020-12-05 |    5    |     48     | [sergesd](https://github.com/sergesd/a-tiny-JS-world)
- 2020-12-05 |    4    |     66     | [m-ruslan](https://github.com/m-ruslan/a-tiny-JS-world)
+ 2020-12-05 |    5    |     112    | [m-ruslan](https://github.com/m-ruslan/a-tiny-JS-world)
