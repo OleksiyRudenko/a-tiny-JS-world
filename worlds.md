@@ -75,4 +75,6 @@
  2020-12-02 |    4    |     78     | [lalalilulu](https://lalalilulu.github.io/a-tiny-JS-world/)
  2020-12-03 |    4    |     63     | [UA-girl](https://github.com/UA-girl/a-tiny-JS-world)
  2020-12-04 |    5    |     49     | [VBystrov](https://github.com/VBystrov/a-tiny-JS-world)
+ 2020-12-05 |    4    |     66     | [m-ruslan](https://github.com/m-ruslan/a-tiny-JS-world)
+ 
  
