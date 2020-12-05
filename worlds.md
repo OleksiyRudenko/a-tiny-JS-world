@@ -77,3 +77,4 @@
  2020-12-04 |    4    |     97     | [7sergsmith7](https://github.com/7SergSmith7/a-tiny-JS-world/)
  2020-12-05 |    4    |     36     | [UA-girl](https://github.com/UA-girl/a-tiny-JS-world)
  2020-12-04 |    5    |     49     | [VBystrov](https://github.com/VBystrov/a-tiny-JS-world)
+ 2020-12-05 |    4    |     66     | [m-ruslan](https://github.com/m-ruslan/a-tiny-JS-world)
