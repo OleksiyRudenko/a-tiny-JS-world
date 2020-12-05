@@ -73,4 +73,7 @@
  2020-11-23 |    4    |     158    | [ustymchyk](https://github.com/ustymchyk/a-tiny-JS-world/)
  2020-11-25 |    4    |     66     | [Evgeniy241984] (https://evgeniy241984.github.io/a-tiny-JS-world/)
  2020-12-02 |    4    |     78     | [lalalilulu](https://lalalilulu.github.io/a-tiny-JS-world/)
- 2020-12-04 |    5    |     63      | [Yakov Ponomarenko](https://github.com/Iakow/my-tiny-js-world)
+ 2020-12-04 |    5    |     63     | [Yakov Ponomarenko](https://github.com/Iakow/my-tiny-js-world)
+ 2020-12-04 |    4    |     97     | [7sergsmith7](https://github.com/7SergSmith7/a-tiny-JS-world/)
+ 2020-12-03 |    4    |     63     | [UA-girl](https://github.com/UA-girl/a-tiny-JS-world)
+ 2020-12-04 |    5    |     49     | [VBystrov](https://github.com/VBystrov/a-tiny-JS-world)
