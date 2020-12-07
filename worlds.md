@@ -84,4 +84,3 @@
  2020-12-07 |    5    |     49     | [ORybka](https://github.com/ORybka/a-tiny-JS-world)
  2020-12-07 |    4    |     57     | [Shrai-dev](https://github.com/Shrai-dev/a-tiny-JS-world)
  
- 
