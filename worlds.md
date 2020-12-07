@@ -82,4 +82,5 @@
  2020-12-05 |    5    |     48     | [sergesd](https://github.com/sergesd/a-tiny-JS-world)
  2020-12-05 |    5    |     112    | [m-ruslan](https://github.com/m-ruslan/a-tiny-JS-world)
  2020-12-07 |    5    |     49     | [ORybka](https://github.com/ORybka/a-tiny-JS-world)
+ 2020-12-07 |    4    |     57     | [Shrai-dev](https://github.com/Shrai-dev/a-tiny-JS-world)
  
