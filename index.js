@@ -7,7 +7,70 @@
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
+const cat = {
+  species: 'cat',
+  name: 'Toby',
+  gender: 'male',
+  legs: 4,
+  hands: 0,
+  saying: 'Meow! Feed me!',
+  friends:"no one"
+};
 
+const dog = {
+  species: 'dog',
+  name: 'Rex',
+  gender: 'male',
+  legs: 4,
+  hands: 0,
+   saying: 'Woof-woof!',
+   friends: ""
+};
+
+const man = {
+  species: 'human',
+  name: 'Bill',
+  gender: 'male',
+  legs: 2,
+  hands: 2,
+  saying: 'Hi!',
+  friends: ""
+};
+
+const woman = {
+  species: 'human',
+  name: 'Beverly',
+  gender: 'female',
+  legs: 2,
+  hands: 2,
+  saying: "What a nice day!",
+  friends: ""
+};
+
+const catWoman = {
+  species: 'cat-Woman',
+  name: 'Maggie',
+  gender: 'female',
+  legs: 4,
+  hands: 0,
+  saying: cat.saying,
+  friends: ""
+};
+
+woman.friends += `${man.name}, ${cat.name} - a ${cat.species}`;
+man.friends += `${woman.name}, ${dog.name} - a ${dog.species}`;
+catWoman.friends += `${cat.name} - a ${cat.species}`;
+dog.friends = `${man.name}, ${woman.name}`;
+
+function message (obj) {
+  print(Object.values(obj).join('; '));
+}
+
+message(man);
+message(woman);
+message(dog);
+message(cat);
+message(catWoman);
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
