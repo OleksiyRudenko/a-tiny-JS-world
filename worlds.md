@@ -85,4 +85,6 @@
  2020-12-07 |    4    |     57     | [Shrai-dev](https://github.com/Shrai-dev/a-tiny-JS-world)
  2020-12-08 |    5    |     43     | [alstep07](https://github.com/alstep07/a-tiny-JS-world)
  2020-12-08 |    5    |     44     | [ik-web](https://github.com/ik-web/a-tiny-JS-world)
-
+ 2020-12-10 |    5    |     64     | [TaniaBondarenko](https://taniabondarenko.github.io/a-tiny-JS-world/)
+ 
+ 
