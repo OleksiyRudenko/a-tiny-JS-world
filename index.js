@@ -1,33 +1,25 @@
-/* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
-   Complete the below for code reviewers' convenience:
-
-   Code repository: _put repo URL here_
-   Web app: _put project's github pages URL here_
-   */
-
-// ======== OBJECTS DEFINITIONS ========
-// Define your objects here
-const cat = {
+const inhabitants = [];
+inhabitants.push({
   species: 'cat',
   name: 'Toby',
   gender: 'male',
   legs: 4,
   hands: 0,
   saying: 'Meow! Feed me!',
-  friends:"no one"
-};
+  friends: "no one"
+});
 
-const dog = {
-  species: 'dog',
-  name: 'Rex',
-  gender: 'male',
-  legs: 4,
-  hands: 0,
-   saying: 'Woof-woof!',
-   friends: ""
-};
+  inhabitants.push({
+    species: 'dog',
+    name: 'Rex',
+    gender: 'male',
+    legs: 4,
+    hands: 0,
+    saying: 'Woof-woof!',
+    friends: ""
+  });
 
-const man = {
+inhabitants.push( {
   species: 'human',
   name: 'Bill',
   gender: 'male',
@@ -35,9 +27,9 @@ const man = {
   hands: 2,
   saying: 'Hi!',
   friends: ""
-};
+});
 
-const woman = {
+inhabitants.push( {
   species: 'human',
   name: 'Beverly',
   gender: 'female',
@@ -45,32 +37,30 @@ const woman = {
   hands: 2,
   saying: "What a nice day!",
   friends: ""
-};
+});
 
-const catWoman = {
+inhabitants.push( {
   species: 'cat-Woman',
   name: 'Maggie',
   gender: 'female',
-  legs: 4,
-  hands: 0,
-  saying: cat.saying,
+  legs: 2,
+  hands: 2,
+  saying: inhabitants[0].saying,
   friends: ""
+});
+
+inhabitants[1].friends+=`${inhabitants[2].name}, ${inhabitants[3].name}`;
+inhabitants[2].friends += `${inhabitants[3].name}, ${inhabitants[0].name} - a ${inhabitants[0].species}`;
+inhabitants[3].friends += `${inhabitants[1].name} - a ${inhabitants[1].species}`;
+inhabitants[4].friends += `${inhabitants[0].name} - a ${inhabitants[0].species}`;
+
+inhabitants.forEach(myFoo);
+function myFoo(obj) {
+  print(`${obj.species}; ${obj.name}; ${obj.gender}; ${obj.legs}; ${obj.hands}; ${obj.saying}; ${obj.friends}`);
 };
 
-woman.friends += `${man.name}, ${cat.name} - a ${cat.species}`;
-man.friends += `${woman.name}, ${dog.name} - a ${dog.species}`;
-catWoman.friends += `${cat.name} - a ${cat.species}`;
-dog.friends = `${man.name}, ${woman.name}`;
 
-function message (obj) {
-  print(Object.values(obj).join('; '));
-}
 
-message(man);
-message(woman);
-message(dog);
-message(cat);
-message(catWoman);
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
