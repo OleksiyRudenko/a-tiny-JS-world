@@ -87,5 +87,6 @@
  2020-12-08 |    5    |     44     | [ik-web](https://github.com/ik-web/a-tiny-JS-world)
  2020-12-10 |    5    |     60     | [TaniaBondarenko](https://taniabondarenko.github.io/a-tiny-JS-world/)
  2020-16-12 |    5    |     84     | [LGeorge007](https://lgeorge007.github.io/a-tiny-JS-world/)
+ 2020-16-12 |    4    |     73     | [YuliiaHordiichuk](https://yuliiahordiichuk.github.io/a-tiny-JS-world/)
  
  
