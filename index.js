@@ -1,15 +1,59 @@
 /* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
    Complete the below for code reviewers' convenience:
 
-   Code repository: _put repo URL here_
+   Code repository: https://github.com/YuliiaHordiichuk/a-tiny-JS-world
    Web app: _put project's github pages URL here_
    */
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
 
+const man = {
+   species: 'human',
+   name: 'Mark',
+   gender: 'male',
+   legs: 2,
+   hands: 2,
+   saying: 'Hi, there!'
+};
+
+const woman = {
+   species: 'human',
+   name: 'Jane',
+   gender: 'female',
+   legs: 2,
+   hands: 2,
+   saying: 'Hello, darling!'
+};
+
+const dog = {
+   species: 'dog',
+   name: 'Donny',
+   gender: 'male',
+   legs: 4,
+   hands: 0,
+   saying: 'Woof!'
+};
+
+const cat = {
+   species: 'cat',
+   name: 'Beniia',
+   gender: 'male',
+   legs: 4,
+   hands: 0,
+   saying: 'Mrrrr!'
+};
 
 // ======== OUTPUT ========
+
+const inhabitants = [man, woman, dog, cat]; 
+
+let message = (obj) => {
+   return `${obj.saying} I am a ${obj.species} and my name is ${obj.name}. Nice to meet you! My gender is ${obj.gender} so I have ${obj.legs} legs and ${obj.hands} hands.`;  
+} 
+
+inhabitants.forEach(inhabitant => print(message(inhabitant))); 
+
 /* Use print(message) for output.
    Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
 
