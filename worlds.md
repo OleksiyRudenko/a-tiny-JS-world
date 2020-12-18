@@ -89,5 +89,5 @@
  2020-16-12 |    5    |     84     | [LGeorge007](https://lgeorge007.github.io/a-tiny-JS-world/)
  2020-16-12 |    4    |     73     | [YuliiaHordiichuk](https://yuliiahordiichuk.github.io/a-tiny-JS-world/)
  2020-17-12 |    4    |     32     | [yaripey](https://yaripey.github.io/a-tiny-JS-world/)
- 
+ 2020-18-12 |    5    |     50     | [okkkko](https://okkkko.github.io/a-tiny-JS-world/)
  
