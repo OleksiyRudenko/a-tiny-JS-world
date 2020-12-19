@@ -91,5 +91,6 @@
  2020-17-12 |    4    |     32     | [yaripey](https://yaripey.github.io/a-tiny-JS-world/)
  2020-18-12 |    5    |     50     | [okkkko](https://okkkko.github.io/a-tiny-JS-world/)
  2020-12-18 |    5    |     104    | [tavor118sn](https://tavor118sn.github.io/a-tiny-JS-world/)
+ 2020-12-19 |    5    |     90     | [njul](https://njul.github.io/a-tiny-JS-world/)
  
  
