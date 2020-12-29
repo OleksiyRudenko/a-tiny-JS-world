@@ -94,3 +94,7 @@
  2020-12-19 |    5    |     90     | [njul](https://njul.github.io/a-tiny-JS-world/)
  2020-12-23 |    5    |     79     | [kt-std](https://kt-std.github.io/a-tiny-JS-world/)
  2020-12-26 |    5    |     61     | [ania-leichenko](https://github.com/ania-leichenko/a-tiny-JS-world)
+ 2020-12-27 |    5    |     44     | [kasionio](https://kasionio.github.io/a-tiny-JS-world/)
+ 2020-12-28 |    4    |     53     | [Harnytskyi](https://harnytskyi.github.io/a-tiny-JS-world/)
+ 2020-12-29 |    5    |     49     | [AsyaYeromina](https://github.com/AsyaYeromina/a-tiny-JS-world)
+ 2020-12-29 |    5    |     63     | [Ant-C-tech](https://github.com/Ant-C-tech/a-tiny-JS-world)
