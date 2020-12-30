@@ -55,7 +55,6 @@ catWoman.friends = [man, cat];
 
 
 
-
 // ======== OUTPUT ========
 
 [man, dog, woman, cat, catWoman].forEach(elem => {

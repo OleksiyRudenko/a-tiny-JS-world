@@ -1,100 +1,101 @@
 # Tiny JS Worlds
 
- Date       | Objects | Code Lines | Author's repo
-------------|:-------:|:----------:|----------------
- 2018-10-14 |    0    |     0      | [OleksiyRudenko](https://github.com/OleksiyRudenko/a-tiny-JS-world)
- 2018-10-31 |    4    |    41      | [KurosavaAkira](https://github.com/KurosavaAkira/kottans-frontend/tree/master/task_js-pre-oop)
- 2018-11-17 |    4    |     77     | [MitchfFirstGit](https://github.com/MitchfFirstGit/a-tiny-JS-world)
- 2018-11-16 |    5    |    32      | [beta-version-profile](https://github.com/beta-version-profile/a-tiny-JS-world)
- 2018-11-17 |    5    |    70      | [linkqwd](https://github.com/linkqwd/a-tiny-JS-world/tree/populate-world)
- 2018-11-20 |    5    |     27     | [IrynaY](https://github.com/IrynaY/a-tiny-JS-world/tree/populate-world)
- 2018-11-23 |    4    |     46     | [kalash14](https://github.com/kalash14/a-tiny-JS-world/tree/populate-world)
- 2018-11-28 |    4    |     24     | [maxovsanyuk]( https://github.com/maxovsanyuk/kottans-frontend/tree/master/task_js-pre-oop)
- 2018-11-28 |    4    |     23     | [zihfred]( https://github.com/Zihfred/a-tiny-JS-world)
- 2018-11-30 |    5    |     45     | [denislukianenko](https://github.com/denislukianenko/a-tiny-JS-world)
- 2018-12-01 |    5    |     39     | [vitaliykravchyk](https://github.com/vitaliykravchyk/a-tiny-JS-world)
- 2018-12-04 |    6    |     59     | [justdevway](https://github.com/justdevway/a-tiny-JS-world/tree/populate-work)
- 2018-12-04 |    5    |     58     | [MitchfFirstGit](https://github.com/MitchfFirstGit/a-tiny-JS-world)
- 2018-12-04 |    5    |     74     | [o-msh](https://github.com/o-msh/a-tiny-JS-world)
- 2018-12-16 |    5    |     52     | [igkostyuk](https://github.com/igkostyuk/a-tiny-JS-world)
- 2018-12-14 |    5    |     89     | [leonovoleksii](https://github.com/leonovoleksii/a-tiny-JS-world)
- 2018-12-21 |    5    |     68     | [frostwolm](https://github.com/frostwolm/a-tiny-JS-world)
- 2018-12-21 |    5    |     89     | [Aldegid](https://github.com/Aldegid/a-tiny-JS-world)
- 2018-12-21 |    4    |     46     | [AlinaLadybug](https://github.com/AlinaLadybug/a-tiny-JS-world)
- 2018-12-21 |    4    |     53     | [RomanovAleksander](https://github.com/RomanovAleksander/a-tiny-JS-world)
- 2018-12-22 |    5    |     67     | [sioniks](https://github.com/sioniks/a-tiny-JS-world)
- 2018-12-22 |    5    |     50     | [yulyasystem](https://github.com/yulyasystem/a-tiny-JS-world)
- 2018-12-25 |    5    |     45     | [babayK0](https://github.com/babayK0/a-tiny-JS-world)
- 2018-12-25 |    5    |     72     | [bugagashinka](https://github.com/bugagashinka/a-tiny-JS-world)
- 2018-12-26 |    5    |     63     | [CuteShaun](https://github.com/CuteShaun/a-tiny-JS-world)
- 2018-12-26 |    5    |     58     | [Vitaminvp](https://github.com/Vitaminvp/a-tiny-JS-world)
- 2018-12-26 |    4    |     14     | [zophrox](https://github.com/zophrox/a-tiny-JS-world/blob/populate-world/index.js)
- 2018-12-26 |    5    |     77     | [nazmariam](https://github.com/nazmariam/a-tiny-JS-world)
- 2018-12-27 |    4    |     40     | [OlgaFrontend](https://github.com/OlgaFrontend/a-tiny-JS-world)
- 2018-12-29 |    5    |     52     | [vladk96](https://github.com/vladk96/a-tiny-JS-world)
- 2018-12-30 |    4    |     34     | [Roman-Halenko](https://github.com/Roman-Halenko/a-tiny-JS-world/blob/gh-pages/index.js)
- 2019-01-01 |    5    |     62     | [Dnzln](https://github.com/dnzln/a-tiny-JS-world/)
- 2019-01-03 |    5    |     58     | [wely88](https://github.com/wely88/a-tiny-JS-world)
- 2019-01-02 |    5    |     21     | [ivarshavets](https://github.com/ivarshavets/a-tiny-JS-world)
- 2019-01-03 |    5    |     50     | [AnnaGrynchuk](https://github.com/AnnaGrynchuk/a-tiny-JS-world)
- 2018-12-27 |    5    |     60     | [AlexNugda](https://github.com/AlexNugda/a-tiny-JS-world)
- 2019-01-04 |    5    |     94     | [vv2529](https://github.com/vv2529/a-tiny-JS-world)
- 2019-01-05 |    4    |     66     | [Anzhelika](https://github.com/angelikaSemeniuk/a-tiny-JS-world)
- 2019-01-07 |    5    |     87     | [SergSenras](https://github.com/SergSenras/a-tiny-JS-world)
- 2019-01-08 |    6    |     61     | [DJStar77](https://github.com/DJStar77/a-tiny-JS-world)
- 2019-01-10 |    4    |     54     | [webdevagent](https://github.com/webdevagent/a-tiny-JS-world)
- 2019-01-10 |    4    |     72     | [mfialko](https://github.com/mfialko/a-tiny-JS-world)
- 2019-01-24 |    4    |     45     | [mxmgny](https://github.com/mxmgny/a-tiny-JS-world)
- 2019-01-29 |    4    |     50     | [Roka20012](https://roka20012.github.io/a-tiny-JS-world/)
- 2019-02-28 |    4    |     75     | [Temu4](https://temu4.github.io/a-tiny-JS-world/)
- 2019-03-21 |    4    |     47     | [madmaxWMFU](https://madmaxwmfu.github.io/a-tiny-JS-world/)
- 2019-05-18 |    4    |     58     | [aymkin](https://github.com/aymkin/a-tiny-JS-world)
- 2019-06-08 |    5    |     63     | [ArthurGorbenko](https://arthurgorbenko.github.io/a-tiny-JS-world/)
- 2019-07-22 |    4    |     22     | [Valkirin](https://valkirin.github.io/a-tiny-JS-world/)
- 2019-09-20 |    6    |     76     | [Barasii](https://barasii.github.io/a-tiny-JS-world/)
- 2019-10-26 |    4    |     39     | [karelskiy](https://karelskiy.github.io/a-tiny-JS-world/)
- 2019-11-02 |    5    |     37     | [dashakim](https://dashakim.github.io/a-tiny-JS-world/) 
- 2019-11-19 |    5    |     50     | [dafen173](https://github.com/dafen173/a-tiny-JS-world)
- 2020-01-28 |    5    |     63     | [NastjonkaK](https://github.com/NastjonkaK/a-tiny-JS-world)
- 2020-03-03 |    4    |     73     | [evgeniy241984](https://evgeniy241984.github.io/a-tiny-JS-world/)
- 2020-09-01 |    5    |     39     | [chris-voitova](https://github.com/chris-voitova/a-tiny-JS-world)
- 2020-10-28 |    5    |     44     | [mustbefail](https://github.com/mustbefail/a-tiny-JS-world)
- 2020-10-29 |    5    |     49     | [andrewklmn](https://andrewklmn.github.io/a-tiny-JS-world/)
- 2020-11-04 |    5    |     37     | [xT0PERx](https://github.com/xT0PERx/a-tiny-JS-world)
- 2020-11-04 |    5    |     81     | [mustbefail](https://github.com/mustbefail/a-tiny-JS-world)
- 2020-11-09 |    5    |     99     | [nadsatt](https://github.com/nadsatt/a-tiny-JS-world)
- 2020-11-09 |    5    |     66     | [AnnaStoyano](https://github.com/AnnaStoyano/a-tiny-JS-world)
- 2018-11-11 |    4    |     20     | [natashafir](https://github.com/natashafir/a-tiny-JS-world)
- 2020-11-14 |    5    |     89     | [Nemooochka](https://github.com/Nemooochka/a-tiny-JS-world)
- 2020-11-14 |    5    |     89     | [RomanSaiko](https://github.com/RomanSaiko/a-tiny-JS-world)
- 2020-11-17 |    5    |     88     | [HannaSyn](https://github.com/HannaSyn/a-tiny-JS-world)
- 2020-11-21 |    5    |     47     | [WebDevToday](https://github.com/webdevtoday/a-tiny-JS-world)
- 2020-11-22 |    5    |     58     | [BlueLamantine](https://github.com/BlueLamantine/a-tiny-JS-world)
- 2020-11-23 |    4    |     158    | [ustymchyk](https://github.com/ustymchyk/a-tiny-JS-world/)
- 2020-11-24 |    5    |     45     | [TatyanaMolchanova](https://github.com/TatyanaMolchanova/tiny-js)
- 2020-11-25 |    4    |     66     | [Evgeniy241984](https://evgeniy241984.github.io/a-tiny-JS-world/)
- 2020-11-30 |    5    |     57     | [Lu-sure](https://github.com/Lu-sure/a-tiny-JS-world)
- 2020-12-02 |    4    |     78     | [lalalilulu](https://lalalilulu.github.io/a-tiny-JS-world/)
- 2020-12-04 |    5    |     63     | [Yakov Ponomarenko](https://github.com/Iakow/my-tiny-js-world)
- 2020-12-04 |    4    |     97     | [7sergsmith7](https://github.com/7SergSmith7/a-tiny-JS-world/)
- 2020-12-05 |    4    |     36     | [UA-girl](https://github.com/UA-girl/a-tiny-JS-world)
- 2020-12-04 |    5    |     49     | [VBystrov](https://github.com/VBystrov/a-tiny-JS-world)
- 2020-12-05 |    5    |     48     | [sergesd](https://github.com/sergesd/a-tiny-JS-world)
- 2020-12-05 |    5    |     112    | [m-ruslan](https://github.com/m-ruslan/a-tiny-JS-world)
- 2020-12-07 |    5    |     49     | [ORybka](https://github.com/ORybka/a-tiny-JS-world)
- 2020-12-07 |    4    |     57     | [Shrai-dev](https://github.com/Shrai-dev/a-tiny-JS-world)
- 2020-12-08 |    5    |     43     | [alstep07](https://github.com/alstep07/a-tiny-JS-world)
- 2020-12-08 |    5    |     44     | [ik-web](https://github.com/ik-web/a-tiny-JS-world)
- 2020-12-19 |    5    |     54     | [TaniaBondarenko](https://taniabondarenko.github.io/a-tiny-JS-world/)
- 2020-16-12 |    5    |     84     | [LGeorge007](https://lgeorge007.github.io/a-tiny-JS-world/)
- 2020-16-12 |    4    |     73     | [YuliiaHordiichuk](https://yuliiahordiichuk.github.io/a-tiny-JS-world/)
- 2020-17-12 |    4    |     32     | [yaripey](https://yaripey.github.io/a-tiny-JS-world/)
- 2020-18-12 |    5    |     50     | [okkkko](https://okkkko.github.io/a-tiny-JS-world/)
- 2020-12-18 |    5    |     104    | [tavor118sn](https://tavor118sn.github.io/a-tiny-JS-world/)
- 2020-12-19 |    5    |     90     | [njul](https://njul.github.io/a-tiny-JS-world/)
- 2020-12-23 |    5    |     79     | [kt-std](https://kt-std.github.io/a-tiny-JS-world/)
- 2020-12-26 |    5    |     61     | [ania-leichenko](https://github.com/ania-leichenko/a-tiny-JS-world)
- 2020-12-27 |    5    |     44     | [kasionio](https://kasionio.github.io/a-tiny-JS-world/)
- 2020-12-28 |    4    |     53     | [Harnytskyi](https://harnytskyi.github.io/a-tiny-JS-world/)
- 2020-12-29 |    5    |     49     | [AsyaYeromina](https://github.com/AsyaYeromina/a-tiny-JS-world)
- 2020-12-29 |    5    |     63     | [Ant-C-tech](https://github.com/Ant-C-tech/a-tiny-JS-world)
+| Date       | Objects | Code Lines | Author's repo                                                                                  |
+| ---------- | :-----: | :--------: | ---------------------------------------------------------------------------------------------- |
+| 2018-10-14 |    0    |     0      | [OleksiyRudenko](https://github.com/OleksiyRudenko/a-tiny-JS-world)                            |
+| 2018-10-31 |    4    |     41     | [KurosavaAkira](https://github.com/KurosavaAkira/kottans-frontend/tree/master/task_js-pre-oop) |
+| 2018-11-17 |    4    |     77     | [MitchfFirstGit](https://github.com/MitchfFirstGit/a-tiny-JS-world)                            |
+| 2018-11-16 |    5    |     32     | [beta-version-profile](https://github.com/beta-version-profile/a-tiny-JS-world)                |
+| 2018-11-17 |    5    |     70     | [linkqwd](https://github.com/linkqwd/a-tiny-JS-world/tree/populate-world)                      |
+| 2018-11-20 |    5    |     27     | [IrynaY](https://github.com/IrynaY/a-tiny-JS-world/tree/populate-world)                        |
+| 2018-11-23 |    4    |     46     | [kalash14](https://github.com/kalash14/a-tiny-JS-world/tree/populate-world)                    |
+| 2018-11-28 |    4    |     24     | [maxovsanyuk](https://github.com/maxovsanyuk/kottans-frontend/tree/master/task_js-pre-oop)     |
+| 2018-11-28 |    4    |     23     | [zihfred](https://github.com/Zihfred/a-tiny-JS-world)                                          |
+| 2018-11-30 |    5    |     45     | [denislukianenko](https://github.com/denislukianenko/a-tiny-JS-world)                          |
+| 2018-12-01 |    5    |     39     | [vitaliykravchyk](https://github.com/vitaliykravchyk/a-tiny-JS-world)                          |
+| 2018-12-04 |    6    |     59     | [justdevway](https://github.com/justdevway/a-tiny-JS-world/tree/populate-work)                 |
+| 2018-12-04 |    5    |     58     | [MitchfFirstGit](https://github.com/MitchfFirstGit/a-tiny-JS-world)                            |
+| 2018-12-04 |    5    |     74     | [o-msh](https://github.com/o-msh/a-tiny-JS-world)                                              |
+| 2018-12-16 |    5    |     52     | [igkostyuk](https://github.com/igkostyuk/a-tiny-JS-world)                                      |
+| 2018-12-14 |    5    |     89     | [leonovoleksii](https://github.com/leonovoleksii/a-tiny-JS-world)                              |
+| 2018-12-21 |    5    |     68     | [frostwolm](https://github.com/frostwolm/a-tiny-JS-world)                                      |
+| 2018-12-21 |    5    |     89     | [Aldegid](https://github.com/Aldegid/a-tiny-JS-world)                                          |
+| 2018-12-21 |    4    |     46     | [AlinaLadybug](https://github.com/AlinaLadybug/a-tiny-JS-world)                                |
+| 2018-12-21 |    4    |     53     | [RomanovAleksander](https://github.com/RomanovAleksander/a-tiny-JS-world)                      |
+| 2018-12-22 |    5    |     67     | [sioniks](https://github.com/sioniks/a-tiny-JS-world)                                          |
+| 2018-12-22 |    5    |     50     | [yulyasystem](https://github.com/yulyasystem/a-tiny-JS-world)                                  |
+| 2018-12-25 |    5    |     45     | [babayK0](https://github.com/babayK0/a-tiny-JS-world)                                          |
+| 2018-12-25 |    5    |     72     | [bugagashinka](https://github.com/bugagashinka/a-tiny-JS-world)                                |
+| 2018-12-26 |    5    |     63     | [CuteShaun](https://github.com/CuteShaun/a-tiny-JS-world)                                      |
+| 2018-12-26 |    5    |     58     | [Vitaminvp](https://github.com/Vitaminvp/a-tiny-JS-world)                                      |
+| 2018-12-26 |    4    |     14     | [zophrox](https://github.com/zophrox/a-tiny-JS-world/blob/populate-world/index.js)             |
+| 2018-12-26 |    5    |     77     | [nazmariam](https://github.com/nazmariam/a-tiny-JS-world)                                      |
+| 2018-12-27 |    4    |     40     | [OlgaFrontend](https://github.com/OlgaFrontend/a-tiny-JS-world)                                |
+| 2018-12-29 |    5    |     52     | [vladk96](https://github.com/vladk96/a-tiny-JS-world)                                          |
+| 2018-12-30 |    4    |     34     | [Roman-Halenko](https://github.com/Roman-Halenko/a-tiny-JS-world/blob/gh-pages/index.js)       |
+| 2019-01-01 |    5    |     62     | [Dnzln](https://github.com/dnzln/a-tiny-JS-world/)                                             |
+| 2019-01-03 |    5    |     58     | [wely88](https://github.com/wely88/a-tiny-JS-world)                                            |
+| 2019-01-02 |    5    |     21     | [ivarshavets](https://github.com/ivarshavets/a-tiny-JS-world)                                  |
+| 2019-01-03 |    5    |     50     | [AnnaGrynchuk](https://github.com/AnnaGrynchuk/a-tiny-JS-world)                                |
+| 2018-12-27 |    5    |     60     | [AlexNugda](https://github.com/AlexNugda/a-tiny-JS-world)                                      |
+| 2019-01-04 |    5    |     94     | [vv2529](https://github.com/vv2529/a-tiny-JS-world)                                            |
+| 2019-01-05 |    4    |     66     | [Anzhelika](https://github.com/angelikaSemeniuk/a-tiny-JS-world)                               |
+| 2019-01-07 |    5    |     87     | [SergSenras](https://github.com/SergSenras/a-tiny-JS-world)                                    |
+| 2019-01-08 |    6    |     61     | [DJStar77](https://github.com/DJStar77/a-tiny-JS-world)                                        |
+| 2019-01-10 |    4    |     54     | [webdevagent](https://github.com/webdevagent/a-tiny-JS-world)                                  |
+| 2019-01-10 |    4    |     72     | [mfialko](https://github.com/mfialko/a-tiny-JS-world)                                          |
+| 2019-01-24 |    4    |     45     | [mxmgny](https://github.com/mxmgny/a-tiny-JS-world)                                            |
+| 2019-01-29 |    4    |     50     | [Roka20012](https://roka20012.github.io/a-tiny-JS-world/)                                      |
+| 2019-02-28 |    4    |     75     | [Temu4](https://temu4.github.io/a-tiny-JS-world/)                                              |
+| 2019-03-21 |    4    |     47     | [madmaxWMFU](https://madmaxwmfu.github.io/a-tiny-JS-world/)                                    |
+| 2019-05-18 |    4    |     58     | [aymkin](https://github.com/aymkin/a-tiny-JS-world)                                            |
+| 2019-06-08 |    5    |     63     | [ArthurGorbenko](https://arthurgorbenko.github.io/a-tiny-JS-world/)                            |
+| 2019-07-22 |    4    |     22     | [Valkirin](https://valkirin.github.io/a-tiny-JS-world/)                                        |
+| 2019-09-20 |    6    |     76     | [Barasii](https://barasii.github.io/a-tiny-JS-world/)                                          |
+| 2019-10-26 |    4    |     39     | [karelskiy](https://karelskiy.github.io/a-tiny-JS-world/)                                      |
+| 2019-11-02 |    5    |     37     | [dashakim](https://dashakim.github.io/a-tiny-JS-world/)                                        |
+| 2019-11-19 |    5    |     50     | [dafen173](https://github.com/dafen173/a-tiny-JS-world)                                        |
+| 2020-01-28 |    5    |     63     | [NastjonkaK](https://github.com/NastjonkaK/a-tiny-JS-world)                                    |
+| 2020-03-03 |    4    |     73     | [evgeniy241984](https://evgeniy241984.github.io/a-tiny-JS-world/)                              |
+| 2020-09-01 |    5    |     39     | [chris-voitova](https://github.com/chris-voitova/a-tiny-JS-world)                              |
+| 2020-10-28 |    5    |     44     | [mustbefail](https://github.com/mustbefail/a-tiny-JS-world)                                    |
+| 2020-10-29 |    5    |     49     | [andrewklmn](https://andrewklmn.github.io/a-tiny-JS-world/)                                    |
+| 2020-11-04 |    5    |     37     | [xT0PERx](https://github.com/xT0PERx/a-tiny-JS-world)                                          |
+| 2020-11-04 |    5    |     81     | [mustbefail](https://github.com/mustbefail/a-tiny-JS-world)                                    |
+| 2020-11-09 |    5    |     99     | [nadsatt](https://github.com/nadsatt/a-tiny-JS-world)                                          |
+| 2020-11-09 |    5    |     66     | [AnnaStoyano](https://github.com/AnnaStoyano/a-tiny-JS-world)                                  |
+| 2018-11-11 |    4    |     20     | [natashafir](https://github.com/natashafir/a-tiny-JS-world)                                    |
+| 2020-11-14 |    5    |     89     | [Nemooochka](https://github.com/Nemooochka/a-tiny-JS-world)                                    |
+| 2020-11-14 |    5    |     89     | [RomanSaiko](https://github.com/RomanSaiko/a-tiny-JS-world)                                    |
+| 2020-11-17 |    5    |     88     | [HannaSyn](https://github.com/HannaSyn/a-tiny-JS-world)                                        |
+| 2020-11-21 |    5    |     47     | [WebDevToday](https://github.com/webdevtoday/a-tiny-JS-world)                                  |
+| 2020-11-22 |    5    |     58     | [BlueLamantine](https://github.com/BlueLamantine/a-tiny-JS-world)                              |
+| 2020-11-23 |    4    |    158     | [ustymchyk](https://github.com/ustymchyk/a-tiny-JS-world/)                                     |
+| 2020-11-24 |    5    |     45     | [TatyanaMolchanova](https://github.com/TatyanaMolchanova/tiny-js)                              |
+| 2020-11-25 |    4    |     66     | [Evgeniy241984](https://evgeniy241984.github.io/a-tiny-JS-world/)                              |
+| 2020-11-30 |    5    |     57     | [Lu-sure](https://github.com/Lu-sure/a-tiny-JS-world)                                          |
+| 2020-12-02 |    4    |     78     | [lalalilulu](https://lalalilulu.github.io/a-tiny-JS-world/)                                    |
+| 2020-12-04 |    5    |     63     | [Yakov Ponomarenko](https://github.com/Iakow/my-tiny-js-world)                                 |
+| 2020-12-04 |    4    |     97     | [7sergsmith7](https://github.com/7SergSmith7/a-tiny-JS-world/)                                 |
+| 2020-12-05 |    4    |     36     | [UA-girl](https://github.com/UA-girl/a-tiny-JS-world)                                          |
+| 2020-12-04 |    5    |     49     | [VBystrov](https://github.com/VBystrov/a-tiny-JS-world)                                        |
+| 2020-12-05 |    5    |     48     | [sergesd](https://github.com/sergesd/a-tiny-JS-world)                                          |
+| 2020-12-05 |    5    |    112     | [m-ruslan](https://github.com/m-ruslan/a-tiny-JS-world)                                        |
+| 2020-12-07 |    5    |     49     | [ORybka](https://github.com/ORybka/a-tiny-JS-world)                                            |
+| 2020-12-07 |    4    |     57     | [Shrai-dev](https://github.com/Shrai-dev/a-tiny-JS-world)                                      |
+| 2020-12-08 |    5    |     43     | [alstep07](https://github.com/alstep07/a-tiny-JS-world)                                        |
+| 2020-12-08 |    5    |     44     | [ik-web](https://github.com/ik-web/a-tiny-JS-world)                                            |
+| 2020-12-19 |    5    |     54     | [TaniaBondarenko](https://taniabondarenko.github.io/a-tiny-JS-world/)                          |
+| 2020-16-12 |    5    |     84     | [LGeorge007](https://lgeorge007.github.io/a-tiny-JS-world/)                                    |
+| 2020-16-12 |    4    |     73     | [YuliiaHordiichuk](https://yuliiahordiichuk.github.io/a-tiny-JS-world/)                        |
+| 2020-17-12 |    4    |     32     | [yaripey](https://yaripey.github.io/a-tiny-JS-world/)                                          |
+| 2020-18-12 |    5    |     50     | [okkkko](https://okkkko.github.io/a-tiny-JS-world/)                                            |
+| 2020-12-18 |    5    |    104     | [tavor118sn](https://tavor118sn.github.io/a-tiny-JS-world/)                                    |
+| 2020-12-19 |    5    |     90     | [njul](https://njul.github.io/a-tiny-JS-world/)                                                |
+| 2020-12-23 |    5    |     79     | [kt-std](https://kt-std.github.io/a-tiny-JS-world/)                                            |
+| 2020-12-26 |    5    |     61     | [ania-leichenko](https://github.com/ania-leichenko/a-tiny-JS-world)                            |
+| 2020-12-27 |    5    |     44     | [kasionio](https://kasionio.github.io/a-tiny-JS-world/)                                        |
+| 2020-12-28 |    4    |     53     | [Harnytskyi](https://harnytskyi.github.io/a-tiny-JS-world/)                                    |
+| 2020-12-29 |    5    |     49     | [AsyaYeromina](https://github.com/AsyaYeromina/a-tiny-JS-world)                                |
+| 2020-12-29 |    5    |     63     | [Ant-C-tech](https://github.com/Ant-C-tech/a-tiny-JS-world)                                    |
+| 2020-12-30 |    5    |     64     | [SamVal007](https://github.com/SamVal007/a-tiny-JS-world)                                      |
