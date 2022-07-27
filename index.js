@@ -7,7 +7,47 @@
 
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
+const dog = {
+  name: 'Patron',
+  gender: 'male',
+  species: 'dog',
+  legs: 4,
+  hands: 0,
+  saying: 'woof',
+};
 
+const cat = {
+  name: 'Murzyk',
+  gender: 'male',
+  species: 'cat',
+  legs: 4,
+  hands: 0,
+  saying: 'meow',
+};
+
+const woman = {
+  name: 'Anna',
+  gender: 'female',
+  species: 'human',
+  legs: 2,
+  hands: 2,
+  saying: 'hello',
+};
+
+const man = {
+  name: 'Joey',
+  gender: 'male',
+  species: 'human',
+  legs: 2,
+  hands: 2,
+  saying: 'How you doin?',
+};
+
+const catWoman = Object.create(cat);
+catWoman.name = 'Cat-woman';
+catWoman.species = 'human';
+catWoman.legs = 2;
+catWoman.hands = 2;
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -28,4 +68,22 @@
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
 
+print(
+  `${dog.species}; ${dog.name}; ${dog.gender}; ${dog.legs}; ${dog.hands}; ${dog.saying}`
+);
+print(
+  `${cat.species}; ${cat.name}; ${cat.gender}; ${cat.legs}; ${cat.hands}; ${cat.saying}`
+);
+print(
+  `${man.species}; ${man.name}; ${man.gender}; ${man.legs}; ${man.hands}; ${man.saying}`
+);
+print(
+  `${woman.species}; ${woman.name}; ${woman.gender}; ${woman.legs}; ${woman.hands}; ${woman.saying}`
+);
+print(
+  `${catWoman.species}; ${catWoman.name}; ${catWoman.gender}; ${catWoman.legs}; ${catWoman.hands}; ${catWoman.saying}`
+);
 
+print(
+  `${man.species}; ${man.name}; ${man.gender}; ${man.legs}; ${man.hands}; ${man.saying}; ${woman.name}, ${cat.name}, ${dog.name}`
+);
