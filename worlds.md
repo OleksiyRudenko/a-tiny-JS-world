@@ -101,4 +101,6 @@
  2021-08-24 |    4    |     40     | [DaniaB24](https://DaniaB24.github.io/a-tiny-JS-world/)
  2021-09-11 |    5    |     40     | [ILMPI](https://github.com/ILMPI/a-tiny-JS-world)
  2022-07-27 |    5    |     51     | [kovalov](https://github.com/kovalov/a-tiny-JS-world)
+ 2018-10-14 |    5    |     75     | [morenko](https://github.com/maximmorenko/a-tiny-JS-world)
+
  
