@@ -3,7 +3,7 @@ class World {
   // обьявляем поля (свойства)
   
   // объявляем метод конструктора (ожидаем на входе значения)
-  constructor(name, species, gender, legs, hands, saying, friends){
+  constructor(name, species, gender, legs, hands, saying){
       // инициализация полей
       this.name = name
       this.species = species
@@ -11,7 +11,6 @@ class World {
       this.legs = legs
       this.hands = hands
       this.saying = saying
-      this.friends = friends
   }
   // объявление метода printing()
   printing(){
@@ -22,7 +21,6 @@ class World {
       this.legs
       this.hands
       this.saying
-      this.friends
   }
 }
 // создаем экземпляр жителя и передаем параметыр
@@ -34,7 +32,6 @@ let men = new World(
   2,
   2,
   'Hi',
-  `women.this.name`
   );
 
 men.printing(print([
@@ -44,7 +41,6 @@ men.printing(print([
   men.legs,
   men.hands,
   men.saying,
-  men.friends,
 ])) // печатаем мен и его свойства
 
 // создаем новый экземпляр жителя
