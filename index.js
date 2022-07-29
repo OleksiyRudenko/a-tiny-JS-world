@@ -1,16 +1,14 @@
 // создадим родительский класс World
-class World {
+class WorldInhabitant {
   // обьявляем поля (свойства)
   
   // объявляем метод конструктора (ожидаем на входе значения)
-  constructor(name, species, gender, legs, hands, saying){
+  constructor(name, species, gender, saying){
       // инициализация полей
-      this.name = name
-      this.species = species
-      this.gender = gender
-      this.legs = legs
-      this.hands = hands
-      this.saying = saying
+      this.name = name;
+      this.species = species;
+      this.gender = gender;
+      this.saying = saying;
   }
   // объявление метода printing()
   printing(){
@@ -18,14 +16,41 @@ class World {
       this.name
       this.species
       this.gender
-      this.legs
-      this.hands
       this.saying
   }
 }
+
+// создадим два класса наследующие от родительского часть свойств
+class Human extends WorldInhabitant {
+  constructor(name, species, gender, legs, hands, saying) {
+     super(name, species, gender, saying); //наследуем поля от родителя, и добавляем еще два поля
+     this.legs = legs;
+     this.hands = hands;
+  } 
+  
+  printing(){
+    super.toString() //вызываем метод родителя
+    this.legs
+    this.hands
+  }
+}
+
+class Animal extends WorldInhabitant {
+  // наследуем четыре свойства от родителя и добавляем лапы для животных
+  constructor(name, species, gender, paws, saying) {
+     super(name, species, gender, saying) //наследуем поля от родителя, и добавляем еще два поля
+     this.paws = paws;
+  }
+
+  printing(){
+    super.toString() //вызываем метод родителя
+    this.paws
+  }
+}
+
 // создаем экземпляр жителя и передаем параметыр
 // этот экземпляр с собственным состоянием свойств класса
-let men = new World(
+let men = new Human(
   'human',
   'Joey',
   'male',
@@ -43,8 +68,9 @@ men.printing(print([
   men.saying,
 ])) // печатаем мен и его свойства
 
+
 // создаем новый экземпляр жителя
-let women = new World(
+let women = new Human(
   'human',
   'Rey',
   'female',
@@ -62,37 +88,33 @@ women.printing(print([
 ])) // печатаем вумен и её свойства
 
 // создаем новый экземпляр жителя
-let cat = new World(
+let cat = new Animal(
   'cat',
   'Allen',
   'female',
   4,
-  0,
   'Mau',
   );
 cat.printing(print([
   cat.name,
   cat.species,
   cat.gender,
-  cat.legs,
-  cat.hands,
+  cat.paws,
   cat.saying,
 ])) // печатаем cat и её свойства
 
 // создаем новый экземпляр жителя
-let dog = new World(
+let dog = new Animal(
   'dog',
   'Johnny',
   'male',
   4,
-  0,
   'Woof',
   );
 dog.printing(print([
   dog.name,
   dog.species,
   dog.gender,
-  dog.legs,
-  dog.hands,
+  dog.paws,
   dog.saying,
 ])) // печатаем dog и его свойства
