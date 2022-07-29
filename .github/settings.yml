@@ -1,0 +1,91 @@
+# Repo settings
+#
+# 1. Connect https://github.com/apps/settings to your repo
+# 2. Change settings per your needs.
+# 3. Commit the change to the repo's default branch
+#
+# === Repo ===
+# Skipped. Use GitHub repo Settings UI
+#
+# === Labels ===
+# Defines labels for Issues and Pull Requests
+# If including a `#` in label color, make sure to wrap color value with quotes, e.g. '#01cafe'
+#
+labels:
+  # Labels for GH Action - machine-learning-apps/pr-comment (or its fork oleksiyrudenko/pr-comment)
+  - name: app-code-PR
+    color: d73a4a
+    description: PR contains code contribution that is not expected to be merged.
+
+  - name: data-deletion
+    color: d73a4a
+    description: PR deletes data that we want to keep.
+
+  - name: merge-conflict
+    color: d73a4a
+    description: Code conflicts in PR.
+
+  # Hacktoberfest / Education
+
+  - name: Hacktoberfest
+    color: ed9509
+    description: Good for contribution at Hacktoberfest
+
+  - name: Difficulty-Advanced
+    color: '#5566aa'
+    description: Difficulty level - Advanced
+
+  - name: Difficulty-Beginner
+    color: '#55ee99'
+    description: Difficulty level - Beginner
+
+  - name: Difficulty-Pro
+    color: '#aa3333'
+    description: Difficulty level - Pro
+
+  - name: Difficulty-Junior
+    color: '#55aa66'
+    description: Difficulty level - Junior
+
+  # Misc
+
+  - name: warning
+    color: e4e669
+    description: Has minor issues.
+
+  # Default GitHUb labels
+  - name: bug
+    color: d73a4a
+    description: Something isn't working
+
+  - name: documentation
+    color: '#0075ca'
+    description: Improvements or additions to documentation
+
+  - name: duplicate
+    color: cfd3d7
+    description: This issue or pull request already exists
+
+  - name: enhancement
+    color: a2eeef
+    description: New feature or request
+
+  - name: good first issue
+    color: ''#7057ff'
+    description: Good for newcomers
+
+  - name: help wanted
+    color: '#008672'
+    description: Extra attention is needed
+
+  - name: invalid
+    color: e4e669
+    description: This doesn't seem right
+
+  - name: question
+    color: d876e3
+    description: Further information is requested
+
+  - name: wontfix
+    color: ffffff
+    description: This will not be worked on
