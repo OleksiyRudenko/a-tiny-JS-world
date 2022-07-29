@@ -38,7 +38,7 @@ class Animal extends WorldInhabitant {
      this.paws = paws;
   }
 
-  toPrinting(){
+  toString(){
     return super.toString() + `${this.paws}; `
   }
 }
@@ -55,7 +55,7 @@ let man = new Human(
   );
 
 // создаем новый экземпляр жителя
-let women = new Human(
+let woman = new Human(
   'human',
   'Rey',
   'female',
@@ -82,4 +82,4 @@ let dog = new Animal(
   'Woof',
   );
 
-[man, women, cat, dog].map(el => print(el)); 
+[man, woman, cat, dog].map(el => print(el)); 
