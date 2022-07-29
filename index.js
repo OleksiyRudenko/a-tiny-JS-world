@@ -10,13 +10,11 @@ class WorldInhabitant {
       this.gender = gender;
       this.saying = saying;
   }
-  // объявление метода printing()
-  printing(){
-      // обращение к собственному атрибуту через this
-      this.name
-      this.species
-      this.gender
-      this.saying
+// объявление метода toString()
+// toString() возвращает строку, представляющую объект
+// обращение к собственному атрибуту через this
+  toString() {
+     return `${this.name}; ${this.species}; ${this.gender}; ${this.saying}; `;
   }
 }
 
@@ -28,10 +26,8 @@ class Human extends WorldInhabitant {
      this.hands = hands;
   } 
   
-  printing(){
-    super.toString() //вызываем метод родителя
-    this.legs
-    this.hands
+  toString() {
+    return super.toString() + `${this.legs}; ${this.hands}; `
   }
 }
 
@@ -42,15 +38,14 @@ class Animal extends WorldInhabitant {
      this.paws = paws;
   }
 
-  printing(){
-    super.toString() //вызываем метод родителя
-    this.paws
+  toPrinting(){
+    return super.toString() + `${this.paws}; `
   }
 }
 
 // создаем экземпляр жителя и передаем параметыр
 // этот экземпляр с собственным состоянием свойств класса
-let men = new Human(
+let man = new Human(
   'human',
   'Joey',
   'male',
@@ -58,16 +53,6 @@ let men = new Human(
   2,
   'Hi',
   );
-
-men.printing(print([
-  men.name,
-  men.species,
-  men.gender,
-  men.legs,
-  men.hands,
-  men.saying,
-])) // печатаем мен и его свойства
-
 
 // создаем новый экземпляр жителя
 let women = new Human(
@@ -78,14 +63,6 @@ let women = new Human(
   2,
   'Bye',
   );
-women.printing(print([
-  women.name,
-  women.species,
-  women.gender,
-  women.legs,
-  women.hands,
-  women.saying,
-])) // печатаем вумен и её свойства
 
 // создаем новый экземпляр жителя
 let cat = new Animal(
@@ -95,14 +72,7 @@ let cat = new Animal(
   4,
   'Mau',
   );
-cat.printing(print([
-  cat.name,
-  cat.species,
-  cat.gender,
-  cat.paws,
-  cat.saying,
-])) // печатаем cat и её свойства
-
+  
 // создаем новый экземпляр жителя
 let dog = new Animal(
   'dog',
@@ -111,10 +81,5 @@ let dog = new Animal(
   4,
   'Woof',
   );
-dog.printing(print([
-  dog.name,
-  dog.species,
-  dog.gender,
-  dog.paws,
-  dog.saying,
-])) // печатаем dog и его свойства
+
+[man, women, cat, dog].map(el => print(el)); 
