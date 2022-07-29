@@ -20,7 +20,7 @@ jobs:
   add-pr-checklist:
     # define Eligible Labels; consider also using startsWith method
     # (see also https://docs.github.com/en/actions/learn-github-actions/expressions#startswith)
-    if: contains( fromJson('["bad-pr-intro", "irrelevant-files", "irrelevant-commits", "task-Frogger-dod", "task-TJSW-dod", "task-TJSW-OOP-dod"]'), github.event.label.name )
+    if: contains( fromJson('["app-code-PR", "data-deletion", "merge-conflict"]'), github.event.label.name )
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
