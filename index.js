@@ -1,31 +1,53 @@
-/* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
-   Complete the below for code reviewers' convenience:
+const dog = {
+  species: "dog",
+  name: "Dick",
+  gender: "male",
+  legs: 4,
+  hands: 0,
+  saying: "woof-woof!",
+};
 
-   Code repository: _put repo URL here_
-   Web app: _put project's github pages URL here_
-   */
+const cat = {
+  species: "cat",
+  name: "Kitty",
+  gender: "female",
+  legs: 4,
+  hands: 0,
+  saying: "mur-mur",
+};
 
-// ======== OBJECTS DEFINITIONS ========
-// Define your objects here
+const catWoman = {
+  species: "catwoman",
+  name: "Nazar",
+  gender: "female",
+  legs: 4,
+  hands: 0,
+  saying: cat.saying,
+};
 
+const woman = {
+  species: "woman",
+  name: "Dazdraperma",
+  gender: "female",
+  legs: 3,
+  hands: 1,
+  saying: "It used to be better",
+};
 
-// ======== OUTPUT ========
-/* Use print(message) for output.
-   Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
+const man = {
+  species: "man",
+  name: "Mike",
+  gender: "male",
+  legs: 2,
+  hands: 2,
+  saying: "Hello World!",
+};
 
-   Message can contain HTML markup. You may also tweak index.html and/or styles.css.
-   However, please, REFRAIN from improving visuals at least until your code is reviewed
-   so code reviewers might focus on a single file that is index.js.
-   */
+const arr = [dog, cat, woman, man, catWoman];
+const arrValues = ['species', 'name', 'gender', 'legs', 'hands', 'saying'];
 
-/* Print examples:
-   print('ABC');
-   print('<strong>ABC</strong>');
-   print('<strong>ABC</strong>', 'div');
+const newArr = arr.map((item) => arrValues.map((value) => item[value]));
 
-   print('human; John; male; 2; 2; Hello world!; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
-   */
+const result = newArr.join('\n \n');
 
-
+print(result);
