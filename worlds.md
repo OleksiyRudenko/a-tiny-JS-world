@@ -102,3 +102,5 @@
  2021-09-11 |    5    |     40     | [ILMPI](https://github.com/ILMPI/a-tiny-JS-world)
  2022-07-27 |    5    |     51     | [kovalov](https://github.com/kovalov/a-tiny-JS-world)
  2022-07-27 |    5    |     75     | [morenko](https://github.com/maximmorenko/a-tiny-JS-world)
+ 2022-08-02 |    5    |     80     | [antonkottans](https://github.com/AntonKottans/a-tiny-JS-world)
+ 
