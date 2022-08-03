@@ -1,64 +1,60 @@
-const dog = {
-  species: "dog",
-  name: "Dick",
-  gender: "male",
-  legs: 4,
-  hands: 0,
-  saying: "woof-woof!",
-};
+class Inhabitant {
+  constructor(species, name, gender, legs, hands, saying) {
+    this.species = species;
+    this.name = name;
+    this.gender = gender;
+    this.legs = legs;
+    this.hands = hands;
+    this.saying = saying;
+  }
 
-const cat = {
-  species: "cat",
-  name: "Kitty",
-  gender: "female",
-  legs: 4,
-  hands: 0,
-  saying: "mur",
-};
+  getProperties() {
+    return `${this.species}; ${this.name}; ${this.gender}; ${this.legs}; ${this.hands}; ${this.saying};`;
+  }
+}
 
+class Dog extends Inhabitant {
+  constructor(species, name, gender, legs, hands, saying) {
+    super(species, name, gender, legs, hands, saying);
+  }
+}
 
-const woman = {
-  species: "woman",
-  name: "Dazdraperma",
-  gender: "female",
-  legs: 3,
-  hands: 1,
-  saying: "It used to be better",
-};
+class Cat extends Inhabitant{
+  constructor(species, name, gender, legs, hands) {
+    super(species, name, gender, legs, hands, 'Mur-mur');
+  }
+}
 
-const man = {
-  species: "man",
-  name: "Mike",
-  gender: "male",
-  legs: 2,
-  hands: 2,
-  saying: "Hello World!",
-};
+class Catwoman extends Cat {
+  constructor(species, name, gender, legs, hands, saying) {
+    super(species, name, gender, legs, hands, species);
+  }
+}
 
-const catWoman = {
-  species: "catwoman",
-  name: "Nazar",
-  gender: "femalmale",
-  legs: 2,
-  hands: 2,
-};
+class Man extends Inhabitant {
+  constructor(species, name, gender, legs, hands, saying) {
+    super(species, name, gender, legs, hands, saying);
+  }
+}
 
-Object.setPrototypeOf(catWoman, cat);
+class Woman extends Inhabitant {
+  constructor(species, name, gender, legs, hands, saying) {
+    super(species, name, gender, legs, hands, saying);
+  }
+}
 
-const inhabitants = [dog, cat, woman, man, catWoman];
-const inhabitantsValues = [
-  "species",
-  "name",
-  "gender",
-  "legs",
-  "hands",
-  "saying",
-];
+class CatWoman extends Inhabitant {
+  constructor(species, name, gender, legs, hands, saying) {
+    super(species, name, gender, legs, hands, saying);
+  }
+}
 
-const connectInhabitantsAndValues = inhabitants.map((item) =>
-  inhabitantsValues.map((value) => item[value])
-);
+const dog = new Dog("dog", "Dick","male", 4, 0, "woof-woof!");
+const cat = new Cat("cat", "Kitty","female", 5, 0);
+const catwoman = new Catwoman("catwoman", "Nazar","female", 2, 2);
+const woman = new Woman("woman", "Dazdraperma","female", 3, 1, "It used to be better");
+const man = new Man("man", "Mike","male", 2, 2, "Hello World!");
 
-const showInhabitantsInHtml = connectInhabitantsAndValues.join(";\n \n") + ";";
+const inhabitants = [dog, cat, catwoman, woman, man];
 
-print(showInhabitantsInHtml);
+inhabitants.forEach((inhabitant) => print(inhabitant.getProperties()));
