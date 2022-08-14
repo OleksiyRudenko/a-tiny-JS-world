@@ -44,3 +44,31 @@ footer {
 .credits {
     font-size: 0.75rem;
 }
+
+.species {
+    font-style: italic;
+}
+
+.gender {
+    text-decoration: underline;
+}
+
+.legs::before {
+    content: "legs = "
+}
+
+.hands::before {
+    content: "hands = "
+}
+
+.name {
+    font-weight: bold;
+}
+
+.friends {
+    color:#68afe7;
+}
+
+.enemies {
+    color:crimson;
+}
