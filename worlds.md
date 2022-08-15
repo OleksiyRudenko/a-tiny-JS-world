@@ -105,4 +105,7 @@
  2022-08-02 |    5    |     80     | [antonkottans](https://github.com/AntonKottans/a-tiny-JS-world)
  2022-08-03 |    5    |     64     | [Pozzitive11](https://pozzitive11.github.io/a-tiny-JS-world)
  2022-08-04 |    5    |     60     | [vovan-zt](https://github.com/vovan-zt/a-tiny-JS-world.git)
+ 2022-08-15 |    5    |     50     | [zhenyakornilov](https://github.com/zhenyakornilov/a-tiny-JS-world.git)
+ 
+ 
  
