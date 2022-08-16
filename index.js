@@ -1,9 +1,12 @@
 "use strict";
 
 const inhabitants = initializeInhabinants();
-
-for (const resident in inhabitants) {
-  print(getPrintableInhabitantInfo(inhabitants[resident]));
+printAllInhabitantsInfo(inhabitants);
+//inhabitants must be an object with a properties-objects for each person
+function printAllInhabitantsInfo(inhabitants) {
+  for (const resident in inhabitants) {
+    print(getPrintableInhabitantInfo(inhabitants[resident], resident));
+  }
 }
 
 function initializeInhabinants() {
@@ -14,6 +17,10 @@ function initializeInhabinants() {
       gender: "male",
       legs: 2,
       hands: 2,
+      eyes: {
+        color: "green",
+        size: "big",
+      },
       phrase: "Hi all! I'm a man!",
       sayHi() {
         return this.phrase;
@@ -91,47 +98,67 @@ function initializeInhabinants() {
 
   return inhabitants;
 }
-
-function getPrintableInhabitantInfo(inhabitant) {
-  const infoOneFields = ["species", "name", "gender", "legs", "hands"],
-    infoArrayFields = ["friends", "enemies"],
-    infoFunctionFields = ["sayHi"];
-
-  return [
-    ...infoOneFields.map((field) => {
-      if (inhabitant.hasOwnProperty(field)) {
-        return makePrintableSpan(inhabitant[field], field);
-      } else {
-        return makePrintableSpan("0", field);
-      }
-    }),
-    ...infoArrayFields.map((field) => {
-      if (inhabitant.hasOwnProperty(field)) {
-        return makePrintableListOfSpan(inhabitant[field], field);
-      } else {
-        return makePrintableSpan("0", field);
-      }
-    }),
-    ...infoFunctionFields.map((field) => {
-      if (inhabitant.hasOwnProperty(field)) {
-        return makePrintableSpan(inhabitant[field](), field);
-      } else {
-        return makePrintableSpan("0", "field");
-      }
-    }),
-  ].join(", ");
+//supports properties-objects of any nesting through recursion
+function getPrintableInhabitantInfo(inhabitant, residentName) {
+  const ignoredFields = ["phrase"]; //properties excluded from the output
+  let printableInfo = [];
+  for (let field in inhabitant) {
+    if (!ignoredFields.includes(field)) {
+      printableInfo.push(
+        fieldTypeHandler(inhabitant[field])(
+          inhabitant[field],
+          residentName + " " + field,
+          inhabitant
+        )
+      );
+    }
+  }
+  return printableInfo.join(", ");
 }
-
-function makePrintableListOfSpan(relationTargets, cssClass) {
-  if (relationTargets.length != 0) {
-    return relationTargets.map(
-      (resident) => `<span class=${cssClass}>${resident.name}</span>`
-    );
-  } else {
-    return makePrintableSpan("0", cssClass);
+//assign handlers for each field type
+function fieldTypeHandler(field) {
+  let typeOfField;
+  Array.isArray(field) ? (typeOfField = "array") : (typeOfField = typeof field);
+  switch (typeOfField) {
+    case "function":
+      return makePrintableFunctionReturn;
+    case "array":
+      return makePrintableListOfSpan;
+    case "string":
+      return makePrintableSpan;
+    case "number":
+      return makePrintableSpan;
+    case "object":
+      return getPrintableInhabitantInfo;
+    case "boolean":
+      return makePrintableSpan;
+    case "symbol":
+      return makePrintableSpan;
+    case "undefined":
+      return makePrintableSpan;
+    default:
+      break;
   }
 }
-
+//typeof feild == 'number', 'string', 'boolean', 'symbol', 'undefined'
 function makePrintableSpan(text, cssClass) {
-  return `<span class=${cssClass}>${text}</span>`;
+  return `<span class="${cssClass}">${text}</span>`;
+}
+//typeof feild == 'array'
+function makePrintableListOfSpan(arrayOfValues, cssClass) {
+  if (Array.isArray(arrayOfValues)) {
+    if (arrayOfValues.length != 0) {
+      return arrayOfValues
+        .map((resident) => `<span class="${cssClass}">${resident.name}</span>`)
+        .join(", ");
+    } else {
+      return makePrintableSpan("0", cssClass);
+    }
+  } else {
+    return makePrintableSpan("Object", cssClass);
+  }
+}
+//typeof feild == 'function'
+function makePrintableFunctionReturn(personFunction, cssClass, person) {
+  return `<span class="${cssClass}">${personFunction.call(person)}</span>`;
 }
