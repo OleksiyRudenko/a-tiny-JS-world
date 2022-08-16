@@ -125,17 +125,13 @@ function fieldTypeHandler(field) {
     case "array":
       return makePrintableListOfSpan;
     case "string":
-      return makePrintableSpan;
     case "number":
+    case "boolean":
+    case "symbol":
+    case "undefined":
       return makePrintableSpan;
     case "object":
       return getPrintableInhabitantInfo;
-    case "boolean":
-      return makePrintableSpan;
-    case "symbol":
-      return makePrintableSpan;
-    case "undefined":
-      return makePrintableSpan;
     default:
       break;
   }
