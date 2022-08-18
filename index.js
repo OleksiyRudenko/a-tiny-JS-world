@@ -98,4 +98,3 @@
    Inhabitants.forEach(habitant => summaryInhabitans.push(keyOfInhabitants.map(keyInObject => habitant[keyInObject])));
 
    summaryInhabitans.forEach(habitants => print(habitants.join("; ")));
-
