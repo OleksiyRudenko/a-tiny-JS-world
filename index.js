@@ -91,11 +91,10 @@
       saying: cat.saying
    };
 
-   const arrayOfInhabitants = [dog, cat, manJake, manSpensor, womanJessy, womanMargo, catWoman];
+   const Inhabitants = [dog, cat, manJake, manSpensor, womanJessy, womanMargo, catWoman];
    const keyOfInhabitants = ["species", "name", "gender", "legs", "hands", "saying"];
-   let summaryArrayWithInhabitans = [];
+   let summaryInhabitans = [];
 
-   arrayOfInhabitants.forEach(habitant => summaryArrayWithInhabitans.push(keyOfInhabitants.map(keyInObject => habitant[keyInObject])));
+   Inhabitants.forEach(habitant => summaryInhabitans.push(keyOfInhabitants.map(keyInObject => habitant[keyInObject])));
 
-   summaryArrayWithInhabitans.forEach(habitants => print(habitants.join("; ")));
-   
+   summaryInhabitans.forEach(habitants => print(habitants.join("; ")));
