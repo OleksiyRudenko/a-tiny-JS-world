@@ -108,4 +108,5 @@
  2022-08-06 |    5    |     45     | [OlStani](https://github.com/OlStani/a-tiny-JS-world)
  2022-08-15 |    5    |     50     | [zhenyakornilov](https://github.com/zhenyakornilov/a-tiny-JS-world.git)
  2022-08-17 |    5    |     52     | [YuliiaDikun](https://github.com/YuliiaDikun/a-tiny-JS-world)
+2022-08-18 |    4    |     78     | [VladyslavaKhomenok](https://github.com/Vlada-khom/a-tiny-JS-world)
  
