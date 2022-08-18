@@ -6,8 +6,45 @@
    */
 
 // ======== OBJECTS DEFINITIONS ========
-// Define your objects here
+let man = {
+  entity: "person",
+  name: "John",
+  sex: "male",
+  hands: 2,
+  legs: 2,
+  say: "Hello world!",
+  friends: "Jenny, Rex",
+};
 
+let woman = {
+  entity: "person",
+  name: "Jenny",
+  sex: "female",
+  hands: 2,
+  legs: 2,
+  say: "Hello world! I'm Jenny.",
+  friends: "Tom",
+};
+
+let dog = {
+  entity: "dog",
+  name: "Rex",
+  sex: "male",
+  hands: 0,
+  legs: 4,
+  say: "Gav!",
+  friends: "John, Jenny",
+};
+
+let cat = {
+  entity: "cat",
+  name: "Tom",
+  sex: "male",
+  hands: 0,
+  legs: 4,
+  say: "Meyow!",
+  friends: "Jenny",
+};
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
@@ -18,6 +55,18 @@
    so code reviewers might focus on a single file that is index.js.
    */
 
+function makeString(obj) {
+  let arrStr = [];
+  for (let value in obj) {
+    arrStr.push(obj[value]);
+  }
+  return arrStr.join(";");
+}
+
+print(makeString(man));
+print(makeString(woman));
+print(makeString(cat));
+print(makeString(dog));
 /* Print examples:
    print('ABC');
    print('<strong>ABC</strong>');
@@ -27,5 +76,3 @@
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
-
-
