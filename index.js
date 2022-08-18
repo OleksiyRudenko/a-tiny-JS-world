@@ -90,5 +90,3 @@ const dog = new Dog('Toby', 'male', 'woof-woof!'),
       womanJessy = new Human('Jessy', 'female', 'Im a little tired today'),
       womanMargo = new Human('Margo', 'female', 'Your shirt is just rubbish!');
       catWoman = new CatWoman('Kate', 'female', cat.saying);
-
-      
