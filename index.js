@@ -88,5 +88,5 @@ const dog = new Dog('Toby', 'male', 'woof-woof!'),
       manJake = new Human('Jake', 'male', 'Hey, whats up?'),
       manSpensor = new Human('Spensor', 'male', 'The weather is fine'),
       womanJessy = new Human('Jessy', 'female', 'Im a little tired today'),
-      womanMargo = new Human('Margo', 'female', 'Your shirt is just rubbish!');
+      womanMargo = new Human('Margo', 'female', 'Your shirt is just rubbish!'),
       catWoman = new CatWoman('Kate', 'female', cat.saying);
