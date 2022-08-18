@@ -27,74 +27,66 @@
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
+class Inhabitant {
+   constructor(name, gender, saying) {
+      this.name = name;
+      this.gender = gender;
+      this.saying = saying;
+   }
+   print() {
+      const specs = [this.species, this.name, this.gender, this.legs, this.hands, this.saying];
+      print(specs.join("; "));
+   }
+}
 
-   const dog = {
-      species: 'dog',
-      name: 'Toby',
-      gender: 'male',
-      legs: 4,
-      hands: 0,
-      saying: 'woof-woof!'
-    };
+class Animal extends Inhabitant {
+   constructor(name, gender, saying) {
+      super(name, gender, saying);
+      this.legs = 4; 
+      this.hands = 0;
+   }
+}
 
-    const cat = {
-      species: 'cat',
-      name: 'Mike',
-      gender: 'male',
-      legs: 4,
-      hands: 0,
-      saying: 'Murrrrrrrrrrr...'
-    };
+class Human extends Inhabitant {
+   constructor(name, gender, saying) {
+      super(name, gender, saying);
+      this.species = 'human';
+      this.legs = 2;
+      this.hands = 2;
+      this.print();
+   }
+}
 
-   const manJake = {  
-      species: 'human',
-      name: 'Jake',
-      gender: 'male',
-      legs: 2,
-      hands: 2,
-      saying: 'Hey, whats up?'
-   };
+class Dog extends Animal {
+   constructor(name, gender, saying) {
+      super(name, gender, saying);
+      this.species = 'dog';
+      this.print();
+   }
+}
 
-   const manSpensor = {  
-      species: 'human',
-      name: 'Spensor',
-      gender: 'male',
-      legs: 2,
-      hands: 2,
-      saying: 'The weather is fine'
-   };
-   
-   const womanJessy = {
-      species: 'human',
-      name: 'Jessy',
-      gender: 'female',
-      legs: 2,
-      hands: 2,
-      saying: 'Im a little tired today'
-   };
+class Cat extends Animal {
+   constructor(name, gender, saying) {
+      super(name, gender, saying);
+      this.species = 'cat';
+      this.print();
+   }
+}
 
-   const womanMargo = {
-      species: 'human',
-      name: 'Margo',
-      gender: 'male',
-      legs: 2,
-      hands: 2,
-      saying: 'Your shirt is just rubbish!'
-   };
+class CatWoman extends Animal {
+   constructor(name, gender, saying) {
+      super(name, gender, saying);
+      this.species = 'catWoman';
+      this.legs = 2;
+      this.hands = 2;
+      this.print();
+   }
+}
 
-   const catWoman = {
-      species: 'Catwoman',
-      name: 'Kate',
-      gender: 'male',
-      legs: 2,
-      hands: 2,
-      saying: cat.saying
-   };
-
-   const Inhabitants = [dog, cat, manJake, manSpensor, womanJessy, womanMargo, catWoman];
-   const keyOfInhabitants = ["species", "name", "gender", "legs", "hands", "saying"];
-   let summaryInhabitans = [];
-
-   Inhabitants.forEach(habitant => summaryInhabitans.push(keyOfInhabitants.map(keyInObject => habitant[keyInObject])));
-
-   summaryInhabitans.forEach(habitants => print(habitants.join("; ")));
+const dog = new Dog('Toby', 'male', 'woof-woof!'),
+      cat = new Cat('Mike', 'male', 'Murrrrrrrrrrr...'),
+      manJake = new Human('Jake', 'male', 'Hey, whats up?'),
+      manSpensor = new Human('Spensor', 'male', 'The weather is fine'),
+      womanJessy = new Human('Jessy', 'female', 'Im a little tired today'),
+      womanMargo = new Human('Margo', 'female', 'Your shirt is just rubbish!');
+      catWoman = new CatWoman('Kate', 'female', cat.saying);
