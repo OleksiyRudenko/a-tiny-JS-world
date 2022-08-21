@@ -83,15 +83,6 @@ class CatWoman extends Animal {
    }
 }
 
-<<<<<<< HEAD
-const dog = new Dog('Toby', 'male', 'woof-woof!'),
-      cat = new Cat('Mike', 'male', 'Murrrrrrrrrrr...'),
-      manJake = new Human('Jake', 'male', 'Hey, whats up?'),
-      manSpensor = new Human('Spensor', 'male', 'The weather is fine'),
-      womanJessy = new Human('Jessy', 'female', 'Im a little tired today'),
-      womanMargo = new Human('Margo', 'female', 'Your shirt is just rubbish!'),
-      catWoman = new CatWoman('Kate', 'female', cat.saying);
-=======
 const dog = new Dog('dog', 'Toby', 'male', 'woof-woof!'),
       cat = new Cat('cat', 'Mike', 'male', 'Murrrrrrrrrrr...'),
       manJake = new Human('human', 'Jake', 'male', 'Hey, whats up?'),
@@ -99,5 +90,3 @@ const dog = new Dog('dog', 'Toby', 'male', 'woof-woof!'),
       womanJessy = new Human('human', 'Jessy', 'female', 'Im a little tired today'),
       womanMargo = new Human('human', 'Margo', 'female', 'Your shirt is just rubbish!'),
       catWoman = new CatWoman('catWoman', 'Kate', 'female', cat.saying);
-
->>>>>>> master
