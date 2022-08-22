@@ -47,7 +47,7 @@ const male = {
    friends: ['Olya', 'Bonya'],
 }
 
-const catwoman = {
+const catWoman = {
    species: 'human',
    name: 'Catwoman',
    gender: 'female',
@@ -65,17 +65,34 @@ const catwoman = {
    so code reviewers might focus on a single file that is index.js.
    */
 
-function printObject(object){
-   const prop = [];
-   for (element in object){
-      prop.push(object[element]);
-   }
-   let newStr = prop.join('; ');
+const prop = ['species', 'name', 'gender', 'legs', 'hands', 'saying', 'friends']
+
+function printObjectNew(personToPrint){
+   const propToPrint = [];
+   prop.forEach((propOfObj) => {
+      propToPrint.push(personToPrint[propOfObj]);
+   })
+   let newStr = propToPrint.join('; ');
    print(newStr);
 }
 
-printObject(catwoman);
-printObject(male);
-printObject(female);
-printObject(cat);
-printObject(dog);
+// function printObject(object){
+//    const prop = [];
+//    for (element in object){
+//       prop.push(object[element]);
+//    }
+//    let newStr = prop.join('; ');
+//    print(newStr);
+// }
+
+// printObject(catWoman);
+// printObject(male);
+// printObject(female);
+// printObject(cat);
+// printObject(dog);
+
+printObjectNew(catWoman);
+printObjectNew(male);
+printObjectNew(female);
+printObjectNew(cat);
+printObjectNew(dog);
