@@ -66,33 +66,41 @@ const catWoman = {
    */
 
 const prop = ['species', 'name', 'gender', 'legs', 'hands', 'saying', 'friends']
+const allCharactersArray = [catWoman, male, female, cat, dog]
 
-function printObjectNew(personToPrint){
+// function printObjectNew(personToPrint){
+//    const propToPrint = [];
+//    prop.forEach((propOfObj) => {
+//       propToPrint.push(personToPrint[propOfObj]);
+//    })
+//    let newStr = propToPrint.join('; ');
+//    print(newStr);
+// }
+
+function arrayToString(propToPrint){
+   let newStr = propToPrint.join('; ');
+   console.log(propToPrint);
+   print(newStr);
+}
+
+function arrayOfPropToPrint(personToPrint){
    const propToPrint = [];
    prop.forEach((propOfObj) => {
       propToPrint.push(personToPrint[propOfObj]);
    })
-   let newStr = propToPrint.join('; ');
-   print(newStr);
+   arrayToString(propToPrint);
 }
 
-// function printObject(object){
-//    const prop = [];
-//    for (element in object){
-//       prop.push(object[element]);
-//    }
-//    let newStr = prop.join('; ');
-//    print(newStr);
-// }
+function printAllObjects(arrayAllObjects){
+   arrayAllObjects.forEach((characters) => {
+      arrayOfPropToPrint(characters);
+   })
+}
 
-// printObject(catWoman);
-// printObject(male);
-// printObject(female);
-// printObject(cat);
-// printObject(dog);
+printAllObjects(allCharactersArray);
 
-printObjectNew(catWoman);
-printObjectNew(male);
-printObjectNew(female);
-printObjectNew(cat);
-printObjectNew(dog);
+// printObjectNew(catWoman);
+// printObjectNew(male);
+// printObjectNew(female);
+// printObjectNew(cat);
+// printObjectNew(dog);
