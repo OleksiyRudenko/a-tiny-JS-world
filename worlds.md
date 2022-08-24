@@ -110,6 +110,6 @@
  2022-08-17 |    5    |     52     | [YuliiaDikun](https://github.com/YuliiaDikun/a-tiny-JS-world)
 2022-08-18 |    4    |     78     | [VladyslavaKhomenok](https://github.com/Vlada-khom/a-tiny-JS-world)
  2022-08-22 |    5    |     40     | [yhorodechna](https://github.com/yhorodechna/a-tiny-JS-world)
-
+ 2022-08-24 |    4    |     18      | [ivan-chukhalo](https://github.com/ivan-chukhalo/a-tiny-JS-world)
 
 
