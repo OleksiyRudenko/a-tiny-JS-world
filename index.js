@@ -1,31 +1,58 @@
-/* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
-   Complete the below for code reviewers' convenience:
+class Creature {
+   constructor (name, sex){
+      this.name = name;
+      if (sex !== 'Male' && sex !== 'Female'){
+         this.sex = 'WARNING! Invalid value of a sex property';
+      } else {
+         this.sex = sex;
+      }
+   }
 
-   Code repository: _put repo URL here_
-   Web app: _put project's github pages URL here_
-   */
+   getInfo(){
+      let consolidatedInfo =[];
+      Object.getOwnPropertyNames(this).forEach((elArr)=>{
+         consolidatedInfo.push(this[elArr]);
+      })
+      return consolidatedInfo.join('; ');
+   }
+}
 
-// ======== OBJECTS DEFINITIONS ========
-// Define your objects here
+class Human extends Creature{
+   constructor(name, sex, saying){
+      super(name, sex);
+      this.species = 'Human';
+      this.legs = 2;
+      this.hands = 2;
+      this.saying = saying;
+   }
+}
 
+class Dog extends Creature{
+   constructor (name, sex){
+      super(name, sex);
+      this.species = 'Dog';
+      this.legs = 4;
+      this.hands = 0;
+      this.saying = 'Woof';
+   }
+}
 
-// ======== OUTPUT ========
-/* Use print(message) for output.
-   Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
+class Cat extends Creature {
+   constructor (name, sex){
+      super(name, sex);
+      this.species = 'Cat';
+      this.legs = 4;
+      this.hands = 0;
+      this.saying = 'Meow';
+   }
+}
 
-   Message can contain HTML markup. You may also tweak index.html and/or styles.css.
-   However, please, REFRAIN from improving visuals at least until your code is reviewed
-   so code reviewers might focus on a single file that is index.js.
-   */
+let janLevinson = new Human ('Jan Levinson', 'Female', "You are not the first one!")
+let michaelScott = new Human ('Michael Scott', 'Male', "That's what she said!");
+let theirDog = new Dog ('Sobachka', 'Female');
+let theirCat = new Cat ('Kytsya', 'Female');
 
-/* Print examples:
-   print('ABC');
-   print('<strong>ABC</strong>');
-   print('<strong>ABC</strong>', 'div');
-
-   print('human; John; male; 2; 2; Hello world!; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
-   */
-
-
+print(janLevinson.getInfo());
+print(michaelScott.getInfo());
+print(theirDog.getInfo());
+print(theirCat.getInfo());
