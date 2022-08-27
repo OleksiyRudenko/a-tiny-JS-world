@@ -29,12 +29,13 @@
    */
 
 class Inhabitant {
-   constructor(name, spacies, gender, saying) {
+   constructor(name, spacies, gender, saying, legs) {
       this.name = name;
       this.spacies = spacies;
       this.gender = gender;
       this.saying = saying;
-      this.property = ['name', 'spacies', 'gender', 'saying'];
+      this.legs = legs;
+      this.property = ['name', 'spacies', 'gender', 'saying', 'legs'];
    }
    get props() {
       return this.property.map(key => this[key]).join('; ');
@@ -42,42 +43,42 @@ class Inhabitant {
 }
 
 class Human extends Inhabitant {
-   constructor (name, gender, saying, spacies, legs, hands) {
-      super(name, spacies, gender, saying);
-      this.spacies = 'human';
-      this.legs = 2;
+   constructor (name, gender, saying) {
+      super(name, 'human', gender, saying, '2');
       this.hands = 2;
-      this.property.push('legs', 'hands');
-
+   }
+   get props() {
+      return super.props + `; ${this.hands}`;
    }
 }
 
 class Dog extends Inhabitant {
-   constructor (name, gender, saying, spacies, legs) {
-      super(name, spacies, gender, saying);
-      this.spacies = 'dog';
-      this.legs = 4;
-      this.property.push('legs');
+   constructor (name, gender, saying) {
+      super(name, 'dog', gender, saying, '4');
+   }
+   get props() {
+      return super.props;
    }
 }
 
 class Cat extends Inhabitant {
-   constructor (name, gender, saying, spacies, legs) {
-      super(name, spacies, gender, saying);
-      this.spacies = 'cat';
-      this.legs = 4;
-      this.property.push('legs');
+   constructor (name, gender, saying) {
+      super(name, 'cat', gender, saying, '4');
+   }
+   get props() {
+      return super.props;
    }
 }
 
 class CatWoman extends Cat {
-   constructor (name, gender, saying, spacies, legs, hands) {
-      super(name, gender, spacies, saying);
-      this.saying = cat.saying;
+   constructor (name, gender) {
+      super(name, gender, cat.saying);
       this.spacies = 'catWoman';
       this.legs = 2;
       this.hands = 2;
-      this.property.push('hands');
+   }
+   get props() {
+      return super.props + `; ${this.hands}`;
    }
 }
 
