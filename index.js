@@ -44,7 +44,7 @@ const man = {
 };
 // ======== OUTPUT ========
 const allInhabitants = [dog, cat, woman, man];
-const keys = Object.keys(allInhabitants[0]);
+const keys = ["species", "legs", "hands", "name", "gender", "saying"];
 
 allInhabitants.map((inhabitan) => {
   print(keys.map((key) => inhabitan[key]).join("; "));
