@@ -114,4 +114,5 @@
  2022-08-24 |    4    |     55      | [pashapushak1996](https://github.com/pashapushak1996/a-tiny-JS-world)
  2022-08-26 |    5    |     62     | [YaroslavHadion](https://github.com/YarHadi/a-tiny-JS-world)
  2022-08-27 |    5    |     66     | [Levi123](https://github.com/Levi123/a-tiny-JS-world/)
+ 2022-08-31 |    5    |     61      | [DrewZag](https://github.com/drewzag/a-tiny-JS-world)
 
