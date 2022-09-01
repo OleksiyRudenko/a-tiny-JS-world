@@ -6,36 +6,58 @@
    */
 
 // ======== OBJECTS DEFINITIONS ========
-class Person {
-  constructor(species, legs, hands, name, gender, saying) {
+class Inhabitant {
+  constructor(species, name, gender, saying) {
     this.species = species;
-    this.legs = legs;
-    this.hands = hands;
     this.name = name;
     this.gender = gender;
     this.saying = saying;
   }
-}
-class Animal {
-  constructor(species, legs, hands, name, gender, saying) {
-    this.species = species;
-    this.legs = legs;
-    this.hands = hands;
-    this.name = name;
-    this.gender = gender;
-    this.saying = saying;
+
+  displayData() {
+    return ["species", "name", "gender", "saying"]
+      .map((data) => this[data])
+      .join("; ");
   }
 }
 
-const man = new Person("human", 2, 2, "Dimitrij", "male", "Nice to meet you!");
-const woman = new Person("human", 2, 2, "Kate", "male", "Have a good day!");
-const dog = new Animal("dog", 4, 0, "Molly", "female", "WOOF-WOOF!");
-const cat = new Animal("cat", 4, 0, "Whiskey", "female", "Meow!");
+class Person extends Inhabitant {
+  constructor(species, name, gender, saying, hands, legs) {
+    super(species, name, gender, saying);
+    this.hands = hands;
+    this.legs = legs;
+  }
+
+  displayData() {
+    return `${super.displayData()}; ${this.hands}; ${this.legs};`;
+  }
+}
+
+class Animal extends Inhabitant {
+  constructor(species, name, gender, saying, paws, tail) {
+    super(species, name, gender, saying);
+    this.paws = paws;
+    this.tail = tail;
+  }
+
+  displayData() {
+    return `${super.displayData()}; ${this.paws}; ${this.tail};`;
+  }
+}
+
+class Man extends Person {}
+class Woman extends Person {}
+class Dog extends Animal {}
+class Cat extends Animal {}
+
+const man = new Man("Man", "Dimitrij", "male", "Nice to meet you!", 2, 2);
+const woman = new Woman("Woman", "Kate", "male", "Have a good day!", 2, 2);
+const dog = new Dog("Dog", "Molly", "female", "WOOF-WOOF!", 4, 1);
+const cat = new Cat("Cat", "Whiskey", "female", "Meow!", 4, 1);
 
 // ======== OUTPUT ========
 const allInhabitants = [man, woman, dog, cat];
-const keys = ["species", "legs", "hands", "name", "gender", "saying"];
 
 allInhabitants.map((inhabitan) => {
-  print(keys.map((key) => inhabitan[key]).join("; "));
+  print(inhabitan.displayData());
 });
