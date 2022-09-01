@@ -6,44 +6,34 @@
    */
 
 // ======== OBJECTS DEFINITIONS ========
-// Define your objects here
-const dog = {
-  species: "dog",
-  legs: 4,
-  hands: 0,
-  name: "Molly",
-  gender: "female",
-  saying: "WOOF-WOOF!",
-};
+class Person {
+  constructor(species, legs, hands, name, gender, saying) {
+    this.species = species;
+    this.legs = legs;
+    this.hands = hands;
+    this.name = name;
+    this.gender = gender;
+    this.saying = saying;
+  }
+}
+class Animal {
+  constructor(species, legs, hands, name, gender, saying) {
+    this.species = species;
+    this.legs = legs;
+    this.hands = hands;
+    this.name = name;
+    this.gender = gender;
+    this.saying = saying;
+  }
+}
 
-const cat = {
-  species: "cat",
-  legs: 4,
-  hands: 0,
-  name: "Whiskey",
-  gender: "male",
-  saying: "Meow!",
-};
+const man = new Person("human", 2, 2, "Dimitrij", "male", "Nice to meet you!");
+const woman = new Person("human", 2, 2, "Kate", "male", "Have a good day!");
+const dog = new Animal("dog", 4, 0, "Molly", "female", "WOOF-WOOF!");
+const cat = new Animal("cat", 4, 0, "Whiskey", "female", "Meow!");
 
-const woman = {
-  species: "human",
-  legs: 2,
-  hands: 2,
-  name: "Kate",
-  gender: "female",
-  saying: "Have a good day!",
-};
-
-const man = {
-  species: "human",
-  legs: 2,
-  hands: 2,
-  name: "Dimitrij",
-  gender: "male",
-  saying: "Nice to meet you!",
-};
 // ======== OUTPUT ========
-const allInhabitants = [dog, cat, woman, man];
+const allInhabitants = [man, woman, dog, cat];
 const keys = ["species", "legs", "hands", "name", "gender", "saying"];
 
 allInhabitants.map((inhabitan) => {
