@@ -116,4 +116,4 @@
  2022-08-29 |    5    |     58     | [martthaa](https://github.com/martthaa/a-tiny-JS-world)
  2022-08-27 |    5    |     66     | [Levi123](https://github.com/Levi123/a-tiny-JS-world/)
  2022-08-29 |    5    |     52     | [DmitryHniezdilov](https://github.com/DmitryHniezdilov/task-a-tiny-JS-world)
-
+ 2022-08-31 |    5    |     55     | [Yuliiadd](https://github.com/Yuliiadd/a-tiny-JS-world)
