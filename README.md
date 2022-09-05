@@ -142,12 +142,12 @@ you may consider it to be of release quality and worth merging into master:
 
 `git checkout master && git merge populate-world`
 
-However proceed with any further changes when on `populate-world` or
+However, proceed with any further changes when on `populate-world` or
 another feature branch, merging into `master` from time to time.
 
 ### Publishing
 
-Push your repo to github.
+Push your repo to GitHub.
 
 You may want to publish your world on [GitHub Pages](https://pages.github.com/).
 The following commands will help you.
@@ -170,7 +170,7 @@ from master, and pushes updated branch to the remote.
 Now your world is published at
 `https://<YourGithubUsername>.github.io/a-tiny-JS-world/`
 
-When you want to update your site with latest changes in `master`
+When you want to update your site with the latest changes in `master`
 do the following:
 (Assuming you merged your code into `master`.
 You may alternatively merge from feature branch (`populate-world`).)
@@ -216,7 +216,7 @@ Grant this repo a :star:!
      - current date as YYYY-MM-DD
      - number of objects you created
      - number of code lines your object definitions take
-     - your github nick in square brackets
+     - your GitHub nick in square brackets
        and link to your repository in parentheses
        
    * Add an extra new line so additions from other contributors
@@ -253,7 +253,7 @@ approach on some working code.
 
 Keep in mind that this was just a tiny world and
 whenever you need to build bigger worlds
-Object Oriented Programming concepts come
+Object-Oriented Programming concepts come
 to your rescue.
 
 [_^ Up to TOC ^_](#table-of-contents)

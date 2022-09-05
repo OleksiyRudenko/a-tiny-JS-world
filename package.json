@@ -1,0 +1,20 @@
+{
+  "name": "a-tiny-js-world",
+  "version": "2.0.0",
+  "description": "This is a tiny task for those who are not familiar with\nObject-Oriented Programing concepts yet.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OleksiyRudenko/a-tiny-JS-world.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OleksiyRudenko/a-tiny-JS-world/issues"
+  },
+  "homepage": "https://github.com/OleksiyRudenko/a-tiny-JS-world#readme"
+}

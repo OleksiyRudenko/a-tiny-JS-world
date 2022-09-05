@@ -1,3 +1,4 @@
+import { print } from './js/lib.js';
 /* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
    Complete the below for code reviewers' convenience:
 
@@ -27,5 +28,3 @@
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
-
-
