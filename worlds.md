@@ -118,3 +118,4 @@
  2022-08-29 |    5    |     52     | [DmitryHniezdilov](https://github.com/DmitryHniezdilov/task-a-tiny-JS-world)
  2022-08-31 |    5    |     55     | [Yuliiadd](https://github.com/Yuliiadd/a-tiny-JS-world)
  2022-08-31 |    5    |     61      | [DrewZag](https://github.com/drewzag/a-tiny-JS-world)
+ 2022-09-01 |    4    |     51     | [chernetskyi8704](https://github.com/chernetskyi8704/a-tiny-JS-world)
