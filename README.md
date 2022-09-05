@@ -312,9 +312,34 @@ Some extras related to OOP:
 ### Improve your code
 
 If you feel now that you can improve your code being armed
-with OOP knowledge then go ahead! Don't forget to fix your row
+with OOP knowledge then go ahead!
+
+In addition to the [requirements above](#the-job) implement the following:
+1. we need **at least** three men, three women, two cats and two dogs;
+   all cats produce the same word when they meow, all dogs produce the same word as a bark;
+   write the code in a manner that adding more inhabitants
+   by a peer developer will require as small effort as only possible,
+   so you will need to keep the code DRY;
+1. at inhabitant creation time some properties are assigned a default value,  
+   so that  we do not need to specify species at inhabitant creation time;
+   same goes with legs, hands, and whatever words we define for animals to say;
+   although any properties
+   with default values should exist and be initialized;
+1. if any inhabitant doesn't have a property by natural design (e.g. dogs do not have hands),
+   then the class shouldn't have its own or inherited property;
+   no hands - no property and no info about hands in presentation string and so on;
+1. (optional, yet may be requested by a reviewer) all inhabitants
+   have friends from among other inhabitants;
+   friends list should store inhabitants (not just names as strings),
+   while output lists only friends' names;
+   what to print if an inhabitant has no friends? you decide;
+1. (optional): change all cat's word for meow, CatWoman's word
+   should also change accordingly without additional effort;
+   add code fragment that clearly demonstrates this effect.
+
+When done **update your row**
 in the [worlds.md](https://github.com/OleksiyRudenko/a-tiny-JS-world/blob/master/worlds.md)
-submitting an update PR.
+submitting a relevant PR.
 
 ### Wrap-up
 
