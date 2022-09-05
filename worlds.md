@@ -124,3 +124,4 @@
  2022-09-01 |    4    |     18     | [ivan-chukhalo](https://github.com/ivan-chukhalo/a-tiny-JS-world)
  2022-09-01 |    5    |     46     | [kuslosolodka](https://github.com/kuslosolodka/a-tiny-JS-world.git)
  2022-09-01 |    5    |     57     | [YuraZagor](https://github.com/YuraZagor/a-tiny-JS-world)
+ 2022-09-03 |    5    |     75     | [OlexiyDobroskok](https://github.com/OlexiyDobroskok/a-tiny-JS-world)
