@@ -122,3 +122,4 @@
  2022-09-01 |    4    |     51     | [chernetskyi8704](https://github.com/chernetskyi8704/a-tiny-JS-world)
  2022-09-01 |    5    |     79     | [JuliaNovak](https://github.com/JuliaNovak/a-tiny-JS-world)
  2022-09-01 |    4    |     18     | [ivan-chukhalo](https://github.com/ivan-chukhalo/a-tiny-JS-world)
+ 2022-09-01 |    5    |     46     | [kuslosolodka](https://github.com/kuslosolodka/a-tiny-JS-world.git)
