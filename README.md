@@ -297,8 +297,8 @@ with OOP and JavaScript OOP.
   * [constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)
   * [extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
   * [super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
-- [“Super” and “Extends” In JavaScript ES6 - Understanding The Tough Parts](https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420)
-  How ES6 class syntax maps onto ES5 prototype features. 
+- [“Super” and “Extends” In JavaScript ES6 - Understanding The Tough Parts](https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420) - How ES6 class syntax maps onto ES5 prototype features. 
+- [What is `super()` in Javascript](https://css-tricks.com/what-is-super-in-javascript/)
 - [ES6 classes cheat snippet](https://gist.github.com/OleksiyRudenko/672d39b08d9d0da4e179aca49876c58b)
 
 Consider completing
