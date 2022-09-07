@@ -7,7 +7,7 @@ import { print } from './js/lib.js';
          this.gender = gender;
          this.saying = saying;
          this.legs = legs;
-         this.property = ['name', 'spacies', 'gender', 'saying', 'legs'];
+         this.property = ['name', 'subspecies', 'gender', 'saying', 'legs'];
       }
       get fullProperties() {
          return this.property.map(key => this[key]).join('; ');
@@ -44,7 +44,8 @@ import { print } from './js/lib.js';
    
      class CatWoman extends Cat {
       constructor (name, gender) {
-         super(name, 'catWomen', gender, Cat.saying);
+         super(name, gender, cat.saying);
+         this.subspecies = 'catWomen';
          this.legs = 2;
          this.hands = 2;
       }
