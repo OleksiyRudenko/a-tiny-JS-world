@@ -3,7 +3,7 @@ import { print } from './js/lib.js';
    class Inhabitant {
       constructor(name, subspecies, gender, saying, legs) {
          this.name = name;
-         this.spacies = spacies;
+         this.subspecies = subspecies;
          this.gender = gender;
          this.saying = saying;
          this.legs = legs;
