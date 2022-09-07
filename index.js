@@ -16,8 +16,8 @@ import { print } from './js/lib.js';
 
    class Human extends Inhabitant {
       constructor (name, gender, saying) {
-         super(name, 'human', gender, saying, '2');
-         this.hands = 2;
+         super(name, 'human', gender, saying, '2 legs');
+         this.hands = '2 hands';
       }
       get fullProperties() {
          return super.fullProperties + `; ${this.hands}`;
@@ -26,7 +26,7 @@ import { print } from './js/lib.js';
    
  class Dog extends Inhabitant {
       constructor (name, gender, saying) {
-         super(name, 'dog', gender, saying, '4');
+         super(name, 'dog', gender, saying, '4 legs');
       }
       get fullProperties() {
          return super.fullProperties;
@@ -35,7 +35,7 @@ import { print } from './js/lib.js';
    
   class Cat extends Inhabitant {
       constructor (name, gender, saying) {
-         super(name, 'cat', gender, saying, '4');
+         super(name, 'cat', gender, saying, '4 legs');
       }
       get fullProperties() {
          return super.fullProperties;
@@ -46,8 +46,8 @@ import { print } from './js/lib.js';
       constructor (name, gender) {
          super(name, gender, cat.saying);
          this.subspecies = 'catWomen';
-         this.legs = 2;
-         this.hands = 2;
+         this.legs = '2 legs';
+         this.hands = '2 hands';
       }
       get fullProperties() {
          return super.fullProperties + `; ${this.hands}`;
@@ -64,6 +64,4 @@ import { print } from './js/lib.js';
    
    const inhabitants = [barsik, joe, tuzik, svitlana, jozeph, stefy, ivanka];
    
-   inhabitants.forEach(item => {
-      print(item.fullProperties);
-   });
+   inhabitants.forEach((item) => print(item));
