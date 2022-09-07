@@ -129,4 +129,5 @@
  2022-09-05 |    4    |     73     | [Vlad Shevchenko](https://github.com/vl-shevchenko/a-tiny-JS-world/)
  2022-09-05 |    4    |     39     | [Andriy Mashko](https://github.com/andreymashko7/a-tiny-JS-world)
  2022-09-07 |    4    |     38     | [kirill8210](https://github.com/kirill8210/a-tiny-JS-world)
- 
+ 2022-09-08 |    4    |     36     | [Conversee12](https://github.com/Conversee12/a-tiny-JS-world)
+
