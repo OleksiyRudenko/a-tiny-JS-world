@@ -1,31 +1,67 @@
-/* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
-   Complete the below for code reviewers' convenience:
+import { print } from './js/lib.js';
+  
+   class Inhabitant {
+      constructor(name, subspecies, gender, saying, legs) {
+         this.name = name;
+         this.subspecies = subspecies;
+         this.gender = gender;
+         this.saying = saying;
+         this.legs = legs;
+         this.property = ['name', 'subspecies', 'gender', 'saying', 'legs'];
+      }
+      get fullProperties() {
+         return this.property.map(key => this[key]).join('; ');
+      }
+   }
 
-   Code repository: _put repo URL here_
-   Web app: _put project's github pages URL here_
-   */
-
-// ======== OBJECTS DEFINITIONS ========
-// Define your objects here
-
-
-// ======== OUTPUT ========
-/* Use print(message) for output.
-   Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
-
-   Message can contain HTML markup. You may also tweak index.html and/or styles.css.
-   However, please, REFRAIN from improving visuals at least until your code is reviewed
-   so code reviewers might focus on a single file that is index.js.
-   */
-
-/* Print examples:
-   print('ABC');
-   print('<strong>ABC</strong>');
-   print('<strong>ABC</strong>', 'div');
-
-   print('human; John; male; 2; 2; Hello world!; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
-   */
-
-
+   class Human extends Inhabitant {
+      constructor (name, gender, saying) {
+         super(name, 'human', gender, saying, '2');
+         this.hands = 2;
+      }
+      get fullProperties() {
+         return super.fullProperties + `; ${this.hands}`;
+      }
+   }
+   
+ class Dog extends Inhabitant {
+      constructor (name, gender, saying) {
+         super(name, 'dog', gender, saying, '4');
+      }
+      get fullProperties() {
+         return super.fullProperties;
+      }
+   }
+   
+  class Cat extends Inhabitant {
+      constructor (name, gender, saying) {
+         super(name, 'cat', gender, saying, '4');
+      }
+      get fullProperties() {
+         return super.fullProperties;
+      }
+   }
+   
+     class CatWoman extends Cat {
+      constructor (name, gender) {
+         super(name, gender, cat.saying);
+         this.subspecies = 'catWomen';
+         this.legs = 2;
+         this.hands = 2;
+      }
+      get fullProperties() {
+         return super.fullProperties + `; ${this.hands}`;
+      }
+   }
+   
+   const barsik = new Dog('Barsik', 'male', "Garrrr!!"),
+         joe = new Human('Joe', 'male', 'It is nice to be in the YNCA!!!'),
+         tuzik = new Cat('Tuzik', 'male', "Myaw!"),
+         svitlana = new Human('Svitlana', 'female', 'Hola amigo!'),
+         jozeph = new Human('Jozeph', 'male', 'Whats up, dude?'),
+         stefy = new CatWoman('Stefany', 'female'),
+         ivanka = new Human('Ivanka', 'female', 'Bonjour!!');
+   
+   const inhabitants = [barsik, joe, tuzik, svitlana, jozeph, stefy, ivanka];
+   
+   inhabitants.forEach((item) => print(item));

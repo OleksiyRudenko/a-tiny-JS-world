@@ -1,0 +1,33 @@
+# This action adds checklists from .github/pr-checklists/
+# to PR conversations
+# when a PR is targeted at a specific branch (branches)
+# and a specific label (labels) are assigned.
+#
+# Checklist file name must match label name and end with '.md' extension.
+#
+# This action uses:
+# - actions/checkout@v3
+# - oleksiyrudenko/pr-comment@v1.1 (an updated fork of machine-learning-apps/pr-comment@master)
+
+on:
+  pull_request_target:
+    types: [ labeled ]
+    branches:
+      - master
+      - main
+
+jobs:
+  add-pr-checklist:
+    # define Eligible Labels; consider also using startsWith method
+    # (see also https://docs.github.com/en/actions/learn-github-actions/expressions#startswith)
+    if: contains( fromJson('["app-code-PR", "data-deletion", "merge-conflict"]'), github.event.label.name )
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      # use https://github.com/actions/download-artifact to get templates from a resource other than the PR's targeted branch
+      # use https://github.com/actions/github-script to use GtiHub Action API methods immediately in the workflow
+      - uses: oleksiyrudenko/pr-comment@v1.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          path: .github/pr-checklists/${{ github.event.label.name }}.md

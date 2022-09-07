@@ -137,12 +137,23 @@ Read about
 
 </details>
 
+Once you are happy with your app, or at least it doesn't report any errors in dev console
+you may consider it to be of release quality and worth merging into master:
+
+`git checkout master && git merge populate-world`
+
+However proceed with any further changes when on `populate-world` or
+another feature branch, merging into `master` from time to time.
+
 ### Publishing
 
 Push your repo to github.
 
 You may want to publish your world on [GitHub Pages](https://pages.github.com/).
 The following commands will help you.
+
+Assuming you merged your code into `master`.
+You may alternatively merge from feature branch (`populate-world`).
 
 ```
 git fetch
@@ -161,12 +172,25 @@ Now your world is published at
 
 When you want to update your site with latest changes in `master`
 do the following:
+(Assuming you merged your code into `master`.
+You may alternatively merge from feature branch (`populate-world`).)
 
 ```
 git checkout gh-pages
 git merge master
 git push origin gh-pages
 git checkout master
+```
+
+**NB!** Your project may not be published or updated immediately.
+Try refreshing your page in 5 to 10 minutes after pushing `gh-pages`.
+
+If you want to have your fork published before any changes pushed
+(i.e. original `gh-pages`) then do the following to trigger 
+publishing:
+```
+git push -f origin origin/gh-pages^:gh-pages
+git push origin origin/gh-pages:gh-pages
 ```
 
 [_^ Up to TOC ^_](#table-of-contents)
@@ -194,6 +218,9 @@ Grant this repo a :star:!
      - number of code lines your object definitions take
      - your github nick in square brackets
        and link to your repository in parentheses
+       
+   * Add an extra new line so additions from other contributors
+     do not affect yours.
 
    * Switch to Preview tab to check if the table still looks
      nice.
@@ -262,9 +289,16 @@ with OOP and JavaScript OOP.
 - [How to explain object-oriented programming concepts to a 6-year-old](https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260)
 - [Object-oriented JavaScript for beginners](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 - [Object oriented programming in javascript](https://www.sohamkamani.com/blog/2016/04/30/oops-in-js/)
+- [A guide to prototype-based class inheritance in JavaScript](https://levelup.gitconnected.com/a-guide-to-prototype-based-class-inheritance-in-javascript-e2e30c2c92b4)
 - [Fundamental Object Design Patterns](https://medium.com/launch-school/javascript-weekly-fundamental-object-design-patterns-31453f68427f)
 - [Composition over Inheritance
 ](https://medium.com/humans-create-software/composition-over-inheritance-cb6f88070205)
+- MDN reference:
+  * [constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)
+  * [extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
+  * [super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
+- [“Super” and “Extends” In JavaScript ES6 - Understanding The Tough Parts](https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420)
+  How ES6 class syntax maps onto ES5 prototype features. 
 - [ES6 classes cheat snippet](https://gist.github.com/OleksiyRudenko/672d39b08d9d0da4e179aca49876c58b)
 
 Consider completing
