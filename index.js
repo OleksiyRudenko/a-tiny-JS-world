@@ -1,7 +1,7 @@
 import { print } from './js/lib.js';
   
    class Inhabitant {
-      constructor(name, spacies, gender, saying, legs) {
+      constructor(name, subspecies, gender, saying, legs) {
          this.name = name;
          this.spacies = spacies;
          this.gender = gender;
