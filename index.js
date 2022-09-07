@@ -16,8 +16,8 @@ import { print } from './js/lib.js';
 
    class Human extends Inhabitant {
       constructor (name, gender, saying) {
-         super(name, 'human', gender, saying, '2 legs');
-         this.hands = '2 hands';
+         super(name, 'human', gender, saying, '2');
+         this.hands = 2;
       }
       get fullProperties() {
          return super.fullProperties + `; ${this.hands}`;
@@ -26,7 +26,7 @@ import { print } from './js/lib.js';
    
  class Dog extends Inhabitant {
       constructor (name, gender, saying) {
-         super(name, 'dog', gender, saying, '4 legs');
+         super(name, 'dog', gender, saying, '4');
       }
       get fullProperties() {
          return super.fullProperties;
@@ -35,7 +35,7 @@ import { print } from './js/lib.js';
    
   class Cat extends Inhabitant {
       constructor (name, gender, saying) {
-         super(name, 'cat', gender, saying, '4 legs');
+         super(name, 'cat', gender, saying, '4');
       }
       get fullProperties() {
          return super.fullProperties;
@@ -46,8 +46,8 @@ import { print } from './js/lib.js';
       constructor (name, gender) {
          super(name, gender, cat.saying);
          this.subspecies = 'catWomen';
-         this.legs = '2 legs';
-         this.hands = '2 hands';
+         this.legs = 2;
+         this.hands = 2;
       }
       get fullProperties() {
          return super.fullProperties + `; ${this.hands}`;
