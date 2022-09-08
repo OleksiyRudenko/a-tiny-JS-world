@@ -148,51 +148,17 @@ another feature branch, merging into `master` from time to time.
 
 ### Publishing
 
-Push your repo to GitHub.
+Push your repo to github.
 
 You may want to publish your world on [GitHub Pages](https://pages.github.com/).
-The following commands will help you.
-
-Assuming you merged your code into `master`.
-You may alternatively merge from feature branch (`populate-world`).
-
-```
-git fetch
-git checkout gh-pages
-git pull origin gh-pages
-git merge master
-git push origin gh-pages
-git checkout master
-```
-
-The above script updates `gh-pages` branch from the remote, then
-from master, and pushes updated branch to the remote.
+Following the [official GitHub guidelines](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+on a simple web-project publishing.
 
 Now your world is published at
 `https://<YourGithubUsername>.github.io/a-tiny-JS-world/`
 
-When you want to update your site with the latest changes in `master`
-do the following:
-(Assuming you merged your code into `master`.
-You may alternatively merge from feature branch (`populate-world`).)
-
-```
-git checkout gh-pages
-git merge master
-git push origin gh-pages
-git checkout master
-```
-
-**NB!** Your project may not be published or updated immediately.
-Try refreshing your page in 5 to 10 minutes after pushing `gh-pages`.
-
-If you want to have your fork published before any changes pushed
-(i.e. original `gh-pages`) then do the following to trigger 
-publishing:
-```
-git push -f origin origin/gh-pages^:gh-pages
-git push origin origin/gh-pages:gh-pages
-```
+Publication will be automatically updated when you push your new commits
+(although it may take 5 to 10 minutes since `git push`).
 
 [_^ Up to TOC ^_](#table-of-contents)
 
