@@ -121,7 +121,12 @@ That is the aim of incremental studying process:
 
 ### Testing your app
 
-To see how things work just open `index.html` with your browser.
+To see how things work open `index.html` in Live Server mode in your IDE.
+
+> How to open file in the LiveServer mode:
+> - [VS Code](https://github.com/ritwickdey/vscode-live-server)
+> - [WebStorm](./img/WebStorm-LiveServer.png)
+
 Press `Ctrl-Shift-J` in Google Chrome or Mozilla Firefox to see
 developer's console for possible errors.
 
@@ -130,12 +135,8 @@ You may want to prettify the output, but try focusing more on code itself.
 Doing `var object1 = object2` and `object2.name='Anny'`
 results in changing name of `object1` to `Anny` as well?
 
-<details><summary>Click me!</summary>
-
 Read about
 [Copying Objects in JavaScript](https://scotch.io/bar-talk/copying-objects-in-javascript)
-
-</details>
 
 Once you are happy with your app, or at least it doesn't report any errors in dev console
 you may consider it to be of release quality and worth merging into master:
