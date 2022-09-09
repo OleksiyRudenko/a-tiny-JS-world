@@ -16,7 +16,7 @@ if (typeof window !== 'undefined') {
     const targetDomain = (domainComponents.length > 1)
       ? 'github.com/' + domainComponents[0]
       : domainComponents[0];
-    return prefix + '//' + targetDomain + basePath + (domainComponents.length > 1 ? 'blob/gh-pages/' : '') + filePath;
+    return prefix + '//' + targetDomain + basePath + (domainComponents.length > 1 ? 'blob/master/' : '') + filePath;
   }
 
   (function (elementId) {
