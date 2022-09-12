@@ -134,3 +134,4 @@
  2022-09-09 |    5    |     24     | [VikTorNik](https://github.com/VikTorNik/a-tiny-JS-world)
  2022-09-09 |    4    |     33     | [another96](https://github.com/another96/a-tiny-JS-world)
  2022-09-10 |    6    |     65     | [crealime](https://github.com/crealime/a-tiny-JS-world) 
+ 2022-09-10 |    1    |     58     | [SableVector](https://github.com/SableVector/a-tiny-JS-world)
