@@ -136,6 +136,6 @@
  2022-09-10 |    6    |     65     | [crealime](https://github.com/crealime/a-tiny-JS-world) 
  2022-09-10 |    1    |     58     | [SableVector](https://github.com/SableVector/a-tiny-JS-world)
  2022-09-10 |    5    |     96     | [unabyband](https://github.com/unabyband/a-tiny-JS-world)
- 2022-09-11 |    5    |     57     | [sofiichuk](https://github.com/sofiichuk/a-tiny-JS-world)
+ 2022-09-14 |   10    |     64     | [sofiichuk](https://github.com/sofiichuk/a-tiny-JS-world/blob/OOP-exercise/index.js)
  2022-09-12 |    5    |     66     | [DmytryjK](https://github.com/DmytryjK/a-tiny-JS-world)
  2022-09-12 |    5    |     37     | [rahmanoff](https://github.com/rahmanoff/a-tiny-JS-world)
