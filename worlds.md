@@ -141,3 +141,5 @@
  2022-09-12 |    5    |     37     | [rahmanoff](https://github.com/rahmanoff/a-tiny-JS-world)
  2022-09-13 |    4    |     89     | [Semka094](https://github.com/Semka094/a-tiny-JS-world)
  2022-09-16 |    5    |     78     | [D1telo](https://github.com/D1telo/a-tiny-JS-world)
+ 2022-09-19 |    4    |     29     | [supert111](https://github.com/supert111/a-tiny-JS-world/tree/start-projeckt)
+ 
