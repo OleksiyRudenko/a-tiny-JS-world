@@ -9,6 +9,35 @@ import { print } from './js/lib.js';
 // ======== OBJECTS DEFINITIONS ========
 // Define your objects here
 
+const InhabitantsOfTheWorld = function (species, name, gender, legs, hands, saying) {
+  this.species = species;
+  this.name = name;
+  this.gender = gender;
+  this.legs = legs;
+  this.hands = hands;
+  this.saying = saying;
+  this.friends = [];
+}
+
+const dog = new InhabitantsOfTheWorld('dog', 'Caesar', 'male', 4, 0, 'woof-woof!');
+const cat= new InhabitantsOfTheWorld('cat', 'Musya', 'female', 4, 0, 'meow-meow!');
+const man = new InhabitantsOfTheWorld('human', 'Myk', 'male', 2, 2, 'hello bro!');
+const woman = new InhabitantsOfTheWorld('human', 'Magda', 'female', 2, 2, "I'll kill you!");
+
+dog.friends = [cat.name, man.name, woman.name];
+cat.friends = [dog.name, man.name, woman.name];
+man.friends = [dog.name, cat.name, woman.name];
+woman.friends = [dog.name, cat.name, man.name];
+
+const inhabitants = [dog, cat, man, woman];
+inhabitants.map(({species, name, gender, legs, hands, saying, friends}) => 
+  print(`species: <strong style="color: darkblue">${species}</strong>;
+    name: <strong style="color: red">${name}</strong>; 
+    gender: <strong style="color: green">${gender}</strong>;
+    legs: <strong style="color: black">${legs}</strong>;
+    hands: <strong style="color: gray">${hands}</strong>;
+    saying: <strong style="color: blue">${saying}</strong>;
+    friends: <strong style="color: darkorchid">${friends}</strong>;`));
 
 // ======== OUTPUT ========
 /* Use print(message) for output.
