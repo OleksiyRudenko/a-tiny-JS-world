@@ -29,16 +29,6 @@ cat.friends = [dog.name, man.name, woman.name];
 man.friends = [dog.name, cat.name, woman.name];
 woman.friends = [dog.name, cat.name, man.name];
 
-const inhabitants = [dog, cat, man, woman];
-inhabitants.map(({species, name, gender, legs, hands, saying, friends}) => 
-  print(`species: <strong style="color: darkblue">${species}</strong>;
-    name: <strong style="color: red">${name}</strong>; 
-    gender: <strong style="color: green">${gender}</strong>;
-    legs: <strong style="color: black">${legs}</strong>;
-    hands: <strong style="color: gray">${hands}</strong>;
-    saying: <strong style="color: blue">${saying}</strong>;
-    friends: <strong style="color: darkorchid">${friends}</strong>;`));
-
 // ======== OUTPUT ========
 /* Use print(message) for output.
    Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
@@ -48,6 +38,16 @@ inhabitants.map(({species, name, gender, legs, hands, saying, friends}) =>
    so code reviewers might focus on a single file that is index.js.
    */
 
+   const inhabitants = [dog, cat, man, woman];
+   inhabitants.map(({species, name, gender, legs, hands, saying, friends}) => 
+     print(`species: <strong style="color: darkblue">${species}</strong>;
+       name: <strong style="color: red">${name}</strong>; 
+       gender: <strong style="color: green">${gender}</strong>;
+       legs: <strong style="color: black">${legs}</strong>;
+       hands: <strong style="color: gray">${hands}</strong>;
+       saying: <strong style="color: blue">${saying}</strong>;
+       friends: <strong style="color: darkorchid">${friends}</strong>;`));
+       
 /* Print examples:
    print('ABC');
    print('<strong>ABC</strong>');
