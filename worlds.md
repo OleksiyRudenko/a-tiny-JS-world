@@ -147,4 +147,5 @@
  2022-09-27 |    5    |     69     | [TetianaDiachenko](https://github.com/TetianaDiachenko/a-tiny-JS-world)
  2022-09-27 |    5    |     64     | [Halv27](https://github.com/Halv27/a-tiny-JS-world)
  2022-09-27 |    5    |     45     | [rukhlovka](https://github.com/rukhlovka/a-tiny-JS-world)
+ 2022-09-28 |    5    |     48     | [iva-stasia](https://github.com/iva-stasia/a-tiny-JS-world)
  
