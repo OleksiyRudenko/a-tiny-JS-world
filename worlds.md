@@ -149,3 +149,5 @@
  2022-09-27 |    5    |     45     | [rukhlovka](https://github.com/rukhlovka/a-tiny-JS-world)
  2022-09-28 |    5    |     48     | [iva-stasia](https://github.com/iva-stasia/a-tiny-JS-world)
  2022-09-28 |    5    |     66     | [Anatolii-Petrenko](https://github.com/Anatolii-Petrenko/a-tiny-JS-world/tree/populate-world)
+ 2022-09-29 |    5    |     76     | [SofiiaTrokhymchuk](https://github.com/SofiiaTrokhymchuk/a-tiny-JS-world)
+ 
