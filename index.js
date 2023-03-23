@@ -6,7 +6,7 @@ import { print } from './js/lib.js';
    Complete the below for code reviewers' convenience:
 
    Code repository: https://github.com/oleksii-anoshkin/a-tiny-JS-world
-   Web app: _put project's github pages URL here_
+   Web app: https://oleksii-anoshkin.github.io/a-tiny-JS-world/
    */
 
 // ======== OBJECTS DEFINITIONS ========
