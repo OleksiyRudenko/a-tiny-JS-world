@@ -1,30 +1,64 @@
 import { print } from './js/lib.js';
-/* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
-   Complete the below for code reviewers' convenience:
 
-   Code repository: _put repo URL here_
-   Web app: _put project's github pages URL here_
-   */
+class Inhabitants {
+	constructor(name, species, gender, legs, hands, saying) {
+		this.name = name;
+		this.species = species;
+		this.gender = gender;
+		this.legs = legs;
+		this.hands = hands;
+		this.saying = saying;
+	}
+	prepareForPrinting() {
+		print(`species:${this.species}; name:${this.name}; gender:${this.gender};` +
+			`legs:${this.legs}; hands:${this.hands}; saying:${this.saying}`);
+	}
+}
 
-// ======== OBJECTS DEFINITIONS ========
-// Define your objects here
+class Humans extends Inhabitants {
+	constructor(name, gender, saying) {
+		super(name, 'human', gender, 2, 2, saying);
+	}
+	prepareForPrinting() {
+		return [super.prepareForPrinting()].join('; ')
+	}
+}
 
+class Pets extends Inhabitants {
+	constructor(name, species, gender, saying) {
+		super(name, species, gender, 4, 0, saying)
+	}
 
-// ======== OUTPUT ========
-/* Use print(message) for output.
-   Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
+	prepareForPrinting() {
+		return [super.prepareForPrinting()].join('; ')
+	}
+}
+class Cats extends Pets {
+	constructor(name, gender, saying) {
+		super(name, 'cat', gender, saying)
+	}
+}
+class Dogs extends Pets {
+	constructor(name, gender, saying) {
+		super(name, 'dog', gender, saying)
+	}
+}
 
-   Message can contain HTML markup. You may also tweak index.html and/or styles.css.
-   However, please, REFRAIN from improving visuals at least until your code is reviewed
-   so code reviewers might focus on a single file that is index.js.
-   */
+const RyanMan = new Humans('Ryan', 'male', 'Hold on, hold on, Miranda.');
+const JohnMan = new Humans('John', 'male', 'I beg your pardon!');
+const BradMan = new Humans('Brad', 'male', 'wassup guys?');
 
-/* Print examples:
-   print('ABC');
-   print('<strong>ABC</strong>');
-   print('<strong>ABC</strong>', 'div');
+const EmmaWoman = new Humans('Emma', 'female', 'Special for you!');
+const AnaWoman = new Humans('Ana', 'female', 'I love u!');
+const KateWoman = new Humans('Kate', 'female', 'Honey, can you hear me?');
 
-   print('human; John; male; 2; 2; Hello world!; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
-   print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
-   */
+const AzreaCat = new Cats('Azrea', 'female', 'Murrr...');
+const ZumikCat = new Cats('Zumik', 'male', 'Meow');
+
+const ArchiDog = new Dogs('Archi', 'female', 'Woof');
+const ButchDog = new Dogs('Butch', 'male', 'Woof-woof!');
+
+const inhabitants = [JohnMan, RyanMan, BradMan, EmmaWoman, AnaWoman, KateWoman, AzreaCat, ZumikCat, ArchiDog, ButchDog];
+inhabitants.forEach(inhabitant => {
+	print(inhabitant.prepareForPrinting());
+});
