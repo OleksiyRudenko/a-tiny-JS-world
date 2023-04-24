@@ -1,6 +1,6 @@
-import { print } from './js/lib.js';
+import { print } from "./js/lib.js";
 
-"use strict";
+("use strict");
 
 /* Refer to https://github.com/OleksiyRudenko/a-tiny-JS-world for the task details
    Complete the below for code reviewers' convenience:
@@ -9,49 +9,273 @@ import { print } from './js/lib.js';
    Web app: https://oleksii-anoshkin.github.io/a-tiny-JS-world/
    */
 
-// ======== OBJECTS DEFINITIONS ========
-// Define your objects here
+// ======== OBJECTS DEFINITIONS v1 ========
+// class Objects {
+//   constructor(object, name, gender, hands, legs, phrase, friends) {
+//     (this.object = object),
+//       (this.name = name),
+//       (this.gender = gender),
+//       (this.hands = hands),
+//       (this.legs = legs),
+//       (this.saying = phrase),
+//       (this.friends = friends);
+//   }
 
-class Objects {
-   constructor(object, name, gender, hands, legs, phrase, friends) {
-      this.object = object,
-      this.name = name,
-      this.gender = gender,
-      this.hands = hands,
-      this.legs = legs,
-      this.saying = phrase,
-      this.friends = friends
-   };
+//   printObj() {
+//     let str = ``;
+//     let i = 1;
 
-   printObj() {
-      let str = ``;
-      let i = 1;
+//     for (const key in this) {
+//       if (i === 7) {
+//         str += `${this[key]}`;
+//         continue;
+//       }
 
-      for (const key in this) {
-         if (i === 7) {
-            str += `${this[key]}`;
-            continue;
-         };
+//       str += `${this[key]}; `;
+//       i += 1;
+//     }
 
-         str += `${this[key]}; `;
-         i += 1;
-      };
+//     return str;
+//   }
+// }
 
-      return str;
-   };
+// const man = new Objects(
+//   "human",
+//   "Oleksii",
+//   "male",
+//   2,
+//   2,
+//   "Hello! My name's Oleksii! Nice to meet you!",
+//   "Julia, Jack, Lili"
+// );
+// const woman = new Objects(
+//   "human",
+//   "Julia",
+//   "female",
+//   2,
+//   2,
+//   "Hello! My name's Julia! Nice to meet you!",
+//   "Oleksii, Jack, Lili"
+// );
+// const dog = new Objects(
+//   "animal",
+//   "Jack",
+//   "male",
+//   0,
+//   4,
+//   "Woof-woof!",
+//   "Oleksii, Julia, Lili"
+// );
+// const cat = new Objects(
+//   "animal",
+//   "Lili",
+//   "female",
+//   0,
+//   4,
+//   "Meow-meow!",
+//   "Oleksii, Julia, Jack"
+// );
+// const catWoman = new Objects(
+//   "human",
+//   "Mia",
+//   "female",
+//   2,
+//   2,
+//   cat.saying,
+//   "Lili"
+// );
+
+// ======== OUTPUT v1 ========
+
+// [man, woman, dog, cat, catWoman].forEach((obj) =>
+//   print(`${obj.printObj()}`, "div")
+// );
+
+// ======== OBJECTS DEFINITIONS v2 ========
+// Constants
+const INHABITANTS = [];
+
+// Humans
+const HUMAN_DATA = {
+  hands: 2,
+  legs: 2,
+  species: "human",
 };
 
-const man = new Objects("human", "Oleksii", "male", 2, 2, "Hello! My name's Oleksii! Nice to meet you!", "Julia, Jack, Lili");
-const woman = new Objects("human", "Julia", "female", 2, 2, "Hello! My name's Julia! Nice to meet you!", "Oleksii, Jack, Lili");
-const dog = new Objects("animal", "Jack", "male", 0, 4, "Woof-woof!", "Oleksii, Julia, Lili");
-const cat = new Objects("animal", "Lili", "female", 0, 4, "Meow-meow!", "Oleksii, Julia, Jack");
-const catWoman = new Objects("human", "Mia", "female", 2, 2, cat.saying, "Lili");
+const MALE_DATA = {
+  gender: "male",
+  name: ["Bob", "Jonatan", "Bill"],
+  friends: ["Marta", "Bob", "None"],
+  phrases: ["Hello world!", "Hi everyone!", "Aloha!"],
+  icon: '<span class="material-symbols-outlined">man</span>',
+};
 
-// ======== OUTPUT ========
+const FEMALE_DATA = {
+  gender: "female",
+  name: ["Samanta", "Barbara", "Marta"],
+  friends: ["Bill", "Archie", "Leona"],
+  phrases: ["Ops!", "Yap!", "Okey!"],
+  icon: '<span class="material-symbols-outlined">woman</span>',
+};
 
-[man, woman, dog, cat, catWoman].forEach(obj => print(`${obj.printObj()}`, 'div'));
+const CATWOMAN_DATA = {
+  name: "Julia",
+  friends: "Leona",
+};
 
-// print(`<strong></strong>`, 'div');
+// Animals
+const ANIMAL_DATA = {
+  limbs: 4,
+  tail: 1,
+  species: "animal",
+  icon: '<span class="material-symbols-outlined">pets</span>',
+};
+
+const DOGS_DATA = {
+  kind: "dog",
+  name: ["Archie", "Casper"],
+  friends: ["Barbara", "Colin"],
+  phrase: "Woof!",
+};
+
+const CATS_DATA = {
+  kind: "cat",
+  name: ["Colin", "Leona"],
+  friends: ["Casper", "Marta"],
+  phrase: "Meow!",
+};
+
+// HTML
+const CARD_CLASS = "inhabitant__card";
+const CARD_TAG = "div";
+const KEY_TAG = "span";
+const KEY_CLASS = "inhabitant__text";
+const TEXT_CLASS = "normal";
+const TEXT_TAG = "span";
+const IMG_PROP_NAME = "icon";
+
+// Classes
+// General
+class Inhabitant {
+  constructor(name, friends) {
+    (this.name = name), (this.friends = friends);
+  }
+
+  render() {
+    const propsArr = [];
+
+    for (const prop in this) {
+      prop === IMG_PROP_NAME
+        ? propsArr.unshift(this[prop])
+        : propsArr.push(
+            `<${KEY_TAG} class="${KEY_CLASS}">${prop}: <${TEXT_TAG} class="${TEXT_CLASS}">${this[prop]}</${TEXT_TAG}></${KEY_TAG}>`
+          );
+    }
+
+    return propsArr.join(" ");
+  }
+}
+
+// Humans
+class Human extends Inhabitant {
+  constructor(name, friends, phrase) {
+    super(name, friends);
+    this.saying = phrase;
+    this.hands = HUMAN_DATA.hands;
+    this.legs = HUMAN_DATA.legs;
+    this.species = HUMAN_DATA.species;
+  }
+}
+
+class Male extends Human {
+  constructor(name, friends, phrase) {
+    super(name, friends, phrase);
+    this.gender = MALE_DATA.gender;
+    this.icon = MALE_DATA.icon;
+  }
+}
+
+class Female extends Human {
+  constructor(name, friends, phrase) {
+    super(name, friends, phrase);
+    this.gender = FEMALE_DATA.gender;
+    this.icon = FEMALE_DATA.icon;
+  }
+}
+
+class Catwoman extends Female {
+  constructor(name, friends, phrase) {
+    super(name, friends, phrase);
+    this.gender = FEMALE_DATA.gender;
+    this.saying = CATS_DATA.phrase;
+  }
+}
+
+// Animals
+class Animal extends Inhabitant {
+  constructor(name, friends) {
+    super(name, friends);
+    this.limbs = ANIMAL_DATA.limbs;
+    this.tail = ANIMAL_DATA.tail;
+    this.species = ANIMAL_DATA.species;
+    this.icon = ANIMAL_DATA.icon;
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, friends) {
+    super(name, friends);
+    this.kind = DOGS_DATA.kind;
+    this.phrase = DOGS_DATA.phrase;
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, friends) {
+    super(name, friends);
+    this.kind = CATS_DATA.kind;
+    this.phrase = CATS_DATA.phrase;
+  }
+}
+
+// Add inhabitians
+function addInhabitians(className, base, dataName, dataFriends, dataPhrases) {
+  for (let i = 0; i < dataName.length; i += 1) {
+    dataPhrases === undefined
+      ? base.push(new className(dataName[i], dataFriends[i]))
+      : base.push(new className(dataName[i], dataFriends[i], dataPhrases[i]));
+  }
+}
+
+// Add male
+addInhabitians(
+  Male,
+  INHABITANTS,
+  MALE_DATA.name,
+  MALE_DATA.friends,
+  MALE_DATA.phrases
+);
+
+// Add female
+addInhabitians(
+  Female,
+  INHABITANTS,
+  FEMALE_DATA.name,
+  FEMALE_DATA.friends,
+  FEMALE_DATA.phrases
+);
+
+// Add dog
+addInhabitians(Dog, INHABITANTS, DOGS_DATA.name, DOGS_DATA.friends);
+
+// Add cat
+addInhabitians(Cat, INHABITANTS, CATS_DATA.name, CATS_DATA.friends);
+
+// Add catwoman
+INHABITANTS.push(new Catwoman(CATWOMAN_DATA.name, CATWOMAN_DATA.friends));
+
+// ======== OUTPUT v2 ========
+INHABITANTS.forEach((obj) => print(`${obj.render()}`, CARD_CLASS, CARD_TAG));
 
 /* Use print(message) for output.
    Default tag for message is <pre>. Use print(message,'div') to change containing element tag.

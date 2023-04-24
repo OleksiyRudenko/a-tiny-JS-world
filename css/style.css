@@ -23,7 +23,7 @@ header {
 main {
     flex-grow: 1;
     margin-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 3rem;
 }
 
 .source-code {
@@ -43,4 +43,41 @@ footer {
 
 .credits {
     font-size: 0.75rem;
+}
+
+/* inhabitant cards */
+.inhabitants {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.inhabitant__card {
+    margin: 8px;
+    padding: 12px;
+
+    min-width: 200px;
+
+    border: 2px solid black;
+}
+
+.material-symbols-outlined {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-size: 52px;
+}
+
+.inhabitant__text {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+.normal {
+    font-weight: 400;
 }
