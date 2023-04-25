@@ -9,89 +9,7 @@ import { print } from "./js/lib.js";
    Web app: https://oleksii-anoshkin.github.io/a-tiny-JS-world/
    */
 
-// ======== OBJECTS DEFINITIONS v1 ========
-// class Objects {
-//   constructor(object, name, gender, hands, legs, phrase, friends) {
-//     (this.object = object),
-//       (this.name = name),
-//       (this.gender = gender),
-//       (this.hands = hands),
-//       (this.legs = legs),
-//       (this.saying = phrase),
-//       (this.friends = friends);
-//   }
-
-//   printObj() {
-//     let str = ``;
-//     let i = 1;
-
-//     for (const key in this) {
-//       if (i === 7) {
-//         str += `${this[key]}`;
-//         continue;
-//       }
-
-//       str += `${this[key]}; `;
-//       i += 1;
-//     }
-
-//     return str;
-//   }
-// }
-
-// const man = new Objects(
-//   "human",
-//   "Oleksii",
-//   "male",
-//   2,
-//   2,
-//   "Hello! My name's Oleksii! Nice to meet you!",
-//   "Julia, Jack, Lili"
-// );
-// const woman = new Objects(
-//   "human",
-//   "Julia",
-//   "female",
-//   2,
-//   2,
-//   "Hello! My name's Julia! Nice to meet you!",
-//   "Oleksii, Jack, Lili"
-// );
-// const dog = new Objects(
-//   "animal",
-//   "Jack",
-//   "male",
-//   0,
-//   4,
-//   "Woof-woof!",
-//   "Oleksii, Julia, Lili"
-// );
-// const cat = new Objects(
-//   "animal",
-//   "Lili",
-//   "female",
-//   0,
-//   4,
-//   "Meow-meow!",
-//   "Oleksii, Julia, Jack"
-// );
-// const catWoman = new Objects(
-//   "human",
-//   "Mia",
-//   "female",
-//   2,
-//   2,
-//   cat.saying,
-//   "Lili"
-// );
-
-// ======== OUTPUT v1 ========
-
-// [man, woman, dog, cat, catWoman].forEach((obj) =>
-//   print(`${obj.printObj()}`, "div")
-// );
-
-// ======== OBJECTS DEFINITIONS v2 ========
+// ======== OBJECTS DEFINITIONS ========
 // Constants
 const INHABITANTS = [];
 
@@ -274,7 +192,7 @@ addInhabitians(Cat, INHABITANTS, CATS_DATA.name, CATS_DATA.friends);
 // Add catwoman
 INHABITANTS.push(new Catwoman(CATWOMAN_DATA.name, CATWOMAN_DATA.friends));
 
-// ======== OUTPUT v2 ========
+// ======== OUTPUT ========
 INHABITANTS.forEach((obj) => print(`${obj.render()}`, CARD_CLASS, CARD_TAG));
 
 /* Use print(message) for output.
